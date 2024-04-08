@@ -12,6 +12,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "forceConsistentCasingInFileNames": true,
     "plugins": [
       {
         "name": "next"
@@ -21,9 +22,18 @@
       "@/*": ["./*"],
       "@/components/*": ["./components/*"],
       "@/sections/*": ["./sections/*"],
-      "@/layout/*": ["./layout/*"]
-    }
+      "@/layout/*": ["./layout/*"],
+      "@/data/*": ["./data/*"],
+      "@/public/*": ["./public/*"]
+    },
+    "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
