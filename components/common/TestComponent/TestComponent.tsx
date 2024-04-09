@@ -27,6 +27,7 @@
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
 
+import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
 import React from 'react';
@@ -35,6 +36,10 @@ export const TestComponent = () => {
   return (
     <div>
       <Icons />
+      <Contacts />
+      <div className="bg-black">
+        <Contacts isFooter />
+      </div>
     </div>
   );
 };
