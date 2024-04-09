@@ -1,0 +1,11 @@
+{
+  "DropdownList": [
+    {
+      "text": "Індивідуальна консультація",
+      "moveTo": "Individual-consultation"
+    },
+    { "text": "Сімейна консультація ", "moveTo": "family-consultation" },
+    { "text": "Групова консультація", "moveTo": "group-consultation" }
+  ],
+  "NavBar": ["Головна", "Про мене", "Послуги"]
+}
