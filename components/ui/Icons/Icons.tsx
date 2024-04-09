@@ -39,7 +39,7 @@ export const Icons = () => {
           <div className="flex items-center justify-center">
             <Image
               className="h-[133px] w-[133px] object-cover object-center"
-              src="/icons/profLogo1.png"
+              src="/images/logo/profLogo1.webp"
               width={133}
               height={133}
               priority
@@ -49,7 +49,7 @@ export const Icons = () => {
           <div className="flex items-center justify-center">
             <Image
               className="object-cover object-center"
-              src="/icons/profLogo2.png"
+              src="/images/logo/profLogo2.webp"
               width={133}
               height={133}
               priority
@@ -59,7 +59,7 @@ export const Icons = () => {
           <div className="flex items-center justify-center">
             <Image
               className="object-cover object-center"
-              src="/icons/profLogo3.png"
+              src="/images/logo/profLogo3.webp"
               width={133}
               height={133}
               priority
@@ -69,7 +69,7 @@ export const Icons = () => {
           <div className="flex items-center justify-center">
             <Image
               className="object-cover object-center"
-              src="/icons/profLogo4.png"
+              src="/images/logo/profLogo4.webp"
               width={133}
               height={133}
               priority
@@ -81,7 +81,7 @@ export const Icons = () => {
         <div className="flex items-center justify-center gap-[30px]">
           <Image
             className="h-[42px] w-[75px] object-cover object-center md:h-[48px] md:w-[86px] xl:h-[57px] xl:w-[103px] "
-            src="/icons/formImg1.png"
+            src="/images/logo/formImg1.webp"
             width={103}
             height={57}
             priority
@@ -89,12 +89,17 @@ export const Icons = () => {
           />
           <Image
             className="h-[42px] w-[75px] object-cover object-center md:h-[48px] md:w-[86px] xl:h-[57px] xl:w-[103px] "
-            src="/icons/formImg2.png"
+            src="/images/logo/formImg2.webp"
             width={103}
             height={57}
             priority
             alt="портрет дівчини, що посміхаєтсья на світлому фоні"
           />
+        </div>
+        <div className="flex items-center justify-center">
+          <p className="text-cardTextLg relative inline-block before:absolute before:left-[-200px] before:top-0 before:h-[42px] before:w-[75px] before:content-formImg1 after:absolute after:left-[100px] after:top-0 after:h-[42px] after:w-[75px] after:content-formImg2 before:md:h-[48px] before:md:w-[86px] after:md:h-[48px] after:md:w-[86px] before:xl:h-[57px] before:xl:w-[103px] after:xl:h-[57px] after:xl:w-[103px]">
+            Детальніше
+          </p>
         </div>
         <div className="flex flex-col">
           <p className="text-cardTextLg relative inline-block font-roboto text-accent after:absolute after:left-[100px] after:top-0 after:h-[25px] after:w-[25px] after:content-arrowRightSm">
@@ -132,10 +137,10 @@ export const Icons = () => {
         </div>
         <div className="py-[100px]">
           <div className="relative flex flex-col md:w-[346px] xl:w-[495px]">
-            <h1 className="text-large xl:text-extraLarge font-raleway font-semibold uppercase text-mainBlack md:text-[50px] xl:text-[86px]">
+            <h1 className="font-raleway text-large font-semibold uppercase text-mainBlack md:text-[50px] xl:text-[86px] xl:text-extraLarge">
               Климпуш
             </h1>
-            <h2 className="text-large xl:text-extraLarge static right-[-50px] top-[80px] font-raleway font-semibold uppercase text-mainBlack md:absolute md:text-right md:text-[50px] xl:text-[86px]">
+            <h2 className="static right-[-50px] top-[80px] font-raleway text-large font-semibold uppercase text-mainBlack md:absolute md:text-right md:text-[50px] xl:text-[86px] xl:text-extraLarge">
               Ірина
             </h2>
           </div>

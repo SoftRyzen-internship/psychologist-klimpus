@@ -28,12 +28,18 @@
 // };
 
 import { Icons } from '@/components/ui/Icons';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+
+import data from '@/data/common.json';
 
 import React from 'react';
 
 export const TestComponent = () => {
+  const { logo } = data.header;
+
   return (
     <div>
+      <SectionTitle>{logo}</SectionTitle>
       <Icons />
     </div>
   );

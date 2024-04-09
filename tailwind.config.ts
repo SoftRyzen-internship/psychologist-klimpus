@@ -40,12 +40,21 @@ const config: Config = {
         arrowUp: `url(/icons/arrowUp.svg)`,
         arrowDown: `url(/icons/arrowDown.svg)`,
         arrowRightSm: `url(/icons/arrowRightSm.svg)`,
+        formImg1: `url(/images/logo/formImg1.webp)`,
+        formImg2: `url(/images/logo/formImg2.webp)`,
         // arrowRightMd: `url(/icons/arrowRightMd.svg)`,
         // arrowLeftMd: `url(/icons/arrowLeftMd.svg)`,
       },
       fontFamily: {
         raleway: ['var(--font-raleway)'],
         roboto: ['var(--font-roboto)'],
+      },
+      fontSize: {
+        light: ['22px', '1.5'],
+        medium: ['28px', '1.5'],
+        lightLarge: ['32px', '1.5'],
+        large: ['44px', '1.5'],
+        extraLarge: ['86px', '1.5'],
       },
       colors: {
         bgMenu: 'rgba(28, 28, 28, 0.40)',
