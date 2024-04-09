@@ -46,3 +46,18 @@ from the creators of Next.js.
 Check out our
 [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
 details.
+
+## Components API
+
+Here you may find a list of the most common components and their API:
+
+- #### Button
+
+| Prop            | Value               | Description                         |
+| --------------- | ------------------- | ----------------------------------- |
+| `children`      | `string`            | required, button text               |
+| `type`          | `button` / `submit` | required, button type               |
+| `onClick`       | `function`          | optional, add effect on click event |
+| `isSubmitted`   | `boolean`           | optional, set submitted styles      |
+| `isSubmitError` | `boolean`           | optional, set submit error styles   |
+| `disabled`      | `boolean`           | optional, set disable styles        |
