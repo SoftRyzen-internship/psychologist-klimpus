@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import { ButtonProps } from './types';
 
@@ -9,21 +9,20 @@ export const Button: React.FC<ButtonProps> = ({
   to,
   onClick,
 }) => {
+  const buttonStyles =
+    'block cursor-pointer rounded-[12px] bg-[#CA1246] px-12 py-5 text-base leading-[21.6px] text-[#FCFCFC]';
   return isLink && to ? (
-    <ScrollLink
+    <Link
       to={to}
       spy={true}
       smooth={true}
       duration={1500}
-      className="inline-block cursor-pointer rounded-[12px] bg-[#CA1246] px-12 py-5 text-base leading-[21.6px] text-[#FCFCFC]"
+      className={buttonStyles}
     >
       {children}
-    </ScrollLink>
+    </Link>
   ) : (
-    <button
-      onClick={onClick}
-      className="inline-block cursor-pointer rounded-[12px] bg-[#CA1246] px-12 py-5 text-base leading-[21.6px] text-[#FCFCFC]"
-    >
+    <button onClick={onClick} className={buttonStyles}>
       {children}
     </button>
   );
