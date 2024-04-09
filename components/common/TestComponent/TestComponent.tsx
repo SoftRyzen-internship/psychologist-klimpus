@@ -26,3 +26,15 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
+
+import { Icons } from '@/components/ui/Icons';
+
+import React from 'react';
+
+export const TestComponent = () => {
+  return (
+    <div>
+      <Icons />
+    </div>
+  );
+};
