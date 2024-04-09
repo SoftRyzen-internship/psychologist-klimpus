@@ -29,12 +29,15 @@
 
 import { Icons } from '@/components/ui/Icons';
 
+import { Socials } from '@/components/ui/Socials';
+
 import React from 'react';
 
 export const TestComponent = () => {
   return (
     <div>
       <Icons />
+      <Socials />
     </div>
   );
 };
