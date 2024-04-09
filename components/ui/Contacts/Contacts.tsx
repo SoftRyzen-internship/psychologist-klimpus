@@ -20,20 +20,21 @@ export const Contacts = ({ className = '', isFooter }: IContacts) => {
 
   const classLink = classNames(
     className,
-    'transition py-[3px] font-roboto text-mainBlack text-sm md:text-base xl:text-lg font-normal leading-[1.35] inline-flex items-center gap-2',
+    'transition py-[3px] md:py-[1.5px] xl:py-0 font-roboto text-mainBlack text-sm md:text-base xl:text-lg leading-[1.35] md:leading-[1.35] xl:leading-[1.35] font-normal inline-flex items-center gap-2',
     {
-      'text-white xl:hover:text-rose xl:focus:text-rose active:text-accent':
+      'text-white active:text-accent xl:hover:text-rose xl:focus:text-rose ':
         isFooter,
     },
   );
 
-  const classList = classNames(className, 'inline-flex flex-col gap-6', {
+  const classList = classNames(className, 'inline-flex flex-col', {
+    'gap-6': !isFooter,
     'gap-3': isFooter,
   });
 
   return (
     <ul className={classList}>
-      <li>
+      <li className="h-[25px]">
         <Link
           href={`mailto:${email}`}
           target="_blank"
@@ -48,7 +49,7 @@ export const Contacts = ({ className = '', isFooter }: IContacts) => {
           <span>{email}</span>
         </Link>
       </li>
-      <li>
+      <li className="h-[25px]">
         <Link
           href={`tel:${tel}`}
           target="_blank"
