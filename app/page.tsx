@@ -1,10 +1,11 @@
-import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+import { TestComponent } from '@/components/common/TestComponent';
 
 export default function Home() {
   return (
     <>
       <p>Homepage</p>
-      <ButtonTestComponent />
+
+      <TestComponent />
     </>
   );
 }
