@@ -29,7 +29,7 @@
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/typography": "^0.5.10",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^18.2.75",
     "@types/react-dom": "^18",
     "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/parser": "^7.2.0",
