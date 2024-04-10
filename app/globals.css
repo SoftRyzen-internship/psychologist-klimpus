@@ -56,7 +56,6 @@
   color: #900c32;
 }
 /*-----ContactsLink styles end-------*/
-
 /*-----featuresCard styles start-------*/
 @media (min-width: 1280px) {
   .featuresCard:nth-child(2) p {
@@ -64,3 +63,17 @@
   }
 }
 /*-----featuresCard styles end-------*/
+
+.navbar-icon path {
+  fill: currentColor;
+  transition: fill 300ms ease-out;
+}
+
+.navbar-btn:hover .navbar-icon path,
+.navbar-btn:focus .navbar-icon path {
+  fill: #ab123e;
+}
+
+.navbar-btn:active .navbar-icon path {
+  fill: #900c32;
+}

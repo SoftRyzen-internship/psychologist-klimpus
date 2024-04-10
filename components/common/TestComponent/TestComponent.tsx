@@ -40,6 +40,7 @@ import { Socials } from '@/components/ui/Socials';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
+import { NavBar } from '../NavBar';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -79,6 +80,7 @@ export const TestComponent = () => {
           );
         })}
       </div>
+      <NavBar />
     </div>
   );
 };
