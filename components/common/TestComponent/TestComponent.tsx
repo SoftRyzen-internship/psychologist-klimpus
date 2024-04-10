@@ -29,6 +29,8 @@
 
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
+
+import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
@@ -44,6 +46,24 @@ export const TestComponent = () => {
     <div>
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
+      <div className="container bg-white pb-6 pt-6">
+        <Card isFeatures className="mb-6">
+          <h2>Features Card</h2>
+        </Card>
+
+        <Card isUniqueness className="mb-6">
+          <h2>Uniqueness Card</h2>
+        </Card>
+        <Card isConsultations className="mb-6">
+          <h2>Consultations Card</h2>
+        </Card>
+        <Card isReviews className="mb-6">
+          <h2>Reviews Card</h2>
+        </Card>
+        <Card isCommunities>
+          <h2>Communities Card</h2>
+        </Card>
+      </div>
       <Socials />
       <Contacts />
       <div className="bg-black">
