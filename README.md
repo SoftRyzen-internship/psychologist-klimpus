@@ -90,6 +90,8 @@ Here you may find a list of the most common components and their API:
 
 | Prop        | Value      | Description                                            |
 | ----------- | ---------- | ------------------------------------------------------ |
+| `isLink`    | `boolean`  | required, defines if button is link or not             |
+| `content`   | `string`   | required, link/button text                             |
 | `href`      | `string`   | required, sets the link address                        |
 | `onClick`   | `function` | optional, add effect on click event                    |
 | `className` | `string`   | optional, you can add some additional styles if needed |

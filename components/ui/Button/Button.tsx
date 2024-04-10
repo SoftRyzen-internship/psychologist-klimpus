@@ -11,7 +11,7 @@ export const Button: React.FC<ButtonProps> = ({
   className,
 }) => {
   const buttonStyles =
-    'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 mdOnly:px-[41px] text-white xl:leading-[1.35] max-w-[448px] md:max-w-[300px] xl:max-w-[340px]';
+    'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 text-white xl:leading-[1.35] max-w-[448px] md:max-w-[320px] xl:max-w-[340px]';
   return isLink && to ? (
     <Link
       to={to}

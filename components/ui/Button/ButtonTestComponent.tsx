@@ -24,8 +24,30 @@ export const ButtonTestComponent: React.FC<ButtonProps> = () => {
       <Button isLink={false} onClick={() => console.log('submit')} className="">
         {common.buttonsText.v1}
       </Button>
-      <ButtonLink href="/" className="" />
-      <ButtonLink href="/contacts" className="" />
+      <ButtonLink
+        isLink={true}
+        href="/"
+        className=""
+        content={common.buttonsText.v2}
+      />
+      <ButtonLink
+        isLink={true}
+        href="/contacts"
+        className=""
+        content={common.buttonsText.v3}
+      />
+      <ButtonLink
+        isLink={false}
+        className=""
+        content={common.buttonsText.v4}
+        onClick={() => console.log('більше')}
+      />
+      <ButtonLink
+        isLink={false}
+        className=""
+        content={common.buttonsText.v5}
+        onClick={() => console.log('сховати')}
+      />
       <div className="h-[600px]"></div>
       <section id={contacts} className="outline-dashed">
         {contacts}
