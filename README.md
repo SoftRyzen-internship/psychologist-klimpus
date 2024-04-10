@@ -75,3 +75,33 @@ Here you may find a list of the most common components and their API:
 | `name`  | `string` | required, specifies the name of the SocialsItem     |
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
+
+Here you may find a list of the most common components and their API:
+
+- #### Card
+
+| Prop              | Value       | Description                                          |
+| ----------------- | ----------- | ---------------------------------------------------- |
+| `children`        | `ReactNode` | required, card elements                              |
+| `className`       | `string`    | optional, adds custom css class or property          |
+| `isSlider`        | `boolean`   | optional, adds height:100% for the card              |
+| `isFeatures`      | `boolean`   | optional, set paddings, width for Features card      |
+| `isUniqueness`    | `boolean`   | optional, set paddings, width for Uniqueness card    |
+| `isConsultations` | `boolean`   | optional, set paddings, width for Consultations card |
+| `isReviews`       | `boolean`   | optional, set paddings, width for Reviews card       |
+| `isCommunities`   | `boolean`   | optional, set paddings, width for Communities card   |
+
+- #### FeaturesCard
+
+| Prop         | Value     | Description                                     |
+| ------------ | --------- | ----------------------------------------------- |
+| `card`       | `{}`      | required, card data                             |
+| `className`  | `string`  | optional, adds custom css class or property     |
+| `isFeatures` | `boolean` | optional, set paddings, width for Features card |
+
+- #### Contacts
+
+| Prop        | Value     | Description                                     |
+| ----------- | --------- | ----------------------------------------------- |
+| `className` | `string`  | optional, adds custom css class or property     |
+| `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |

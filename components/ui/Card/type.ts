@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 export type CardProps = {
   children: ReactNode;
-  isSlider: boolean;
+  isSlider?: boolean;
   className?: string;
   isFeatures?: boolean;
   isUniqueness?: boolean;
