@@ -1,0 +1,51 @@
+.titleIcon:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 42px;
+  top: 0;
+  left: -120px;
+  background-image: url('/images/logo/formImg1.webp');
+  background-size: 75px auto;
+  object-fit: cover;
+}
+
+.titleIcon:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 42px;
+  top: 0;
+  left: 100px;
+  background-image: url('/images/logo/formImg2.webp');
+  background-size: 75px auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .titleIcon:before {
+    width: 86px;
+    height: 48px;
+    background-size: 86px auto;
+  }
+  .titleIcon:after {
+    width: 86px;
+    height: 48px;
+    background-size: 86px auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .titleIcon:before {
+    width: 103px;
+    height: 57px;
+    background-size: 103px auto;
+  }
+  .titleIcon:after {
+    width: 103px;
+    height: 57px;
+    background-size: 103px auto;
+  }
+}

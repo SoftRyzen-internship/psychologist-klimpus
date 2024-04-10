@@ -62,7 +62,21 @@ Here you may find a list of the most common components and their API:
 | `isSubmitError` | `boolean`           | optional, set submit error styles   |
 | `disabled`      | `boolean`           | optional, set disable styles        |
 
-- #### Button-1
+- #### Socials
+
+| Prop        | Value    | Description                                    |
+| ----------- | -------- | ---------------------------------------------- |
+| `className` | `string` | optional, adds custom css class to the Socials |
+
+- #### SocialsItem
+
+| Prop    | Value    | Description                                         |
+| ------- | -------- | --------------------------------------------------- |
+| `name`  | `string` | required, specifies the name of the SocialsItem     |
+| `href`  | `string` | required, specifies the URL of the link             |
+| `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
+
+- #### Button
 
 | Prop        | Value             | Description                                            |
 | ----------- | ----------------- | ------------------------------------------------------ |
