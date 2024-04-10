@@ -32,6 +32,8 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
 
+import { Socials } from '@/components/ui/Socials';
+
 import React from 'react';
 
 export const TestComponent = () => {
@@ -41,6 +43,7 @@ export const TestComponent = () => {
     <div>
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
+      <Socials />
     </div>
   );
 };
