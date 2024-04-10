@@ -50,3 +50,9 @@
     @apply transition-all duration-300 ease-out;
   }
 }
+
+/*-----ContactsLink styles start-------*/
+.contactsLink:active span {
+  color: #900c32;
+}
+/*-----ContactsLink styles end-------*/
