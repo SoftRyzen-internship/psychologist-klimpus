@@ -34,33 +34,36 @@ import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
+import dataJson from '@/data/features.json';
 
 import { Socials } from '@/components/ui/Socials';
+import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
 
 export const TestComponent = () => {
   const { logo } = data.header;
+  const { featuresList } = dataJson;
 
   return (
     <div>
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <div className="container bg-white pb-6 pt-6">
-        <Card isFeatures className="mb-6">
+        <Card isFeatures isSlider={false} className="mb-6">
           <h2>Features Card</h2>
         </Card>
 
-        <Card isUniqueness className="mb-6">
+        <Card isUniqueness isSlider={false} className="mb-6">
           <h2>Uniqueness Card</h2>
         </Card>
-        <Card isConsultations className="mb-6">
+        <Card isConsultations isSlider={false} className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
-        <Card isReviews className="mb-6">
+        <Card isReviews isSlider={false} className="mb-6">
           <h2>Reviews Card</h2>
         </Card>
-        <Card isCommunities>
+        <Card isCommunities isSlider={false}>
           <h2>Communities Card</h2>
         </Card>
       </div>
@@ -68,6 +71,13 @@ export const TestComponent = () => {
       <Contacts />
       <div className="bg-black">
         <Contacts isFooter />
+      </div>
+      <div className="container gap-5 bg-white pb-6 pt-6 xl:flex">
+        {featuresList.map(item => {
+          return (
+            <FeaturesCard key={item.id} card={item} className="featuresCard" />
+          );
+        })}
       </div>
     </div>
   );
