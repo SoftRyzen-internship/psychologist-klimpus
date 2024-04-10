@@ -1,0 +1,128 @@
+{
+  "contactsTitle": {
+    "line1": "Запрошую вас у світ",
+    "line2": "внутрішнього росту",
+    "line3": "та гармонії",
+    "line4": "внутрішнього",
+    "line5": "росту та",
+    "line6": "гармонії"
+  },
+  "subtitle": "Забронюйте перший безкоштовний сеанс прямо зараз.",
+  "formTitle": "Запис на консультацію",
+  "inputs": [
+    {
+      "name": {
+        "textarea": false,
+        "label": "Ім’я*",
+        "name": "name",
+        "placeholder": "Введіть ім'я",
+        "validation": {
+          "required": {
+            "value": true,
+            "message": "Введіть своє ім'я"
+          },
+          "pattern": {
+            "value": "^(?!.*(?:[ -]{2,}| -| - |^[ -]|^-))[A-Za-zА-Яа-яЁёІіЇїЄєҐґ'ʼ` -]+$",
+            "message": "Введіть коректне ім'я"
+          },
+          "minLength": {
+            "value": 2,
+            "message": "Введіть своє ім'я"
+          },
+          "maxLength": {
+            "value": 30,
+            "message": "Максимальна довжина 30 символів"
+          }
+        }
+      }
+    },
+    {
+      "name": {
+        "textarea": false,
+        "label": "Номер телефону*",
+        "name": "phone",
+        "placeholder": "+380680000000",
+        "validation": {
+          "required": {
+            "value": true,
+            "message": "Введіть свій номер телефону"
+          },
+          "pattern": {
+            "value": "[0-9]+",
+            "message": "Введіть коректний номер телефону"
+          },
+          "minLength": {
+            "value": 10,
+            "message": "Мінімальна довжина 10 символів"
+          },
+          "maxLength": {
+            "value": 13,
+            "message": "Максимальна довжина 13 символів"
+          }
+        }
+      }
+    },
+    {
+      "name": {
+        "textarea": false,
+        "label": "Email",
+        "name": "email",
+        "placeholder": "psyhologhelp111111@gmail.com",
+        "validation": {
+          "required": {
+            "value": false,
+            "message": ""
+          },
+          "pattern": {
+            "value": "",
+            "message": ""
+          },
+          "minLength": {
+            "value": 10,
+            "message": "Введіть своє ім'я"
+          },
+          "maxLength": {
+            "value": 30,
+            "message": "Максимальна довжина 30 символів"
+          }
+        }
+      }
+    },
+    {
+      "name": {
+        "textarea": true,
+        "label": "Залиште повідомлення",
+        "name": "message",
+        "placeholder": "Я хочу...",
+        "validation": {
+          "required": {
+            "value": true,
+            "message": ""
+          },
+          "pattern": {
+            "value": ".",
+            "message": ""
+          }
+        }
+      }
+    }
+  ],
+
+  "checkBox": {
+    "name": "checkbox",
+    "label": "Я погоджуюся на обробку моїх персональних даних відповідно до ",
+    "ariaLabel": "Прапорець підтвердження згоди на обробку персональних даних",
+    "validation": {
+      "required": {
+        "value": true,
+        "message": ""
+      }
+    },
+    "conditionsLink": "Політики конфіденційності"
+  },
+
+  "location": {
+    "iconLabel": "іконка місцезнаходження",
+    "label": "м. Хмельницький"
+  }
+}
