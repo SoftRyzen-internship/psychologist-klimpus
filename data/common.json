@@ -10,5 +10,11 @@
     { "text": "Сімейна консультація ", "moveTo": "family-consultation" },
     { "text": "Групова консультація", "moveTo": "group-consultation" }
   ],
-  "NavBar": ["Головна", "Про мене", "Послуги"]
+  "NavBar": {
+    "link": [
+      { "text": "Головна", "moveTo": "/" },
+      { "text": "Про мене", "moveTo": "about" }
+    ],
+    "btn": "Послуги"
+  }
 }

@@ -18,7 +18,7 @@
 
 // import css from './TestComponent.module.css';
 
-// interface ITestComponent = {
+// interface ITestComponent {
 //   children: ReactNode;
 //   className?: string;
 // };
@@ -30,11 +30,13 @@
 import { Icons } from '@/components/ui/Icons';
 
 import React from 'react';
+import { NavBar } from '../NavBar';
 
 export const TestComponent = () => {
   return (
     <div>
       <Icons />
+      <NavBar />
     </div>
   );
 };

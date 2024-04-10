@@ -50,3 +50,12 @@
     @apply transition-all duration-300 ease-out;
   }
 }
+
+.navbar-btn:hover .navbar-icon path,
+.navbar-btn:focus .navbar-icon path {
+  fill: #454545;
+}
+
+.navbar-btn:active .navbar-icon path {
+  fill: #555555;
+}
