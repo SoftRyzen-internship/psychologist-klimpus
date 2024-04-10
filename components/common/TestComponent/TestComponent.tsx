@@ -33,6 +33,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 import data from '@/data/common.json';
 
 import { Socials } from '@/components/ui/Socials';
+import { FormSection } from '@/sections/FormSection';
 
 import React from 'react';
 
@@ -44,6 +45,7 @@ export const TestComponent = () => {
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <Socials />
+      <FormSection />
     </div>
   );
 };

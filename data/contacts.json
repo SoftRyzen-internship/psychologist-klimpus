@@ -13,7 +13,7 @@
     {
       "name": {
         "textarea": false,
-        "label": "Ім’я*",
+        "label": "Ім’я",
         "name": "name",
         "placeholder": "Введіть ім'я",
         "validation": {
@@ -39,7 +39,7 @@
     {
       "name": {
         "textarea": false,
-        "label": "Номер телефону*",
+        "label": "Номер телефону",
         "name": "phone",
         "placeholder": "+380680000000",
         "validation": {
@@ -56,7 +56,7 @@
             "message": "Мінімальна довжина 10 символів"
           },
           "maxLength": {
-            "value": 13,
+            "value": 15,
             "message": "Максимальна довжина 13 символів"
           }
         }
@@ -74,16 +74,8 @@
             "message": ""
           },
           "pattern": {
-            "value": "",
+            "value": ".",
             "message": ""
-          },
-          "minLength": {
-            "value": 10,
-            "message": "Введіть своє ім'я"
-          },
-          "maxLength": {
-            "value": 30,
-            "message": "Максимальна довжина 30 символів"
           }
         }
       }
@@ -96,7 +88,7 @@
         "placeholder": "Я хочу...",
         "validation": {
           "required": {
-            "value": true,
+            "value": false,
             "message": ""
           },
           "pattern": {
@@ -110,19 +102,13 @@
 
   "checkBox": {
     "name": "checkbox",
-    "label": "Я погоджуюся на обробку моїх персональних даних відповідно до ",
+    "label": "Даю згоду на обробку персональних данних",
     "ariaLabel": "Прапорець підтвердження згоди на обробку персональних даних",
     "validation": {
       "required": {
         "value": true,
         "message": ""
       }
-    },
-    "conditionsLink": "Політики конфіденційності"
-  },
-
-  "location": {
-    "iconLabel": "іконка місцезнаходження",
-    "label": "м. Хмельницький"
+    }
   }
 }
