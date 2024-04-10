@@ -1,0 +1,23 @@
+.titleIcon:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 42px;
+  top: 0;
+  left: -120px;
+  background-image: url('/images/logo/formImg1.webp');
+  background-size: 75px auto;
+}
+
+.titleIcon:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 75px;
+  height: 42px;
+  top: 0;
+  left: 100px;
+  background-image: url('/images/logo/formImg2.webp');
+  background-size: 75px auto;
+}

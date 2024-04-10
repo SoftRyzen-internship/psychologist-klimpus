@@ -14,7 +14,7 @@ import Email from '@/public/icons/mail.svg';
 import EmailAccent from '@/public/icons/mailRed.svg';
 import Phone from '@/public/icons/phone.svg';
 import PhoneAccent from '@/public/icons/phoneRed.svg';
-
+import s from './Icons.module.css';
 import { Logo } from '../Logo';
 
 export const Icons = () => {
@@ -97,7 +97,9 @@ export const Icons = () => {
           />
         </div>
         <div className="flex items-center justify-center">
-          <p className="text-cardTextLg relative inline-block before:absolute before:left-[-200px] before:top-0 before:h-[42px] before:w-[75px] before:content-formImg1 after:absolute after:left-[100px] after:top-0 after:h-[42px] after:w-[75px] after:content-formImg2 before:md:h-[48px] before:md:w-[86px] after:md:h-[48px] after:md:w-[86px] before:xl:h-[57px] before:xl:w-[103px] after:xl:h-[57px] after:xl:w-[103px]">
+          <p
+            className={`${s.titleIcon} text-cardTextLg relative inline-block after:md:h-[48px] after:md:w-[86px] before:xl:h-[57px] before:xl:w-[103px] after:xl:h-[57px] after:xl:w-[103px]`}
+          >
             Детальніше
           </p>
         </div>
