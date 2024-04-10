@@ -27,6 +27,7 @@
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
 
+import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
 import { Card } from '@/components/ui/Card';
@@ -64,6 +65,10 @@ export const TestComponent = () => {
         </Card>
       </div>
       <Socials />
+      <Contacts />
+      <div className="bg-black">
+        <Contacts isFooter />
+      </div>
     </div>
   );
 };
