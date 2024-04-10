@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-// import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 import { NavBarDropdownList } from '@/components/ui/NavBarDropdownList';
 
@@ -17,8 +17,7 @@ export const NavBar = () => {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  // const pathname = usePathname();
-  // console.log('pathname');
+  const pathname = usePathname();
 
   const toggleModal = () => {
     setIsModalVisible(!isModalVisible);
@@ -30,9 +29,11 @@ export const NavBar = () => {
         {linkData.map((item, index) => (
           <li key={index}>
             <Link
-              href={`/${item.moveTo}`}
-              className="font-roboto text-[18px] font-normal leading-[1.35] transition-[color] 
-              duration-300 ease-out hover:text-hoverBlack focus:text-hoverBlack active:text-clickBlack"
+              href={`${item.moveTo}`}
+              className={`font-roboto text-[18px] font-normal leading-[1.35] transition-[color]
+                  duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent ${
+                    pathname === `${item.moveTo}` ? 'text-hoverAccent' : ''
+                  }`}
             >
               {item.text}
             </Link>
@@ -42,17 +43,23 @@ export const NavBar = () => {
           <button
             type="button"
             onClick={toggleModal}
-            className="navbar-btn flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35] 
-            transition-[color] duration-300 ease-out hover:text-hoverBlack focus:text-hoverBlack active:text-clickBlack"
+            className={`navbar-btn flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35]
+            transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent ${
+              pathname === '/family-consultation' ||
+              pathname === '/group-consultation' ||
+              pathname === '/individual-consultation'
+                ? 'text-hoverAccent'
+                : ''
+            }`}
           >
             {btnData}
             {!isModalVisible ? (
-              <ArrowDown className="navbar-icon h-[15px] w-[15px] transition-[fill] duration-300 ease-out" />
+              <ArrowDown className="navbar-icon h-[15px] w-[15px]" />
             ) : (
-              <ArrowUp className="navbar-icon h-[15px] w-[15px] transition-[fill] duration-300 ease-out" />
+              <ArrowUp className="navbar-icon h-[15px] w-[15px]" />
             )}
           </button>
-          <NavBarDropdownList isOpen={isModalVisible} />
+          <NavBarDropdownList isOpen={isModalVisible} pathname={pathname} />
         </li>
       </ul>
     </nav>

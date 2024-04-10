@@ -1,14 +1,16 @@
+import React from 'react';
 import Link from 'next/link';
 
 import classNames from 'classnames';
 
+import { DropdownListProps } from './type';
+
 import jsonData from '@/data/common.json';
 
-interface IDropdownList {
-  isOpen: boolean;
-}
-
-export const NavBarDropdownList = ({ isOpen }: IDropdownList) => {
+export const NavBarDropdownList: React.FC<DropdownListProps> = ({
+  isOpen,
+  pathname,
+}) => {
   const data = jsonData.DropdownList;
 
   const className = classNames(
@@ -24,10 +26,12 @@ export const NavBarDropdownList = ({ isOpen }: IDropdownList) => {
         {data.map((item, index) => (
           <li
             key={index}
-            className="rounded-[20px] transition hover:bg-bgBeige focus:bg-bgBeige active:bg-clickAccent active:text-white"
+            className={`rounded-[20px] px-[20px] py-[10px] transition hover:bg-bgBeige focus:bg-bgBeige active:bg-clickAccent active:text-white ${
+              pathname === `${item.moveTo}` ? 'bg-clickAccent text-white' : ''
+            }`}
           >
             <Link
-              href={`/${item.moveTo}`}
+              href={`${item.moveTo}`}
               className="font-roboto text-[18px] font-normal leading-[1.35]"
             >
               {item.text}

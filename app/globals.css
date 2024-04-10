@@ -51,11 +51,16 @@
   }
 }
 
+.navbar-icon path {
+  fill: currentColor;
+  transition: fill 300ms ease-out;
+}
+
 .navbar-btn:hover .navbar-icon path,
 .navbar-btn:focus .navbar-icon path {
-  fill: #454545;
+  fill: #ab123e;
 }
 
 .navbar-btn:active .navbar-icon path {
-  fill: #555555;
+  fill: #900c32;
 }
