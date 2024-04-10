@@ -61,3 +61,21 @@ Here you may find a list of the most common components and their API:
 | `isSubmitted`   | `boolean`           | optional, set submitted styles      |
 | `isSubmitError` | `boolean`           | optional, set submit error styles   |
 | `disabled`      | `boolean`           | optional, set disable styles        |
+
+- #### Button-1
+
+| Prop        | Value             | Description                                            |
+| ----------- | ----------------- | ------------------------------------------------------ |
+| `isLink`    | `boolean`         | required, defines if button is link or not             |
+| `children`  | `React.ReactNode` | required, button content                               |
+| `to`        | `string`          | optional, sets the link address                        |
+| `onClick`   | `function`        | optional, add effect on click event                    |
+| `className` | `string`          | optional, you can add some additional styles if needed |
+
+- #### ButtonLink
+
+| Prop        | Value      | Description                                            |
+| ----------- | ---------- | ------------------------------------------------------ |
+| `href`      | `string`   | required, sets the link address                        |
+| `onClick`   | `function` | optional, add effect on click event                    |
+| `className` | `string`   | optional, you can add some additional styles if needed |
