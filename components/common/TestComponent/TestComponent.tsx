@@ -27,6 +27,7 @@
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
 
+import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
 import { Card } from '@/components/ui/Card';
@@ -38,6 +39,7 @@ import { Socials } from '@/components/ui/Socials';
 import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 import React from 'react';
+import { NavBar } from '../NavBar';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -65,6 +67,11 @@ export const TestComponent = () => {
         </Card>
       </div>
       <Socials />
+      <Contacts />
+      <div className="bg-black">
+        <Contacts isFooter />
+      </div>
+      <NavBar />
       <ButtonTestComponent />
     </div>
   );

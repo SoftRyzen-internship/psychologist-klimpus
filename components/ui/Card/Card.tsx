@@ -21,8 +21,8 @@ export const Card: React.FC<CardProps> = ({
         isUniqueness,
       'py-6 xl:py-12 px-4 md:px-[46px] xl:px-8 md:w-[527px] xl:w-[316px]':
         isConsultations,
-      'py-6 px-4 md:px-[23px] xl:px-6 md:w-[255px] xl:w-[323px]': isReviews,
-      'py-[13px] xl:py-3 px-[51px] md:w-[346px] xl:w-[289px]': isCommunities,
+      'py-6 px-4 md:px-6 md:w-[255px] xl:w-[323px]': isReviews,
+      'py-3 px-[51px] md:w-[346px] xl:w-[289px]': isCommunities,
     },
     className,
   );
