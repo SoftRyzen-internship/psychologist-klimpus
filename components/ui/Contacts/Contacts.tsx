@@ -21,7 +21,7 @@ export const Contacts: React.FC<ContactsProps> = ({
     'transition font-roboto  text-sm md:text-base xl:text-lg leading-[1.35] md:leading-[1.35] xl:leading-[1.35] font-normal inline-flex items-center gap-2',
     {
       'contactsLink text-mainBlack active:text-clickAccent': !isFooter,
-      'text-white active:text-accent xl:hover:text-rose xl:focus:text-rose ':
+      'text-white active:text-accent xl:hover:text-rose xl:focus:text-rose xl:active:text-accent':
         isFooter,
     },
   );
@@ -34,12 +34,7 @@ export const Contacts: React.FC<ContactsProps> = ({
   return (
     <ul className={classList}>
       <li className="h-[25px]">
-        <Link
-          href={`mailto:${email}`}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className={classLink}
-        >
+        <Link href={`mailto:${email}`} className={classLink}>
           {isFooter ? (
             <Email className="h-[25px] w-[25px]" />
           ) : (
@@ -51,12 +46,7 @@ export const Contacts: React.FC<ContactsProps> = ({
         </Link>
       </li>
       <li className="h-[25px]">
-        <Link
-          href={`tel:${tel}`}
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          className={classLink}
-        >
+        <Link href={`tel:${tel}`} className={classLink}>
           {isFooter ? (
             <Tel className="h-[25px] w-[25px]" />
           ) : (
