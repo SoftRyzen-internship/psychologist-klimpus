@@ -51,6 +51,12 @@
   }
 }
 
+/*-----ContactsLink styles start-------*/
+.contactsLink:active span {
+  color: #900c32;
+}
+/*-----ContactsLink styles end-------*/
+
 .navbar-icon path {
   fill: currentColor;
   transition: fill 300ms ease-out;
