@@ -3,25 +3,33 @@ import React from 'react';
 
 import { Button } from './Button';
 
+import { ButtonLink } from '../ButtonLink';
+
 import common from '@/data/common.json';
 
-interface ButtonProps {}
+interface ButtonProps {
+  classNames?: string;
+}
 
 const contacts = 'contacts';
 
 export const ButtonTestComponent: React.FC<ButtonProps> = () => {
   return (
-    <>
-      <Button isLink={true} to={contacts}>
+    <div className="container">
+      <p>Link button</p>
+      <Button isLink={true} to={contacts} className="">
         {common.buttonsText.v1}
       </Button>
-      <Button isLink={false} onClick={() => console.log('submit')}>
-        Submit
+      <p>Submit button</p>
+      <Button isLink={false} onClick={() => console.log('submit')} className="">
+        {common.buttonsText.v1}
       </Button>
-      <div className="h-[1000px]"></div>
+      <ButtonLink href="/" className="" />
+      <ButtonLink href="/contacts" className="" />
+      <div className="h-[600px]"></div>
       <section id={contacts} className="outline-dashed">
         {contacts}
       </section>
-    </>
+    </div>
   );
 };

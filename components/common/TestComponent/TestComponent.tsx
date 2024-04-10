@@ -28,6 +28,7 @@
 // };
 
 import { Icons } from '@/components/ui/Icons';
+import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 import React from 'react';
 
@@ -35,6 +36,7 @@ export const TestComponent = () => {
   return (
     <div>
       <Icons />
+      <ButtonTestComponent />
     </div>
   );
 };

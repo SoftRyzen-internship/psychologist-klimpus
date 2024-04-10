@@ -8,21 +8,22 @@ export const Button: React.FC<ButtonProps> = ({
   children,
   to,
   onClick,
+  className,
 }) => {
   const buttonStyles =
-    'block cursor-pointer rounded-[12px] bg-[#CA1246] px-12 py-5 text-base leading-[21.6px] text-[#FCFCFC]';
+    'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 mdOnly:px-[41px] text-white xl:leading-[1.35] max-w-[448px] md:max-w-[300px] xl:max-w-[340px]';
   return isLink && to ? (
     <Link
       to={to}
       spy={true}
       smooth={true}
       duration={1500}
-      className={buttonStyles}
+      className={className ? `${buttonStyles} ${className}` : buttonStyles}
     >
       {children}
     </Link>
   ) : (
-    <button onClick={onClick} className={buttonStyles}>
+    <button onClick={onClick} className={buttonStyles} type="submit">
       {children}
     </button>
   );
