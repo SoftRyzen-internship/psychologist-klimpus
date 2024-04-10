@@ -34,6 +34,8 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
 
+import { Socials } from '@/components/ui/Socials';
+
 import React from 'react';
 
 export const TestComponent = () => {
@@ -61,6 +63,7 @@ export const TestComponent = () => {
           <h2>Communities Card</h2>
         </Card>
       </div>
+      <Socials />
     </div>
   );
 };
