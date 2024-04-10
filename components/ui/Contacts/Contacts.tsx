@@ -20,7 +20,7 @@ export const Contacts = ({ className = '', isFooter }: IContacts) => {
 
   const classLink = classNames(
     className,
-    'transition py-[3px] md:py-[1.5px] xl:py-0 font-roboto text-mainBlack text-sm md:text-base xl:text-lg leading-[1.35] md:leading-[1.35] xl:leading-[1.35] font-normal inline-flex items-center gap-2',
+    'transition font-roboto text-mainBlack text-sm md:text-base xl:text-lg leading-[1.35] md:leading-[1.35] xl:leading-[1.35] font-normal inline-flex items-center gap-2',
     {
       'text-white active:text-accent xl:hover:text-rose xl:focus:text-rose ':
         isFooter,
@@ -46,7 +46,7 @@ export const Contacts = ({ className = '', isFooter }: IContacts) => {
           ) : (
             <EmailRed className="h-[25px] w-[25px]" />
           )}
-          <span>{email}</span>
+          <span className="py-[3px] md:py-[2px] xl:py-0">{email}</span>
         </Link>
       </li>
       <li className="h-[25px]">
@@ -61,7 +61,7 @@ export const Contacts = ({ className = '', isFooter }: IContacts) => {
           ) : (
             <TelRed className="h-[25px] w-[25px]" />
           )}
-          <span>{tel}</span>
+          <span className="py-[3px] md:py-[2px] xl:py-0">{tel}</span>
         </Link>
       </li>
     </ul>
