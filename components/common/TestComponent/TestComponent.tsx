@@ -38,6 +38,7 @@ import data from '@/data/common.json';
 import { Socials } from '@/components/ui/Socials';
 
 import React from 'react';
+import { NavBar } from '../NavBar';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -69,6 +70,7 @@ export const TestComponent = () => {
       <div className="bg-black">
         <Contacts isFooter />
       </div>
+      <NavBar />
     </div>
   );
 };
