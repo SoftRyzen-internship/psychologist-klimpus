@@ -18,7 +18,7 @@
 
 // import css from './TestComponent.module.css';
 
-// interface ITestComponent {
+// interface ITestComponent = {
 //   children: ReactNode;
 //   className?: string;
 // };
@@ -28,14 +28,23 @@
 // };
 
 import { Icons } from '@/components/ui/Icons';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+
+import data from '@/data/common.json';
+
+import { Socials } from '@/components/ui/Socials';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
 
 export const TestComponent = () => {
+  const { logo } = data.header;
+
   return (
     <div>
+      <SectionTitle>{logo}</SectionTitle>
       <Icons />
+      <Socials />
       <NavBar />
     </div>
   );

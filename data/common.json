@@ -16,5 +16,28 @@
       { "text": "Про мене", "moveTo": "about" }
     ],
     "btn": "Послуги"
-  }
+  },
+
+  "socials": [
+    {
+      "name": "instagram",
+      "path": "https://www.instagram.com/metamodal_therapist",
+      "ariaLabel": "посилання на інстаграм"
+    },
+    {
+      "name": "facebook",
+      "path": "https://www.facebook.com/profile.php?id=100089809542625",
+      "ariaLabel": "посилання на фейсбук"
+    },
+    {
+      "name": "telegram",
+      "href": "+44 7404 864095",
+      "ariaLabel": "посилання на телефон в телеграмі"
+    },
+    {
+      "name": "watsup",
+      "href": "+44 7404 864095",
+      "ariaLabel": "посилання на телефон в вотсапі"
+    }
+  ]
 }

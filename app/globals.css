@@ -11,7 +11,7 @@
     @apply mb-[54px] w-full md:mb-20 xl:mb-[100px];
   }
   .sectionTitle {
-    @apply text-medium md:text-lightLarge xl:text-large font-raleway font-semibold uppercase;
+    @apply font-raleway text-medium font-semibold uppercase md:text-lightLarge xl:text-large;
   }
 
   .subtitleConsultation {
