@@ -12,8 +12,7 @@ export const Logo: React.FC<LogoProps> = ({ onClick }) => {
     <Link
       href="/"
       onClick={onClick}
-      className="focus-visible:text transition-color cursor-pointer font-raleway text-base font-bold leading-[1.35] text-mainBlack outline-none duration-300 ease-out hover:text-accent focus:text-accent  md:text-lg xl:text-xl
-      "
+      className="active:clickAccent transition-color cursor-pointer font-raleway text-base font-bold leading-[1.35] text-mainBlack outline-none duration-300 ease-out hover:text-accent focus:text-accent focus-visible:text-accent md:text-lg  md:leading-[1.35] xl:text-xl xl:leading-[1.35]"
     >
       {logo}
     </Link>

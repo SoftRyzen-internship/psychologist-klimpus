@@ -28,13 +28,20 @@
 // };
 
 import { Icons } from '@/components/ui/Icons';
+
 import { Card } from '@/components/ui/Card';
+import { SectionTitle } from '@/components/ui/SectionTitle';
+
+import data from '@/data/common.json';
 
 import React from 'react';
 
 export const TestComponent = () => {
+  const { logo } = data.header;
+
   return (
     <div>
+      <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <div className="container bg-white pb-6 pt-6">
         <Card isFeatures className="mb-6">
