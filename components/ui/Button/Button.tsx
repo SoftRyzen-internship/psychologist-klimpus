@@ -1,30 +1,28 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+
+import ArrowRightSm from '@/public/icons/arrowRightSm.svg';
 
 import { ButtonProps } from './types';
 
-export const Button: React.FC<ButtonProps> = ({
-  isLink,
-  children,
-  to,
-  onClick,
-  className,
-}) => {
-  const buttonStyles =
-    'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 text-white xl:leading-[1.35] max-w-[448px] md:max-w-[320px] xl:max-w-[340px]';
-  return isLink && to ? (
-    <Link
-      to={to}
-      spy={true}
-      smooth={true}
-      duration={1500}
-      className={className ? `${buttonStyles} ${className}` : buttonStyles}
+export const Button: React.FC<ButtonProps> = ({ children, type, onClick }) => {
+  const styles =
+    'inline-block group cursor-pointer block text-cardTextLg flex gap-2 font-roboto text-accent hover:text-hoverAccent focus:text-hoverAccent focus:text-hoverAccent active:text-clickAccent';
+
+  const accentStyles =
+    'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 text-white xl:leading-[1.35] w-full max-w-[448px] md:max-w-[320px] xl:max-w-[340px]';
+
+  const iconStyles =
+    'h-[25px] w-[25px] group-hover:fill-hoverAccent group-active:fill-clickAccent ';
+
+  return (
+    <button
+      className={type === 'submit' ? accentStyles : styles}
+      onClick={onClick}
     >
-      {children}
-    </Link>
-  ) : (
-    <button onClick={onClick} className={buttonStyles} type="submit">
-      {children}
+      <>
+        {children}
+        {type === 'button' && <ArrowRightSm className={iconStyles} />}
+      </>
     </button>
   );
 };

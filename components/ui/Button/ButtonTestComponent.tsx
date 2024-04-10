@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Button } from './Button';
 
-import { ButtonLink } from '../ButtonLink';
+import { SiteLink } from '../SiteLink';
 
 import common from '@/data/common.json';
 
@@ -16,38 +16,31 @@ const contacts = 'contacts';
 export const ButtonTestComponent: React.FC<ButtonProps> = () => {
   return (
     <div className="container">
-      <p>Link button</p>
-      <Button isLink={true} to={contacts} className="">
-        {common.buttonsText.v1}
-      </Button>
+      <p>Scroll link</p>
+      <SiteLink linkType="scroll" href={common.url.contacts} isAccent={true}>
+        {common.linksText.signUp}
+      </SiteLink>
+      <p>Scroll link</p>
+      <SiteLink linkType="scroll" href={common.url.contacts} isAccent={false}>
+        {common.linksText.contacts}
+      </SiteLink>
+      <p>Link</p>
+      <SiteLink linkType="link" href={common.url.individual} isAccent={false}>
+        {common.linksText.inDetail}
+      </SiteLink>
       <p>Submit button</p>
-      <Button isLink={false} onClick={() => console.log('submit')} className="">
-        {common.buttonsText.v1}
+      <Button type="submit" onClick={() => console.log('submit')}>
+        {common.buttonsText.signUp}
       </Button>
-      <ButtonLink
-        isLink={true}
-        href="/"
-        className=""
-        content={common.buttonsText.v2}
-      />
-      <ButtonLink
-        isLink={true}
-        href="/contacts"
-        className=""
-        content={common.buttonsText.v3}
-      />
-      <ButtonLink
-        isLink={false}
-        className=""
-        content={common.buttonsText.v4}
-        onClick={() => console.log('більше')}
-      />
-      <ButtonLink
-        isLink={false}
-        className=""
-        content={common.buttonsText.v5}
-        onClick={() => console.log('сховати')}
-      />
+      <p>Show more button</p>
+      <Button type="button" onClick={() => console.log('more')}>
+        {common.buttonsText.more}
+      </Button>
+      <p>Hide button</p>
+      <Button type="button" onClick={() => console.log('hide')}>
+        {common.buttonsText.hide}
+      </Button>
+
       <div className="h-[600px]"></div>
       <section id={contacts} className="outline-dashed">
         {contacts}
