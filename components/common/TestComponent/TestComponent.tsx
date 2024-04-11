@@ -26,7 +26,6 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
-
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -35,6 +34,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
+import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
 import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
@@ -42,11 +42,13 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
-import { FeaturesSection } from '@/sections/Main/FeaturesSection';
+
+import { FeedbackCard } from '../FeedbackCard';
 
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
+  const firstFeedback = feedbackData.data[0];
 
   return (
     <div>
@@ -83,8 +85,11 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
-      <FeaturesSection />
       <ButtonTestComponent />
+      <div className="container bg-white">
+        <FeedbackCard data={firstFeedback} />
+      </div>
+      <NavBar />
     </div>
   );
 };
