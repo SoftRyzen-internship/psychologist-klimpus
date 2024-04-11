@@ -44,7 +44,7 @@ export const TestComponent = () => {
   const { logo } = data.header;
 
   return (
-    <>
+    <div>
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <div className="container bg-white pb-6 pt-6">
@@ -71,6 +71,6 @@ export const TestComponent = () => {
         <Contacts isFooter />
       </div>
       <FormSection />
-    </>
+    </div>
   );
 };

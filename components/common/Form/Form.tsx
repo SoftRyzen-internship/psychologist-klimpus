@@ -10,7 +10,7 @@ import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
 import { FormData } from './types';
 
 // import common from '@/data/common.json';
-import contacts from '@/data/contacts.json';
+import form from '@/data/form.json';
 
 export const Form = () => {
   const {
@@ -31,7 +31,7 @@ export const Form = () => {
     setValue,
   });
 
-  const checkboxInput = watch(contacts.checkBox.name);
+  const checkboxInput = watch(form.checkBox.name);
 
   const onSubmit: SubmitHandler<FormData> = () => {
     try {
@@ -63,9 +63,9 @@ export const Form = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl xl:text-[20px]">
-          {contacts.formTitle}
+          {form.formTitle}
         </h3>
-        {contacts.inputs.map(item => (
+        {form.inputs.map(item => (
           <FormInput
             key={item.name.label}
             textarea={item.name.textarea}

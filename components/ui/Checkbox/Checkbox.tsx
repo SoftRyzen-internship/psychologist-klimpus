@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { CheckBoxProps } from './types';
 
-import contacts from '@/data/contacts.json';
+import form from '@/data/form.json';
 
 export const CheckBox: React.FC<CheckBoxProps> = ({
   register,
@@ -20,9 +20,9 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
         )}
       >
         <input
-          type={contacts.checkBox.name}
-          aria-label={contacts.checkBox.ariaLabel}
-          {...register(contacts.checkBox.name, {
+          type={form.checkBox.name}
+          aria-label={form.checkBox.ariaLabel}
+          {...register(form.checkBox.name, {
             required: true,
           })}
           className={classNames(
@@ -33,7 +33,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
             errors?.checkbox && 'border-mainRed',
           )}
         />
-        {contacts.checkBox.label}
+        {form.checkBox.label}
       </label>
     </>
   );
