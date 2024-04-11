@@ -14,10 +14,10 @@ export const UniquenessCard: React.FC<UniquenessCardProps> = ({
       isUniqueness
       className="flex h-auto items-center justify-center gap-4 md:flex-col xl:gap-8"
     >
-      <span className="font w-[124px] font-roboto text-[27px] font-medium leading-[1.5] text-accent md:w-[130px] md:text-[30px] xl:text-[36px]">
+      <span className="font w-[124px] font-roboto text-[27px] font-medium leading-[1.5] text-accent md:w-[130px] md:text-[30px] xl:w-[275px] xl:text-[36px]">
         {total}
       </span>
-      <p className="cardTextLg w-[124px] leading-[1.35] md:w-[130px] xl:leading-[1.35]">
+      <p className="cardTextLg min-two-lines w-[124px] leading-[1.35] md:w-[130px] xl:w-[275px] xl:leading-[1.35]">
         {text}
       </p>
     </Card>
