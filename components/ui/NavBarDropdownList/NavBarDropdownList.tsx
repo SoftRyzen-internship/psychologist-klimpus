@@ -14,7 +14,7 @@ export const NavBarDropdownList: React.FC<DropdownListProps> = ({
   const data = jsonData.DropdownList;
 
   const className = classNames(
-    'bg-plashka w-[289px] rounded-b-[20px] mt-[20px] py-[16px] transition pointer-events-none opacity-0',
+    'bg-plashka w-[289px] rounded-b-[20px] mt-[20px] py-[16px] transition pointer-events-none opacity-0 absolute top-[24px]',
     {
       'pointer-events-auto opacity-100': isOpen,
     },
