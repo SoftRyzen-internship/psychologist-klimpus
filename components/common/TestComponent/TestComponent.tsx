@@ -41,6 +41,7 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
+import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -81,6 +82,7 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
+      <FeaturesSection />
     </div>
   );
 };
