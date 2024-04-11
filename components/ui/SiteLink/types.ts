@@ -1,7 +1,9 @@
+import React from 'react';
+
 export interface SiteLinkProps {
   linkType: 'scroll' | 'link';
   isAccent: boolean;
   href: string;
-  children: string;
+  children: React.ReactNode | string;
   className?: string;
 }

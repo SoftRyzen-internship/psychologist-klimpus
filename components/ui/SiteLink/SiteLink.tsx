@@ -15,6 +15,7 @@ export const SiteLink: React.FC<SiteLinkProps> = ({
   isAccent,
   href,
   children,
+  className,
 }) => {
   const styles = classNames(
     'group cursor-pointer block text-cardTextLg flex gap-2 font-roboto text-accent hover:text-hoverAccent focus:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
@@ -38,19 +39,15 @@ export const SiteLink: React.FC<SiteLinkProps> = ({
       spy={true}
       smooth={true}
       duration={1500}
-      className={isAccent ? accentStyles : styles}
+      className={classNames(isAccent ? accentStyles : styles, className)}
     >
-      <>
-        {children}
-        {!isAccent && <ArrowDiagonal className={iconStyles} />}
-      </>
+      {children}
+      {!isAccent && <ArrowDiagonal className={iconStyles} />}
     </ScrollLink>
   ) : (
-    <Link href={href} className={styles}>
-      <>
-        {children}
-        <ArrowRightSm className={iconStyles} />
-      </>
+    <Link href={href} className={classNames(styles, className)}>
+      {children}
+      <ArrowRightSm className={iconStyles} />
     </Link>
   );
 };
