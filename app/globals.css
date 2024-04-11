@@ -52,10 +52,17 @@
 }
 
 /*-----ContactsLink styles start-------*/
-.contactsLink:active span {
+.contactsLink:active svg {
   color: #900c32;
 }
 /*-----ContactsLink styles end-------*/
+/*-----featuresCard styles start-------*/
+@media (min-width: 1280px) {
+  .featuresCard:nth-child(2) p {
+    width: 160px;
+  }
+}
+/*-----featuresCard styles end-------*/
 
 .navbar-icon path {
   fill: currentColor;

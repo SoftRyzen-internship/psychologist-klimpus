@@ -14,7 +14,7 @@ export const Contacts: React.FC<ContactsProps> = ({
   className = '',
   isFooter,
 }) => {
-  const { email, tel } = common;
+  const { contacts } = common;
 
   const classLink = classNames(
     className,
@@ -33,30 +33,33 @@ export const Contacts: React.FC<ContactsProps> = ({
 
   return (
     <ul className={classList}>
-      <li className="h-[25px]">
-        <Link href={`mailto:${email}`} className={classLink}>
-          {isFooter ? (
-            <Email className="h-[25px] w-[25px]" />
-          ) : (
-            <span className="text-accent">
-              <Email className="h-[25px] w-[25px]" />
-            </span>
-          )}
-          <span className="py-[3px] md:py-[2px] xl:py-0">{email}</span>
-        </Link>
-      </li>
-      <li className="h-[25px]">
-        <Link href={`tel:${tel}`} className={classLink}>
-          {isFooter ? (
-            <Tel className="h-[25px] w-[25px]" />
-          ) : (
-            <span className="text-accent">
-              <Tel className="h-[25px] w-[25px]" />
-            </span>
-          )}
-          <span className="py-[3px] md:py-[2px] xl:py-0">{tel}</span>
-        </Link>
-      </li>
+      {contacts.map(contact => {
+        const { name, value } = contact;
+        return (
+          <li key={name} className="h-[25px]">
+            <Link
+              href={name === 'email' ? `mailto:${value}` : `tel:${value}`}
+              className={classLink}
+            >
+              {name === 'email' && (
+                <Email
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
+              )}
+              {name === 'tel' && (
+                <Tel
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
+              )}
+              <span className="py-[3px] md:py-[2px] xl:py-0">{value}</span>
+            </Link>
+          </li>
+        );
+      })}
     </ul>
   );
 };
