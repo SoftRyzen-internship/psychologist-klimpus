@@ -19,7 +19,7 @@ export const Socials: React.FC<SocialsProps> = ({ className }) => {
         <SocialsItem
           key={item.name}
           name={item.name as 'instagram' | 'facebook' | 'telegram' | 'watsup'}
-          href={item.path || `tel:${item.href}`}
+          href={item.path}
           ariaL={item.ariaLabel}
         />
       ))}
