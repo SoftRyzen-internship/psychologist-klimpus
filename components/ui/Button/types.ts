@@ -1,5 +1,7 @@
+import React from 'react';
+
 export interface ButtonProps {
-  children: string;
+  children: React.ReactNode | string;
   type: 'submit' | 'button';
   onClick?: () => void;
   className?: string;
