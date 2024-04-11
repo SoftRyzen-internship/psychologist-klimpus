@@ -51,17 +51,6 @@ details.
 
 Here you may find a list of the most common components and their API:
 
-- #### Button
-
-| Prop            | Value               | Description                         |
-| --------------- | ------------------- | ----------------------------------- |
-| `children`      | `string`            | required, button text               |
-| `type`          | `button` / `submit` | required, button type               |
-| `onClick`       | `function`          | optional, add effect on click event |
-| `isSubmitted`   | `boolean`           | optional, set submitted styles      |
-| `isSubmitError` | `boolean`           | optional, set submit error styles   |
-| `disabled`      | `boolean`           | optional, set disable styles        |
-
 - #### Socials
 
 | Prop        | Value    | Description                                    |
@@ -76,8 +65,6 @@ Here you may find a list of the most common components and their API:
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
 
-Here you may find a list of the most common components and their API:
-
 - #### Card
 
 | Prop              | Value       | Description                                          |
@@ -91,6 +78,41 @@ Here you may find a list of the most common components and their API:
 | `isReviews`       | `boolean`   | optional, set paddings, width for Reviews card       |
 | `isCommunities`   | `boolean`   | optional, set paddings, width for Communities card   |
 
+- #### Contacts
+
+| Prop        | Value     | Description                                     |
+| ----------- | --------- | ----------------------------------------------- |
+| `className` | `string`  | optional, adds custom css class or property     |
+| `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |
+
+- #### NavBarDropdownList
+
+| Prop       | Value     | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| `isOpen`   | `boolean` | required, set visibility of the component |
+| `pathname` | `string`  | required, set styles acc. to pathname     |
+
+- #### Button
+
+| Prop        | Value              | Description                                            |
+| ----------- | ------------------ | ------------------------------------------------------ |
+| `children`  | `string`           | required, button content                               |
+| `type`      | `submit or button` | required, type ofbutton                                |
+| `onClick`   | `function`         | optional, add effect on click event                    |
+| `className` | `string`           | optional, you can add some additional styles if needed |
+
+- #### SiteLink
+
+| Prop        | Value            | Description                                            |
+| ----------- | ---------------- | ------------------------------------------------------ |
+| `linkType`  | `scroll or link` | required, type of link                                 |
+| `isAccent`  | `boolean`        | required, defines if link has accent styles or not     |
+| `href`      | `string`         | required, sets the link address                        |
+| `children`  | `string`         | required, link content                                 |
+| `className` | `string`         | optional, you can add some additional styles if needed |
+
+Here you may find a list of the most common components and their API:
+
 - #### FeaturesCard
 
 | Prop         | Value     | Description                                     |
@@ -98,10 +120,3 @@ Here you may find a list of the most common components and their API:
 | `card`       | `{}`      | required, card data                             |
 | `className`  | `string`  | optional, adds custom css class or property     |
 | `isFeatures` | `boolean` | optional, set paddings, width for Features card |
-
-- #### Contacts
-
-| Prop        | Value     | Description                                     |
-| ----------- | --------- | ----------------------------------------------- |
-| `className` | `string`  | optional, adds custom css class or property     |
-| `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |

@@ -52,7 +52,7 @@
 }
 
 /*-----ContactsLink styles start-------*/
-.contactsLink:active span {
+.contactsLink:active svg {
   color: #900c32;
 }
 /*-----ContactsLink styles end-------*/

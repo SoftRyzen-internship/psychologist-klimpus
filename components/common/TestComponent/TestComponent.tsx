@@ -37,6 +37,7 @@ import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
 
 import { Socials } from '@/components/ui/Socials';
+import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
@@ -81,6 +82,7 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
+      <ButtonTestComponent />
     </div>
   );
 };
