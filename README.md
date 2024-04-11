@@ -102,3 +102,22 @@ Here you may find a list of the most common components and their API:
 | ---------- | --------- | ----------------------------------------- |
 | `isOpen`   | `boolean` | required, set visibility of the component |
 | `pathname` | `string`  | required, set styles acc. to pathname     |
+
+- #### Button
+
+| Prop        | Value              | Description                                            |
+| ----------- | ------------------ | ------------------------------------------------------ |
+| `children`  | `string`           | required, button content                               |
+| `type`      | `submit or button` | required, type ofbutton                                |
+| `onClick`   | `function`         | optional, add effect on click event                    |
+| `className` | `string`           | optional, you can add some additional styles if needed |
+
+- #### SiteLink
+
+| Prop        | Value            | Description                                            |
+| ----------- | ---------------- | ------------------------------------------------------ |
+| `linkType`  | `scroll or link` | required, type of link                                 |
+| `isAccent`  | `boolean`        | required, defines if link has accent styles or not     |
+| `href`      | `string`         | required, sets the link address                        |
+| `children`  | `string`         | required, link content                                 |
+| `className` | `string`         | optional, you can add some additional styles if needed |

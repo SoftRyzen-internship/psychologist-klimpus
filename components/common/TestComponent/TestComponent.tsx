@@ -36,6 +36,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 import data from '@/data/common.json';
 
 import { Socials } from '@/components/ui/Socials';
+import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
@@ -71,6 +72,7 @@ export const TestComponent = () => {
         <Contacts isFooter />
       </div>
       <NavBar />
+      <ButtonTestComponent />
     </div>
   );
 };
