@@ -32,6 +32,7 @@ import { Icons } from '@/components/ui/Icons';
 
 import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
+import { UniquenessCard } from '@/components/ui/UniquenessCard';
 
 import data from '@/data/common.json';
 
@@ -52,9 +53,11 @@ export const TestComponent = () => {
           <h2>Features Card</h2>
         </Card>
 
-        <Card isUniqueness className="mb-6">
-          <h2>Uniqueness Card</h2>
-        </Card>
+        <UniquenessCard
+          total="5000+"
+          text="Годин особистої терапії"
+          //className=""
+        ></UniquenessCard>
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>

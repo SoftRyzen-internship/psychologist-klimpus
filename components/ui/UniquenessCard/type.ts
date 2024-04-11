@@ -1,6 +1,5 @@
 export interface UniquenessCardProps {
-  title: string;
+  total: string;
   text: string;
-  // className?: string;
-  // onClick?: () => void;
+  //className?: string;
 }
