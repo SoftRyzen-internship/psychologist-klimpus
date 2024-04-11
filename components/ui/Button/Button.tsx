@@ -20,10 +20,8 @@ export const Button: React.FC<ButtonProps> = ({ children, type, onClick }) => {
       onClick={onClick}
       type={type}
     >
-      <>
-        {children}
-        {type === 'button' && <ArrowRightSm className={iconStyles} />}
-      </>
+      {children}
+      {type === 'button' && <ArrowRightSm className={iconStyles} />}
     </button>
   );
 };
