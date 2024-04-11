@@ -95,3 +95,10 @@ Here you may find a list of the most common components and their API:
 | ----------- | --------- | ----------------------------------------------- |
 | `className` | `string`  | optional, adds custom css class or property     |
 | `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |
+
+- #### NavBarDropdownList
+
+| Prop       | Value     | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| `isOpen`   | `boolean` | required, set visibility of the component |
+| `pathname` | `string`  | required, set styles acc. to pathname     |
