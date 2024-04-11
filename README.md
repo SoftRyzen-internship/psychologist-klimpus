@@ -78,20 +78,19 @@ Here you may find a list of the most common components and their API:
 
 - #### Button
 
-| Prop        | Value             | Description                                            |
-| ----------- | ----------------- | ------------------------------------------------------ |
-| `isLink`    | `boolean`         | required, defines if button is link or not             |
-| `children`  | `React.ReactNode` | required, button content                               |
-| `to`        | `string`          | optional, sets the link address                        |
-| `onClick`   | `function`        | optional, add effect on click event                    |
-| `className` | `string`          | optional, you can add some additional styles if needed |
+| Prop        | Value              | Description                                            |
+| ----------- | ------------------ | ------------------------------------------------------ |
+| `children`  | `string`           | required, button content                               |
+| `type`      | `submit or button` | required, type ofbutton                                |
+| `onClick`   | `function`         | optional, add effect on click event                    |
+| `className` | `string`           | optional, you can add some additional styles if needed |
 
-- #### ButtonLink
+- #### SiteLink
 
-| Prop        | Value      | Description                                            |
-| ----------- | ---------- | ------------------------------------------------------ |
-| `isLink`    | `boolean`  | required, defines if button is link or not             |
-| `content`   | `string`   | required, link/button text                             |
-| `href`      | `string`   | required, sets the link address                        |
-| `onClick`   | `function` | optional, add effect on click event                    |
-| `className` | `string`   | optional, you can add some additional styles if needed |
+| Prop        | Value            | Description                                            |
+| ----------- | ---------------- | ------------------------------------------------------ |
+| `linkType`  | `scroll or link` | required, type of link                                 |
+| `isAccent`  | `boolean`        | required, defines if link has accent styles or not     |
+| `href`      | `string`         | required, sets the link address                        |
+| `children`  | `string`         | required, link content                                 |
+| `className` | `string`         | optional, you can add some additional styles if needed |
