@@ -25,7 +25,9 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
             checkboxInput
               ? 'border-strokeForm bg-checkmark '
               : 'focus:border-mainRed',
-            errors?.checkbox && 'border-mainRed focus:border-mainRed',
+            errors?.checkbox
+              ? 'border-mainRed focus:border-mainRed'
+              : 'border-strokeForm',
           )}
         />
         {form.checkBox.label}

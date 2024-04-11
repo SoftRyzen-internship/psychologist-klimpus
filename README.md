@@ -71,12 +71,19 @@ Here you may find a list of the most common components and their API:
 | ----------------- | ----------- | ---------------------------------------------------- |
 | `children`        | `ReactNode` | required, card elements                              |
 | `className`       | `string`    | optional, adds custom css class or property          |
-| `isSlider`        | `boolean`   | optional, adds height:100% for the card              |
 | `isFeatures`      | `boolean`   | optional, set paddings, width for Features card      |
 | `isUniqueness`    | `boolean`   | optional, set paddings, width for Uniqueness card    |
 | `isConsultations` | `boolean`   | optional, set paddings, width for Consultations card |
 | `isReviews`       | `boolean`   | optional, set paddings, width for Reviews card       |
 | `isCommunities`   | `boolean`   | optional, set paddings, width for Communities card   |
+
+- #### FeaturesCard
+
+| Prop         | Value                                       | Description                                     |
+| ------------ | ------------------------------------------- | ----------------------------------------------- |
+| `card`       | `{id: number, title: string, text: string}` | required, card data                             |
+| `className`  | `string`                                    | optional, adds custom css class or property     |
+| `isFeatures` | `boolean`                                   | optional, set paddings, width for Features card |
 
 - #### Contacts
 
@@ -94,29 +101,25 @@ Here you may find a list of the most common components and their API:
 
 - #### Button
 
-| Prop        | Value              | Description                                            |
-| ----------- | ------------------ | ------------------------------------------------------ |
-| `children`  | `React.ReactNode`  | required, button content                               |
-| `type`      | `submit or button` | required, type ofbutton                                |
-| `onClick`   | `function`         | optional, add effect on click event                    |
-| `className` | `string`           | optional, you can add some additional styles if needed |
+| Prop        | Value                       | Description                                            |
+| ----------- | --------------------------- | ------------------------------------------------------ |
+| `children`  | `React.ReactNode or string` | required, button content                               |
+| `type`      | `submit or button`          | required, type ofbutton                                |
+| `onClick`   | `function`                  | optional, add effect on click event                    |
+| `className` | `string`                    | optional, you can add some additional styles if needed |
 
 - #### SiteLink
 
-| Prop        | Value            | Description                                            |
-| ----------- | ---------------- | ------------------------------------------------------ |
-| `linkType`  | `scroll or link` | required, type of link                                 |
-| `isAccent`  | `boolean`        | required, defines if link has accent styles or not     |
-| `href`      | `string`         | required, sets the link address                        |
-| `children`  | `string`         | required, link content                                 |
-| `className` | `string`         | optional, you can add some additional styles if needed |
+| Prop        | Value                       | Description                                            |
+| ----------- | --------------------------- | ------------------------------------------------------ |
+| `linkType`  | `scroll or link`            | required, type of link                                 |
+| `isAccent`  | `boolean`                   | required, defines if link has accent styles or not     |
+| `href`      | `string`                    | required, sets the link address                        |
+| `children`  | `React.ReactNode or string` | required, link content                                 |
+| `className` | `string`                    | optional, you can add some additional styles if needed |
 
-Here you may find a list of the most common components and their API:
+- #### FeedbackCard
 
-- #### FeaturesCard
-
-| Prop         | Value     | Description                                     |
-| ------------ | --------- | ----------------------------------------------- |
-| `card`       | `{}`      | required, card data                             |
-| `className`  | `string`  | optional, adds custom css class or property     |
-| `isFeatures` | `boolean` | optional, set paddings, width for Features card |
+| Prop   | Value                           | Description             |
+| ------ | ------------------------------- | ----------------------- |
+| `data` | `{text: string, owner: string}` | required, set card data |

@@ -71,7 +71,7 @@ export const FormInput: React.FC<FormInputProps> = ({
           className={classNames(
             'relative rounded-xl border-[1px] border-solid  px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6',
             isError && (name === 'name' || name === 'phone')
-              ? 'border-mainRed focus:border-mainRed'
+              ? 'border-mainRed text-mainRed focus:border-mainRed'
               : 'border-strokeForm',
             isError && (name === 'name' || name === 'phone')
               ? 'mb-0'

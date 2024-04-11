@@ -35,8 +35,8 @@ export const Form = () => {
     try {
       isLoading && setIsLoading(true);
 
-      console.log("Ім'я:", data.name); // Вивести ім'я в консоль
-      console.log('Телефон:', data.phone); // Вивести телефон в консоль
+      console.log("Ім'я:", data.name);
+      console.log('Телефон:', data.phone);
 
       window.sessionStorage.removeItem('FormData');
       reset();
@@ -50,7 +50,7 @@ export const Form = () => {
   return (
     <>
       <form
-        className="mx-auto flex flex-col xl:w-[517px]"
+        className="mx-auto flex flex-col md:max-w-[450px] xl:max-w-[517px]"
         onSubmit={handleSubmit(onSubmit)}
       >
         <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl xl:text-[20px]">
@@ -70,15 +70,7 @@ export const Form = () => {
           errors={errors}
           checkboxInput={checkboxInput}
         />
-        {/* <Button
-          tag="button"
-          buttonType="submit"
-          accent={true}
-          className="w-full px-12 md:w-[185px] smOnly:mx-auto mdOnly:py-3"
-        >
-          
-        </Button> */}
-        <Button type="submit" className="xl:mx-auto">
+        <Button type="submit" className="mt-6 md:mx-auto md:mt-8">
           {isLoading ? <Loader /> : form.buttonText}
         </Button>
       </form>

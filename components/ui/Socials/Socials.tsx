@@ -14,15 +14,17 @@ export const Socials: React.FC<SocialsProps> = ({ className }) => {
   const socialsClasses = classNames('flex gap-8 bg-mainBlack', className);
 
   return (
-    <ul className={socialsClasses}>
-      {socials.map(item => (
-        <SocialsItem
-          key={item.name}
-          name={item.name as 'instagram' | 'facebook' | 'telegram' | 'watsup'}
-          href={item.path}
-          ariaL={item.ariaLabel}
-        />
-      ))}
-    </ul>
+    <div className="container">
+      <ul className={socialsClasses}>
+        {socials.map(item => (
+          <SocialsItem
+            key={item.name}
+            name={item.name as 'instagram' | 'facebook' | 'telegram' | 'watsup'}
+            href={item.path}
+            ariaL={item.ariaLabel}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };

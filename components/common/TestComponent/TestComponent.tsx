@@ -26,7 +26,6 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
-
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -35,38 +34,39 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
+import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
-import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+// import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
 import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
-
-import React from 'react';
+import { FeedbackCard } from '../FeedbackCard';
 
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
+  const firstFeedback = feedbackData.data[0];
 
   return (
     <div>
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <div className="container bg-white pb-6 pt-6">
-        <Card isFeatures isSlider={false} className="mb-6">
+        <Card isFeatures className="mb-6">
           <h2>Features Card</h2>
         </Card>
 
-        <Card isUniqueness isSlider={false} className="mb-6">
+        <Card isUniqueness className="mb-6">
           <h2>Uniqueness Card</h2>
         </Card>
-        <Card isConsultations isSlider={false} className="mb-6">
+        <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
-        <Card isReviews isSlider={false} className="mb-6">
+        <Card isReviews className="mb-6">
           <h2>Reviews Card</h2>
         </Card>
-        <Card isCommunities isSlider={false}>
+        <Card isCommunities>
           <h2>Communities Card</h2>
         </Card>
       </div>
@@ -83,7 +83,11 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
-      <ButtonTestComponent />
+      {/* <ButtonTestComponent /> */}
+      <div className="container bg-white">
+        <FeedbackCard data={firstFeedback} />
+      </div>
+      <NavBar />
       <FormSection />
     </div>
   );
