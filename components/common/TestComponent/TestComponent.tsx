@@ -39,6 +39,7 @@ import { Socials } from '@/components/ui/Socials';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
+import { FeedbackCard } from '../FeedbackCard';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -71,6 +72,7 @@ export const TestComponent = () => {
         <Contacts isFooter />
       </div>
       <NavBar />
+      <FeedbackCard />
     </div>
   );
 };
