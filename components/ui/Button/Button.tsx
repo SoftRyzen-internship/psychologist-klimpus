@@ -1,10 +1,17 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import ArrowRightSm from '@/public/icons/arrowRightSm.svg';
 
 import { ButtonProps } from './types';
 
-export const Button: React.FC<ButtonProps> = ({ children, type, onClick }) => {
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  type,
+  onClick,
+  className,
+}) => {
   const styles =
     'inline-block group cursor-pointer block text-cardTextLg flex gap-2 font-roboto text-accent hover:text-hoverAccent focus:text-hoverAccent focus:text-hoverAccent active:text-clickAccent';
 
@@ -14,12 +21,13 @@ export const Button: React.FC<ButtonProps> = ({ children, type, onClick }) => {
   const iconStyles =
     'h-[25px] w-[25px] group-hover:fill-hoverAccent group-active:fill-clickAccent ';
 
+  const buttonStyles = classNames(
+    type === 'submit' ? accentStyles : styles,
+    className,
+  );
+
   return (
-    <button
-      className={type === 'submit' ? accentStyles : styles}
-      onClick={onClick}
-      type={type}
-    >
+    <button className={buttonStyles} onClick={onClick} type={type}>
       {children}
       {type === 'button' && <ArrowRightSm className={iconStyles} />}
     </button>
