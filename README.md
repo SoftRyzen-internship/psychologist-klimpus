@@ -51,17 +51,6 @@ details.
 
 Here you may find a list of the most common components and their API:
 
-- #### Button
-
-| Prop            | Value               | Description                         |
-| --------------- | ------------------- | ----------------------------------- |
-| `children`      | `string`            | required, button text               |
-| `type`          | `button` / `submit` | required, button type               |
-| `onClick`       | `function`          | optional, add effect on click event |
-| `isSubmitted`   | `boolean`           | optional, set submitted styles      |
-| `isSubmitError` | `boolean`           | optional, set submit error styles   |
-| `disabled`      | `boolean`           | optional, set disable styles        |
-
 - #### Socials
 
 | Prop        | Value    | Description                                    |
@@ -121,3 +110,13 @@ Here you may find a list of the most common components and their API:
 | `href`      | `string`         | required, sets the link address                        |
 | `children`  | `string`         | required, link content                                 |
 | `className` | `string`         | optional, you can add some additional styles if needed |
+
+Here you may find a list of the most common components and their API:
+
+- #### FeaturesCard
+
+| Prop         | Value     | Description                                     |
+| ------------ | --------- | ----------------------------------------------- |
+| `card`       | `{}`      | required, card data                             |
+| `className`  | `string`  | optional, adds custom css class or property     |
+| `isFeatures` | `boolean` | optional, set paddings, width for Features card |
