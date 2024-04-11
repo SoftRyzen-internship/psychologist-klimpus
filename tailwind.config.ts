@@ -42,6 +42,8 @@ const config: Config = {
         arrowRightSm: `url(/icons/arrowRightSm.svg)`,
         formImg1: `url(/images/logo/formImg1.webp)`,
         formImg2: `url(/images/logo/formImg2.webp)`,
+        checkmark: `url(/icons/checkmark.svg)`,
+        inputError: `url(/icons/inputError.svg)`,
         // arrowRightMd: `url(/icons/arrowRightMd.svg)`,
         // arrowLeftMd: `url(/icons/arrowLeftMd.svg)`,
       },
