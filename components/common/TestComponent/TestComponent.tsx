@@ -26,7 +26,6 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
-
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -34,6 +33,7 @@ import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
+import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
 
@@ -43,6 +43,7 @@ import { FeedbackCard } from '../FeedbackCard';
 
 export const TestComponent = () => {
   const { logo } = data.header;
+  const firstFeedback = feedbackData.data[0];
 
   return (
     <div>
@@ -72,7 +73,10 @@ export const TestComponent = () => {
         <Contacts isFooter />
       </div>
       <NavBar />
-      <FeedbackCard />
+      <div className="container bg-white">
+        <FeedbackCard data={firstFeedback} />
+      </div>
+      <NavBar />
     </div>
   );
 };

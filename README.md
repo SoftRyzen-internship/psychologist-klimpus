@@ -102,3 +102,9 @@ Here you may find a list of the most common components and their API:
 | ---------- | --------- | ----------------------------------------- |
 | `isOpen`   | `boolean` | required, set visibility of the component |
 | `pathname` | `string`  | required, set styles acc. to pathname     |
+
+- #### FeedbackCard
+
+| Prop   | Value                           | Description             |
+| ------ | ------------------------------- | ----------------------- |
+| `data` | `{text: string, owner: string}` | required, set card data |
