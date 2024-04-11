@@ -92,7 +92,7 @@ export const FormInput: React.FC<FormInputProps> = ({
               alt="error icon"
               width={24}
               height={24}
-              className="absolute right-[18px] top-[43px] z-10 md:top-[44px] xl:top-[-40px]"
+              className="absolute right-[18px] top-[-40px]  z-10 "
             />
           </span>
         </div>
