@@ -41,24 +41,19 @@ export const Contacts: React.FC<ContactsProps> = ({
               href={name === 'email' ? `mailto:${value}` : `tel:${value}`}
               className={classLink}
             >
-              {isFooter ? (
-                <>
-                  {name === 'email' && <Email className="h-[25px] w-[25px]" />}
-                  {name === 'tel' && <Tel className="h-[25px] w-[25px]" />}
-                </>
-              ) : (
-                <>
-                  {name === 'email' && (
-                    <span className="text-accent">
-                      <Email className="h-[25px] w-[25px]" />
-                    </span>
-                  )}
-                  {name === 'tel' && (
-                    <span className="text-accent">
-                      <Tel className="h-[25px] w-[25px]" />
-                    </span>
-                  )}
-                </>
+              {name === 'email' && (
+                <Email
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
+              )}
+              {name === 'tel' && (
+                <Tel
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
               )}
               <span className="py-[3px] md:py-[2px] xl:py-0">{value}</span>
             </Link>
