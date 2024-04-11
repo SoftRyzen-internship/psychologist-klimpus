@@ -5,11 +5,10 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
-// import { Loader } from '@/components/ui/Loader/Loader';
+import { Loader } from '@/components/ui/Loader/Loader';
 
 import { FormData } from './types';
 
-// import common from '@/data/common.json';
 import form from '@/data/form.json';
 
 export const Form = () => {
@@ -23,8 +22,6 @@ export const Form = () => {
   } = useForm<FormData>();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  // const [showSuccessModal, setShowSuccessModal] = useState<boolean>(false);
-  // const [showErrorModal, setShowErrorModal] = useState<boolean>(false);
 
   useFormPersist('FormData', {
     watch,
@@ -36,25 +33,15 @@ export const Form = () => {
   const onSubmit: SubmitHandler<FormData> = () => {
     try {
       isLoading && setIsLoading(true);
-      // setIsLoading(true);
-
-      // const message = `Ім'я: ${data.name} %0AТелефон: ${data.phone} %0A${data.message ? `Повідомлення: ${data.message}` : ''}`;
-      // await sendMessage(message);
 
       reset();
       window.sessionStorage.removeItem('FormData');
-      // setShowSuccessModal(true);
     } catch (error) {
-      // setShowErrorModal(true);
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
   };
-
-  // const onClickCloseModal = () => {
-  //   setShowSuccessModal(false);
-  //   setShowErrorModal(false);
-  // };
 
   return (
     <>
@@ -85,9 +72,9 @@ export const Form = () => {
           accent={true}
           className="w-full px-12 md:w-[185px] smOnly:mx-auto mdOnly:py-3"
         >
-          {!isLoading ? common.buttonsText.v3 : <Loader />}
+          
         </Button> */}
-        <button type="submit">Відправити</button>
+        <button type="submit">{!isLoading ? 'Надіслати' : <Loader />}</button>
       </form>
     </>
   );

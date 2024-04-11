@@ -13,12 +13,7 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
 }) => {
   return (
     <>
-      <label
-        className={classNames(
-          'flex cursor-pointer items-start gap-2 font-roboto text-xs font-normal leading-[1.35]',
-          // errors?.checkbox ? 'text-error' : 'text-text',
-        )}
-      >
+      <label className="flex cursor-pointer items-start gap-2 font-roboto text-xs font-normal leading-[1.35]">
         <input
           type={form.checkBox.name}
           aria-label={form.checkBox.ariaLabel}
@@ -26,11 +21,11 @@ export const CheckBox: React.FC<CheckBoxProps> = ({
             required: true,
           })}
           className={classNames(
-            'relative top-[2px] cursor-pointer appearance-none rounded-sm border-[1px] border-solid border-strokeForm p-1.5',
+            'relative top-[2px] cursor-pointer appearance-none rounded-sm border-[1px] border-solid p-1.5',
             checkboxInput
-              ? 'border-mainRed bg-checkmark'
-              : 'border-borderCheckbox bg-footerBcg',
-            errors?.checkbox && 'border-mainRed',
+              ? 'border-strokeForm bg-checkmark '
+              : 'focus:border-mainRed',
+            errors?.checkbox && 'border-mainRed focus:border-mainRed',
           )}
         />
         {form.checkBox.label}

@@ -67,17 +67,7 @@
         "textarea": false,
         "label": "Email",
         "name": "email",
-        "placeholder": "psyhologhelp111111@gmail.com",
-        "validation": {
-          "required": {
-            "value": false,
-            "message": ""
-          },
-          "pattern": {
-            "value": ".",
-            "message": ""
-          }
-        }
+        "placeholder": "psyhologhelp111111@gmail.com"
       }
     },
     {
@@ -85,17 +75,7 @@
         "textarea": true,
         "label": "Залиште повідомлення",
         "name": "message",
-        "placeholder": "Я хочу...",
-        "validation": {
-          "required": {
-            "value": false,
-            "message": ""
-          },
-          "pattern": {
-            "value": ".",
-            "message": ""
-          }
-        }
+        "placeholder": "Я хочу..."
       }
     }
   ],

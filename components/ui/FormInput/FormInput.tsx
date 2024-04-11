@@ -38,11 +38,6 @@ export const FormInput: React.FC<FormInputProps> = ({
             },
           })}
           className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6"
-
-          // className={classNames(
-          //   'mb-4 h-[176px] resize-none px-4 py-4 md:px-6 font-roboto text-base border-solid border-strokeForm border-[1px] rounded-xl font-normal outline-none placeholder:text-strokeForm leading-[1.35]',
-          //   isError ? 'mt-[42px]' : '',
-          // )}
         />
       ) : (
         <input
@@ -74,11 +69,11 @@ export const FormInput: React.FC<FormInputProps> = ({
           })}
           placeholder={placeholder}
           className={classNames(
-            'relative rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6',
-            isError &&
-              (name === 'name' || name === 'phone') &&
-              'text-mainRed transition focus:border-mainRed focus:outline-none',
-            isError && (name === 'name' || name === 'phone' || name === 'mail')
+            'relative rounded-xl border-[1px] border-solid  px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6',
+            isError && (name === 'name' || name === 'phone')
+              ? 'border-mainRed focus:border-mainRed'
+              : 'border-strokeForm',
+            isError && (name === 'name' || name === 'phone')
               ? 'mb-0'
               : 'mb-[42px]',
           )}
