@@ -117,3 +117,9 @@ Here you may find a list of the most common components and their API:
 | `href`      | `string`         | required, sets the link address                        |
 | `children`  | `string`         | required, link content                                 |
 | `className` | `string`         | optional, you can add some additional styles if needed |
+
+- #### FeedbackCard
+
+| Prop   | Value                           | Description             |
+| ------ | ------------------------------- | ----------------------- |
+| `data` | `{text: string, owner: string}` | required, set card data |
