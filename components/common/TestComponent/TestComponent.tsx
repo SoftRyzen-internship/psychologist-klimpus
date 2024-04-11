@@ -52,12 +52,16 @@ export const TestComponent = () => {
         <Card isFeatures className="mb-6">
           <h2>Features Card</h2>
         </Card>
-
-        <UniquenessCard
-          total="5000+"
-          text="Годин особистої терапії"
-          //className=""
-        ></UniquenessCard>
+        <div className="flex flex-col gap-4">
+          <UniquenessCard
+            total="5000+"
+            text="Годин особистої терапії"
+          ></UniquenessCard>
+          <UniquenessCard
+            total="200+"
+            text="Задоволених клієнтів з різних країн"
+          ></UniquenessCard>
+        </div>
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
