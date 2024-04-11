@@ -5,8 +5,8 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
-// import { Loader } from '@/components/ui/Loader/Loader';
-// import { Button } from '@/components/ui/Button';
+import { Loader } from '@/components/ui/Loader/Loader';
+import { Button } from '@/components/ui/Button';
 
 import { FormData } from './types';
 
@@ -78,7 +78,9 @@ export const Form = () => {
         >
           
         </Button> */}
-        <button type="submit">Submit</button>
+        <Button type="submit" className="xl:mx-auto">
+          {isLoading ? <Loader /> : form.buttonText}
+        </Button>
       </form>
     </>
   );
