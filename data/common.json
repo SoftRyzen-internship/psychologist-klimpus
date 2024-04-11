@@ -1,0 +1,47 @@
+{
+  "contacts": [
+    { "name": "email", "value": "therapybyirena@gmail.com" },
+    { "name": "tel", "value": "+447404864095" }
+  ],
+  "header": {
+    "logo": "Климпуш Ірина"
+  },
+  "DropdownList": [
+    {
+      "text": "Індивідуальна консультація",
+      "moveTo": "/individual-consultation"
+    },
+    { "text": "Сімейна консультація ", "moveTo": "/family-consultation" },
+    { "text": "Групова консультація", "moveTo": "/group-consultation" }
+  ],
+  "NavBar": {
+    "link": [
+      { "text": "Головна", "moveTo": "/" },
+      { "text": "Про мене", "moveTo": "/about" }
+    ],
+    "btn": "Послуги"
+  },
+
+  "socials": [
+    {
+      "name": "instagram",
+      "path": "https://www.instagram.com/metamodal_therapist",
+      "ariaLabel": "посилання на інстаграм"
+    },
+    {
+      "name": "facebook",
+      "path": "https://www.facebook.com/profile.php?id=100089809542625",
+      "ariaLabel": "посилання на фейсбук"
+    },
+    {
+      "name": "telegram",
+      "path": "https://t.me/+447404864095",
+      "ariaLabel": "посилання на телефон в телеграмі"
+    },
+    {
+      "name": "watsup",
+      "path": "https://wa.me/447404864095",
+      "ariaLabel": "посилання на телефон в вотсапі"
+    }
+  ]
+}

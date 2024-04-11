@@ -1,3 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .section {
+    @apply mb-[54px] w-full md:mb-20 xl:mb-[100px];
+  }
+  .sectionTitle {
+    @apply font-raleway text-medium font-semibold uppercase md:text-lightLarge xl:text-large;
+  }
+
+  .subtitleConsultation {
+    @apply font-raleway text-[19px] font-medium leading-[1.5] md:text-2xl xl:text-[26px];
+  }
+
+  .subtitleAbout {
+    @apply font-raleway text-2xl font-semibold leading-[1.35] md:text-4xl xl:text-[40px];
+  }
+
+  .mainText {
+    @apply font-roboto text-[15px] font-normal leading-[1.5] md:text-lg xl:text-xl;
+  }
+
+  .textBold {
+    @apply font-roboto text-base font-medium leading-[1.35] md:text-lg xl:text-xl;
+  }
+
+  .cardTextSm {
+    @apply font-roboto text-base font-normal leading-[1.5] md:text-sm xl:text-base;
+  }
+
+  .cardTextLg {
+    @apply font-roboto text-base font-normal leading-[1.35] xl:text-lg;
+  }
+
+  .cardTitleLight {
+    @apply font-roboto text-lg font-semibold leading-[1.35] text-accent xl:text-xl;
+  }
+
+  .cardTitleMedium {
+    @apply font-roboto text-lg font-semibold leading-[1.35] text-accent md:text-[22px] xl:text-2xl;
+  }
+
+  .transition {
+    @apply transition-all duration-300 ease-out;
+  }
+}
+
+/*-----ContactsLink styles start-------*/
+.contactsLink:active svg {
+  color: #900c32;
+}
+/*-----ContactsLink styles end-------*/
+
+.navbar-icon path {
+  fill: currentColor;
+  transition: fill 300ms ease-out;
+}
+
+.navbar-btn:hover .navbar-icon path,
+.navbar-btn:focus .navbar-icon path {
+  fill: #ab123e;
+}
+
+.navbar-btn:active .navbar-icon path {
+  fill: #900c32;
+}
