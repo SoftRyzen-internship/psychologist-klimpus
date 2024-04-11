@@ -51,7 +51,7 @@ export const NavBar = () => {
             </Link>
           </li>
         ))}
-        <li>
+        <li className="relative">
           <button
             type="button"
             onClick={toggleModal}
