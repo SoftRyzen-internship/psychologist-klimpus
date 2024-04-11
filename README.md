@@ -120,3 +120,9 @@ Here you may find a list of the most common components and their API:
 | `card`       | `{}`      | required, card data                             |
 | `className`  | `string`  | optional, adds custom css class or property     |
 | `isFeatures` | `boolean` | optional, set paddings, width for Features card |
+
+- #### FeedbackCard
+
+| Prop   | Value                           | Description             |
+| ------ | ------------------------------- | ----------------------- |
+| `data` | `{text: string, owner: string}` | required, set card data |
