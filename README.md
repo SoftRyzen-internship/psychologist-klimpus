@@ -75,3 +75,10 @@ Here you may find a list of the most common components and their API:
 | `name`  | `string` | required, specifies the name of the SocialsItem     |
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
+
+- #### NavBarDropdownList
+
+| Prop       | Value     | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| `isOpen`   | `boolean` | required, set visibility of the component |
+| `pathname` | `string`  | required, set styles acc. to pathname     |
