@@ -18,6 +18,7 @@ export const Button: React.FC<ButtonProps> = ({ children, type, onClick }) => {
     <button
       className={type === 'submit' ? accentStyles : styles}
       onClick={onClick}
+      type={type}
     >
       <>
         {children}
