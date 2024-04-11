@@ -79,11 +79,11 @@ Here you may find a list of the most common components and their API:
 
 - #### FeaturesCard
 
-| Prop         | Value     | Description                                     |
-| ------------ | --------- | ----------------------------------------------- |
-| `card`       | `{}`      | required, card data                             |
-| `className`  | `string`  | optional, adds custom css class or property     |
-| `isFeatures` | `boolean` | optional, set paddings, width for Features card |
+| Prop         | Value                                       | Description                                     |
+| ------------ | ------------------------------------------- | ----------------------------------------------- |
+| `card`       | `{id: number, title: string, text: string}` | required, card data                             |
+| `className`  | `string`                                    | optional, adds custom css class or property     |
+| `isFeatures` | `boolean`                                   | optional, set paddings, width for Features card |
 
 - #### Contacts
 

@@ -42,7 +42,6 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import React from 'react';
 import { NavBar } from '../NavBar';
-
 import { FeedbackCard } from '../FeedbackCard';
 
 export const TestComponent = () => {
