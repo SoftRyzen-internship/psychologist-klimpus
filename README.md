@@ -71,12 +71,19 @@ Here you may find a list of the most common components and their API:
 | ----------------- | ----------- | ---------------------------------------------------- |
 | `children`        | `ReactNode` | required, card elements                              |
 | `className`       | `string`    | optional, adds custom css class or property          |
-| `isSlider`        | `boolean`   | optional, adds height:100% for the card              |
 | `isFeatures`      | `boolean`   | optional, set paddings, width for Features card      |
 | `isUniqueness`    | `boolean`   | optional, set paddings, width for Uniqueness card    |
 | `isConsultations` | `boolean`   | optional, set paddings, width for Consultations card |
 | `isReviews`       | `boolean`   | optional, set paddings, width for Reviews card       |
 | `isCommunities`   | `boolean`   | optional, set paddings, width for Communities card   |
+
+- #### FeaturesCard
+
+| Prop         | Value                                       | Description                                     |
+| ------------ | ------------------------------------------- | ----------------------------------------------- |
+| `card`       | `{id: number, title: string, text: string}` | required, card data                             |
+| `className`  | `string`                                    | optional, adds custom css class or property     |
+| `isFeatures` | `boolean`                                   | optional, set paddings, width for Features card |
 
 - #### Contacts
 
@@ -110,16 +117,6 @@ Here you may find a list of the most common components and their API:
 | `href`      | `string`         | required, sets the link address                        |
 | `children`  | `string`         | required, link content                                 |
 | `className` | `string`         | optional, you can add some additional styles if needed |
-
-Here you may find a list of the most common components and their API:
-
-- #### FeaturesCard
-
-| Prop         | Value     | Description                                     |
-| ------------ | --------- | ----------------------------------------------- |
-| `card`       | `{}`      | required, card data                             |
-| `className`  | `string`  | optional, adds custom css class or property     |
-| `isFeatures` | `boolean` | optional, set paddings, width for Features card |
 
 - #### FeedbackCard
 
