@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
+import classNames from 'classnames';
+
 import { NavBarDropdownList } from '@/components/ui/NavBarDropdownList';
 
 import ArrowDown from '@/public/icons/arrowDown.svg';
@@ -23,6 +25,16 @@ export const NavBar = () => {
     setIsModalVisible(!isModalVisible);
   };
 
+  const buttonClassName = classNames(
+    'navbar-btn flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35] transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
+    {
+      'text-hoverAccent':
+        pathname === '/family-consultation' ||
+        pathname === '/group-consultation' ||
+        pathname === '/individual-consultation',
+    },
+  );
+
   return (
     <nav className="bg-white">
       <ul className="flex flex-col gap-[27px] text-mainBlack xl:flex-row xl:gap-[48px]">
@@ -39,18 +51,11 @@ export const NavBar = () => {
             </Link>
           </li>
         ))}
-        <li>
+        <li className="relative">
           <button
             type="button"
             onClick={toggleModal}
-            className={`navbar-btn flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35]
-            transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent ${
-              pathname === '/family-consultation' ||
-              pathname === '/group-consultation' ||
-              pathname === '/individual-consultation'
-                ? 'text-hoverAccent'
-                : ''
-            }`}
+            className={buttonClassName}
           >
             {btnData}
             {!isModalVisible ? (

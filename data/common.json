@@ -1,6 +1,8 @@
 {
-  "email": "therapybyirena@gmail.com",
-  "tel": "+447404864095",
+  "contacts": [
+    { "name": "email", "value": "therapybyirena@gmail.com" },
+    { "name": "tel", "value": "+447404864095" }
+  ],
   "header": {
     "logo": "Климпуш Ірина"
   },
@@ -33,12 +35,12 @@
     },
     {
       "name": "telegram",
-      "href": "+44 7404 864095",
+      "path": "https://t.me/+447404864095",
       "ariaLabel": "посилання на телефон в телеграмі"
     },
     {
       "name": "watsup",
-      "href": "+44 7404 864095",
+      "path": "https://wa.me/447404864095",
       "ariaLabel": "посилання на телефон в вотсапі"
     }
   ],

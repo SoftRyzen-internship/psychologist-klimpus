@@ -76,6 +76,33 @@ Here you may find a list of the most common components and their API:
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
 
+- #### Card
+
+| Prop              | Value       | Description                                          |
+| ----------------- | ----------- | ---------------------------------------------------- |
+| `children`        | `ReactNode` | required, card elements                              |
+| `className`       | `string`    | optional, adds custom css class or property          |
+| `isSlider`        | `boolean`   | optional, adds height:100% for the card              |
+| `isFeatures`      | `boolean`   | optional, set paddings, width for Features card      |
+| `isUniqueness`    | `boolean`   | optional, set paddings, width for Uniqueness card    |
+| `isConsultations` | `boolean`   | optional, set paddings, width for Consultations card |
+| `isReviews`       | `boolean`   | optional, set paddings, width for Reviews card       |
+| `isCommunities`   | `boolean`   | optional, set paddings, width for Communities card   |
+
+- #### Contacts
+
+| Prop        | Value     | Description                                     |
+| ----------- | --------- | ----------------------------------------------- |
+| `className` | `string`  | optional, adds custom css class or property     |
+| `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |
+
+- #### NavBarDropdownList
+
+| Prop       | Value     | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| `isOpen`   | `boolean` | required, set visibility of the component |
+| `pathname` | `string`  | required, set styles acc. to pathname     |
+
 - #### Button
 
 | Prop        | Value              | Description                                            |
