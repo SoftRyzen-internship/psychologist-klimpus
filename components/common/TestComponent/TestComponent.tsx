@@ -34,6 +34,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
+import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
@@ -42,10 +43,12 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
+import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
 
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
+  const { consultationsList } = consultations;
   const firstFeedback = feedbackData.data[0];
 
   return (
@@ -89,6 +92,11 @@ export const TestComponent = () => {
       </div>
       <NavBar />
       <FormSection />
+      <div className="container gap-5 pb-6 pt-6 xl:flex">
+        {consultationsList.map(item => {
+          return <ConsultationsCard key={item.id} card={item} />;
+        })}
+      </div>
     </div>
   );
 };
