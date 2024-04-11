@@ -76,8 +76,6 @@ Here you may find a list of the most common components and their API:
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
 
-Here you may find a list of the most common components and their API:
-
 - #### Card
 
 | Prop              | Value       | Description                                          |
@@ -105,3 +103,10 @@ Here you may find a list of the most common components and their API:
 | ----------- | --------- | ----------------------------------------------- |
 | `className` | `string`  | optional, adds custom css class or property     |
 | `isFooter`  | `boolean` | optional, set icon-color, text-color for Footer |
+
+- #### NavBarDropdownList
+
+| Prop       | Value     | Description                               |
+| ---------- | --------- | ----------------------------------------- |
+| `isOpen`   | `boolean` | required, set visibility of the component |
+| `pathname` | `string`  | required, set styles acc. to pathname     |
