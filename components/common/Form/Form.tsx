@@ -5,7 +5,8 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
-import { Loader } from '@/components/ui/Loader/Loader';
+// import { Loader } from '@/components/ui/Loader/Loader';
+// import { Button } from '@/components/ui/Button';
 
 import { FormData } from './types';
 
@@ -30,12 +31,15 @@ export const Form = () => {
 
   const checkboxInput = watch(form.checkBox.name);
 
-  const onSubmit: SubmitHandler<FormData> = () => {
+  const onSubmit: SubmitHandler<FormData> = data => {
     try {
       isLoading && setIsLoading(true);
 
-      reset();
+      console.log("Ім'я:", data.name); // Вивести ім'я в консоль
+      console.log('Телефон:', data.phone); // Вивести телефон в консоль
+
       window.sessionStorage.removeItem('FormData');
+      reset();
     } catch (error) {
       console.log(error);
     } finally {
@@ -74,7 +78,7 @@ export const Form = () => {
         >
           
         </Button> */}
-        <button type="submit">{!isLoading ? 'Надіслати' : <Loader />}</button>
+        <button type="submit">Submit</button>
       </form>
     </>
   );
