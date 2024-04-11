@@ -6,12 +6,14 @@ export const FeaturesList = () => {
   const { featuresList } = features;
 
   return (
-    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5">
+    <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4 xl:gap-5">
       {featuresList.map(item => {
         return (
-          <FeaturesCard key={item.id} card={item} className="featuresCard" />
+          <li key={item.id} className="featuresCard h-auto">
+            <FeaturesCard card={item} />
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 };

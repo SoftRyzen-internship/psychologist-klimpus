@@ -53,20 +53,20 @@ export const TestComponent = () => {
       <SectionTitle>{logo}</SectionTitle>
       <Icons />
       <div className="container bg-white pb-6 pt-6">
-        <Card isFeatures isSlider={false} className="mb-6">
+        <Card isFeatures className="mb-6">
           <h2>Features Card</h2>
         </Card>
 
-        <Card isUniqueness isSlider={false} className="mb-6">
+        <Card isUniqueness className="mb-6">
           <h2>Uniqueness Card</h2>
         </Card>
-        <Card isConsultations isSlider={false} className="mb-6">
+        <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
-        <Card isReviews isSlider={false} className="mb-6">
+        <Card isReviews className="mb-6">
           <h2>Reviews Card</h2>
         </Card>
-        <Card isCommunities isSlider={false}>
+        <Card isCommunities>
           <h2>Communities Card</h2>
         </Card>
       </div>

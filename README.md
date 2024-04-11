@@ -71,7 +71,6 @@ Here you may find a list of the most common components and their API:
 | ----------------- | ----------- | ---------------------------------------------------- |
 | `children`        | `ReactNode` | required, card elements                              |
 | `className`       | `string`    | optional, adds custom css class or property          |
-| `isSlider`        | `boolean`   | optional, adds height:100% for the card              |
 | `isFeatures`      | `boolean`   | optional, set paddings, width for Features card      |
 | `isUniqueness`    | `boolean`   | optional, set paddings, width for Uniqueness card    |
 | `isConsultations` | `boolean`   | optional, set paddings, width for Consultations card |
