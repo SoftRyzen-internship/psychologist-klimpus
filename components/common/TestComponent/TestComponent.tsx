@@ -42,6 +42,7 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
+import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -83,7 +84,7 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
-      {/* <ButtonTestComponent /> */}
+      <ButtonTestComponent />
       <div className="container bg-white">
         <FeedbackCard data={firstFeedback} />
       </div>

@@ -17,15 +17,8 @@ export const SiteLink: React.FC<SiteLinkProps> = ({
   children,
   className,
 }) => {
-  const styles = classNames(
-    'group cursor-pointer block text-cardTextLg flex gap-2 font-roboto text-accent hover:text-hoverAccent focus:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
-    {
-      'w-[105px]': href === '/contacts',
-    },
-    {
-      'w-[123px] xl:w-[134px]': href !== '/contacts',
-    },
-  );
+  const styles =
+    'group cursor-pointer block text-cardTextLg inline-flex gap-2 font-roboto text-accent hover:text-hoverAccent focus:text-hoverAccent focus:text-hoverAccent active:text-clickAccent';
 
   const accentStyles =
     'transition hover:bg-hoverAccent focus:bg-hoverAccent active:bg-clickAccent cardTextLg inline-block text-center cursor-pointer rounded-[12px] bg-accent px-12 py-5 text-white xl:leading-[1.35] w-full max-w-[448px] md:max-w-[320px] xl:max-w-[340px]';
