@@ -35,6 +35,7 @@ import { UniquenessCard } from '@/components/ui/UniquenessCard';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
+import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
 import uniqueData from '@/data/uniqueness.json';
 
@@ -44,11 +45,13 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
+import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
 import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
+  const { consultationsList } = consultations;
   const firstFeedback = feedbackData.data[0];
 
   return (
@@ -99,6 +102,17 @@ export const TestComponent = () => {
       </div>
       <NavBar />
       <FormSection />
+      <div className="container pb-6 pt-6 ">
+        <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
+          {consultationsList.map(item => {
+            return (
+              <li key={item.id}>
+                <ConsultationsCard card={item} />
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </div>
   );
 };
