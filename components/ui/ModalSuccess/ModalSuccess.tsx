@@ -27,7 +27,7 @@ export const ModalSuccess: React.FC<ModalSuccessProps> = ({
       {isModalSuccessOpen && (
         <Modal
           onClose={onClickCloseModal}
-          className="top-1/4 px-6 py-8 md:w-[540px] md:p-12 xl:w-[572px] xl:p-16"
+          className="top-1/4 px-7 py-[108px] md:w-[624px] md:p-12 md:px-24 xl:w-[802px] xl:px-[116px] xl:py-[119px]"
         >
           <Notification type="success" />
         </Modal>

@@ -21,21 +21,26 @@ export const Notification = ({ type }: NotificationProps) => {
       : data.notification.error.text;
 
   const titleStyles = classNames(
-    'mb-6 font-roboto text-2xl text-center md:text-[28px] md:leading-9 xl:text-4xl ',
-    type === 'success' ? 'text-accent' : 'text-mainBlack',
+    'mb-4 font-raleway text-lg text-center md:text-xl leading-[1.35] xl:text-2xl font-semibold uppercase',
+    type === 'success' ? 'text-mainBlack' : 'text-mainRed',
+  );
+
+  const textStyles = classNames(
+    'whitespace-pre-line  text-center font-roboto text-[15px] md-text-base leading-[1.5] font-normal ',
+    type === 'success'
+      ? 'max-w-[232px] md:max-w-[352px]'
+      : 'max-w-[267px] md:max-w-[285px]',
   );
 
   return (
     <div className="flex flex-col items-center">
       {type === 'success' ? (
-        <SuccessIcon width={64} height={64} className="mb-8 xl:mb-10" />
+        <SuccessIcon width={64} height={64} className="mb-6" />
       ) : (
-        <ErrorIcon width={64} height={64} className="mb-8 xl:mb-10" />
+        <ErrorIcon width={64} height={64} className="mb-6" />
       )}
       <p className={titleStyles}>{title}</p>
-      <p className="whitespace-pre-line text-center font-roboto text-sm xl:text-base">
-        {text}
-      </p>
+      <p className={textStyles}>{text}</p>
     </div>
   );
 };

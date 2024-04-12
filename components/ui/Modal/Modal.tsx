@@ -28,7 +28,7 @@ export const Modal = ({ onClose, children, className }: ModalProps) => {
   };
 
   const modalClasses = classNames(
-    'relative mx-auto flex flex-col w-[320px] bg-white shadow-md',
+    'relative mx-auto flex flex-col w-[328px] bg-white shadow-md rounded-[10px] border-solid border-[1px] border-strokeForm',
     className,
   );
 

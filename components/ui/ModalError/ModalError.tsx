@@ -27,7 +27,7 @@ export const ModalError: React.FC<ModalErrorProps> = ({
       {isModalErrorOpen && (
         <Modal
           onClose={onClickCloseModal}
-          className="top-1/4 px-6 py-8 md:w-[540px] md:p-12 xl:w-[572px] xl:p-16"
+          className="top-1/4 px-5 py-[120px] md:w-[624px] md:p-12 md:px-[97px] md:py-[108px] xl:w-[802px] xl:px-[110px] xl:py-[119px] "
         >
           <Notification type="error" />
         </Modal>
