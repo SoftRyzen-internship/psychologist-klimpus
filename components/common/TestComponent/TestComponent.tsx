@@ -47,6 +47,7 @@ import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
 import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
 import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -113,6 +114,7 @@ export const TestComponent = () => {
           })}
         </ul>
       </div>
+      <ConsultationsSection />
     </div>
   );
 };
