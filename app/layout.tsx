@@ -38,7 +38,7 @@ export default function RootLayout({
         className={classNames(
           raleway.variable,
           roboto.variable,
-          'flex h-full min-h-screen flex-col bg-bgBeige',
+          'flex h-full min-h-screen flex-col bg-white',
         )}
       >
         <Header />

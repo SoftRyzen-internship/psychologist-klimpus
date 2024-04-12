@@ -26,7 +26,6 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
-
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -34,14 +33,21 @@ import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 
 import data from '@/data/common.json';
+import dataJson from '@/data/features.json';
+import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
-
-import React from 'react';
+// import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+import { FeaturesCard } from '@/components/ui/FeaturesCard';
+import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
+import { FeedbackCard } from '../FeedbackCard';
+import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 
 export const TestComponent = () => {
   const { logo } = data.header;
+  const { featuresList } = dataJson;
+  const firstFeedback = feedbackData.data[0];
 
   return (
     <div>
@@ -70,7 +76,20 @@ export const TestComponent = () => {
       <div className="bg-black">
         <Contacts isFooter />
       </div>
+      <div className="container gap-5 bg-white pb-6 pt-6 xl:flex">
+        {featuresList.map(item => {
+          return (
+            <FeaturesCard key={item.id} card={item} className="featuresCard" />
+          );
+        })}
+      </div>
       <NavBar />
+      <ButtonTestComponent />
+      <div className="container bg-white">
+        <FeedbackCard data={firstFeedback} />
+      </div>
+      <NavBar />
+      <FormSection />
     </div>
   );
 };

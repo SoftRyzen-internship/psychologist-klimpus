@@ -43,5 +43,19 @@
       "path": "https://wa.me/447404864095",
       "ariaLabel": "посилання на телефон в вотсапі"
     }
-  ]
+  ],
+  "buttonsText": {
+    "signUp": "Записатися на консультацію",
+    "more": "Більше",
+    "hide": "Сховати"
+  },
+  "linksText": {
+    "signUp": "Записатися на консультацію",
+    "contacts": "Контакти",
+    "inDetail": "Детальніше"
+  },
+  "url": {
+    "contacts": "/contacts",
+    "individual": "/individual"
+  }
 }
