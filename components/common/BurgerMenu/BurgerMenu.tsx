@@ -45,7 +45,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className=" pointer-events-auto relative w-screen bg-white md:h-[626px] md:w-[384px] md:rounded-bl-[20px]">
-                  <div className="md:pt-30 mx-auto flex h-full max-w-[480px] flex-col justify-between px-[16px] pb-[36px] pt-4 md:px-[16px] md:pb-[48px] md:pt-[30px]">
+                  <div className=" mx-auto flex h-full max-w-[480px] flex-col justify-between px-[16px] pb-[36px] pt-4 md:px-[30px] md:pb-[48px] md:pt-[30px]">
                     <div>
                       <div className="mb-6 flex items-center justify-between md:mb-4">
                         <Logo className="md:hidden" onClick={onClose} />
@@ -59,11 +59,11 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                           <CloseIcon className="h-[36px] w-[36px]" />
                         </button>
                       </div>
-                      <div className="container">
+                      <div className=" px-[20px] md:px-[18px]">
                         <NavBar />
                       </div>
                     </div>
-                    <div className="container">
+                    <div className=" px-[20px] md:px-[18px]">
                       <p className="mb-6 font-raleway text-lg font-semibold leading-[1.35]">
                         {contacts}
                       </p>
