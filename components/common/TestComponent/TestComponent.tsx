@@ -58,7 +58,7 @@ export const TestComponent = () => {
         <Card isFeatures className="mb-6">
           <h2>Features Card</h2>
         </Card>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 md:flex-row">
           <UniquenessCard
             total="5000+"
             text="Годин особистої терапії"

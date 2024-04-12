@@ -1,5 +1,6 @@
 import React from 'react';
-//import Link from 'next/link';
+
+import classNames from 'classnames';
 
 import { UniquenessCardProps } from './type';
 
@@ -8,11 +9,15 @@ import { Card } from '../Card';
 export const UniquenessCard: React.FC<UniquenessCardProps> = ({
   total,
   text,
+  className,
 }) => {
   return (
     <Card
       isUniqueness
-      className="flex h-auto items-center justify-center gap-4 md:flex-col xl:gap-8"
+      className={classNames(
+        'flex min-h-[98px] items-center justify-center gap-4 md:h-[159px] md:flex-col md:gap-5 xl:h-[182px] xl:gap-8',
+        className,
+      )}
     >
       <span className="font w-[124px] font-roboto text-[27px] font-medium leading-[1.5] text-accent md:w-[130px] md:text-[30px] xl:w-[275px] xl:text-[36px]">
         {total}
@@ -23,18 +28,3 @@ export const UniquenessCard: React.FC<UniquenessCardProps> = ({
     </Card>
   );
 };
-
-// // export const FeaturesCard: React.FC<FeaturesCardProps> = ({
-// //   className = '',
-// //   card,
-// // }) => {
-// //   const { title, text } = card;
-// //   return (
-// // <Card isFeatures className={classNames('h-auto', className)}>
-// //   <h3 className="cardTitleLight mb-4 leading-[1.35] xl:leading-[1.35]">
-// //     {title}
-// //   </h3>
-// //   <p className="cardTextLg leading-[1.35] xl:leading-[1.35]">{text}</p>
-// // </Card>
-// //   );
-// // };
