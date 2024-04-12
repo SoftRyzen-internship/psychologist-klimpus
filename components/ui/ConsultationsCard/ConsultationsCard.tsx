@@ -25,7 +25,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
       <p className="mb-6 font-roboto text-base font-normal leading-[1.35] text-gray md:text-sm md:leading-[1.5] xl:text-base">
         {text}
       </p>
-      <ul className="mb-2 inline-flex flex-wrap gap-2">
+      <ul className="inline-flex flex-wrap gap-2">
         {info.map(item => {
           const { id, infoText } = item;
           return (
@@ -33,7 +33,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
               key={id}
               className=" inline-block rounded-[20px] bg-plashka px-4 py-[6px] font-roboto text-xs font-medium leading-[1.35] text-mainBlack md:text-sm md:leading-[1.35]"
             >
-              {infoText}
+              <p>{infoText}</p>
             </li>
           );
         })}
@@ -42,7 +42,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
         href={href}
         linkType="link"
         isAccent
-        className="inline-flex w-auto py-4 pr-[22px] text-base font-normal leading-[1.35] xl:hidden"
+        className="mb-4 mt-6 inline-flex w-auto text-base font-normal leading-[1.35] xl:hidden"
       >
         {linkText}
       </SiteLink>
