@@ -36,6 +36,7 @@ import { UniquenessCard } from '@/components/ui/UniquenessCard';
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
 import feedbackData from '@/data/feedback.json';
+import uniqueData from '@/data/uniqueness.json';
 
 import { Socials } from '@/components/ui/Socials';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
@@ -59,14 +60,15 @@ export const TestComponent = () => {
           <h2>Features Card</h2>
         </Card>
         <div className="flex flex-col gap-4 md:flex-row">
-          <UniquenessCard
-            total="5000+"
-            text="Годин особистої терапії"
-          ></UniquenessCard>
+          {uniqueData.uniquenessess.map(item => (
+            <UniquenessCard total="5000+" text={item} key={item} />
+          ))}
+          {/* <UniquenessCard total="5000+" text="Годин особистої терапії" />
+          <UniquenessCard total="2000+" text="Сеансів з клієнтами" />
           <UniquenessCard
             total="200+"
             text="Задоволених клієнтів з різних країн"
-          ></UniquenessCard>
+          /> */}
         </div>
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
