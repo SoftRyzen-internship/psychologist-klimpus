@@ -27,6 +27,7 @@ export const Form = () => {
   useFormPersist('FormData', {
     watch,
     setValue,
+    exclude: ['checkbox'],
   });
 
   const checkboxInput = watch(form.checkBox.name);
@@ -48,32 +49,30 @@ export const Form = () => {
   };
 
   return (
-    <>
-      <form
-        className="mx-auto flex flex-col md:max-w-[450px] xl:max-w-[517px]"
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl xl:text-[20px]">
-          {form.formTitle}
-        </h3>
-        {form.inputs.map(item => (
-          <FormInput
-            key={item.name.label}
-            textarea={item.name.textarea}
-            config={item.name}
-            register={register}
-            errors={errors}
-          />
-        ))}
-        <CheckBox
+    <form
+      className="mx-auto flex flex-col md:max-w-[450px] xl:max-w-[517px]"
+      onSubmit={handleSubmit(onSubmit)}
+    >
+      <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl xl:text-[20px]">
+        {form.formTitle}
+      </h3>
+      {form.inputs.map(item => (
+        <FormInput
+          key={item.name.label}
+          textarea={item.name.textarea}
+          config={item.name}
           register={register}
           errors={errors}
-          checkboxInput={checkboxInput}
         />
-        <Button type="submit" className="mt-6 md:mx-auto md:mt-8">
-          {isLoading ? <Loader /> : form.buttonText}
-        </Button>
-      </form>
-    </>
+      ))}
+      <CheckBox
+        register={register}
+        errors={errors}
+        checkboxInput={checkboxInput}
+      />
+      <Button type="submit" className="mt-6 md:mx-auto md:mt-8">
+        {isLoading ? <Loader /> : form.buttonText}
+      </Button>
+    </form>
   );
 };
