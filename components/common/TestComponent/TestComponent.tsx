@@ -26,6 +26,7 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
+'use client';
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -43,10 +44,16 @@ import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
 
+import { BurgerMenu } from '@/components/common/BurgerMenu';
+import { useState } from 'react';
+
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
   const firstFeedback = feedbackData.data[0];
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <div>
@@ -89,6 +96,11 @@ export const TestComponent = () => {
       </div>
       <NavBar />
       <FormSection />
+
+      <button type="button" onClick={() => setIsMenuOpen(true)}>
+        Відкрити
+      </button>
+      <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
     </div>
   );
 };
