@@ -28,14 +28,14 @@ export const Modal = ({ onClose, children, className }: ModalProps) => {
   };
 
   const modalClasses = classNames(
-    'relative mx-auto flex flex-col w-[320px] bg-mainBcg shadow-md',
+    'relative mx-auto flex flex-col w-[320px] bg-white shadow-md',
     className,
   );
 
   return (
     <div
       onClick={OnBackDropClick}
-      className="bg-backdrop fixed bottom-0 right-0 z-10 h-full w-full overscroll-none backdrop-blur-2xl"
+      className="fixed bottom-0 right-0 z-10 h-full w-full overscroll-none bg-backdrop backdrop-blur-2xl"
     >
       <div className={modalClasses}>
         <button
