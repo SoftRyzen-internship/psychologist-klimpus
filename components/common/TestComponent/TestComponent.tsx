@@ -38,10 +38,9 @@ import dataJson from '@/data/features.json';
 import feedbackData from '@/data/feedback.json';
 
 import { Socials } from '@/components/ui/Socials';
-import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+// import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
-
-import React from 'react';
+import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
 
@@ -91,11 +90,12 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
-      <ButtonTestComponent />
+      {/* <ButtonTestComponent /> */}
       <div className="container bg-white">
         <FeedbackCard data={firstFeedback} />
       </div>
       <NavBar />
+      <FormSection />
     </div>
   );
 };
