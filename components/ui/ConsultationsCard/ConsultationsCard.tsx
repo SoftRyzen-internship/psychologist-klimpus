@@ -42,7 +42,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
         href={href}
         linkType="link"
         isAccent
-        className="w-auto py-4 pr-[22px] xl:hidden"
+        className="inline-flex w-auto py-4 pr-[22px] text-base font-normal leading-[1.35] xl:hidden"
       >
         {linkText}
       </SiteLink>
