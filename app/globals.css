@@ -79,6 +79,15 @@
   fill: #900c32;
 }
 
+/*-----ConsultationsCard styles start-------*/
+@media (min-width: 1280px) {
+  .consultationsCard:hover a,
+  .consultationsCard:focus a {
+    display: inline-flex;
+  }
+}
+/*-----ConsultationsCard styles end-------*/
+
 /*-----slider-------*/
 .swiper .swiper-slide {
   height: auto;
