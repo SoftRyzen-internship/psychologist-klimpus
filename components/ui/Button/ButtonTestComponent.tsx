@@ -39,7 +39,7 @@ export const ButtonTestComponent: React.FC<ButtonProps> = () => {
         linkType="link"
         href={common.url.individual}
         isAccent={false}
-        className="outline-dashed"
+        className="w-[200px] outline-dashed"
       >
         {common.linksText.inDetail}
       </SiteLink>

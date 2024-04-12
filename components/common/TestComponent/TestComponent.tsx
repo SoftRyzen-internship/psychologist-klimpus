@@ -32,10 +32,13 @@ import { Icons } from '@/components/ui/Icons';
 
 import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
+import { UniquenessCard } from '@/components/ui/UniquenessCard';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
+// import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
+import uniqueData from '@/data/uniqueness.json';
 
 import { Socials } from '@/components/ui/Socials';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
@@ -50,6 +53,7 @@ import { useState } from 'react';
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
+  // const { consultationsList } = consultations;
   const firstFeedback = feedbackData.data[0];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,10 +67,17 @@ export const TestComponent = () => {
         <Card isFeatures className="mb-6">
           <h2>Features Card</h2>
         </Card>
-
-        <Card isUniqueness className="mb-6">
-          <h2>Uniqueness Card</h2>
-        </Card>
+        <div className="flex flex-col gap-4 md:flex-row">
+          {uniqueData.uniquenessess.map(item => (
+            <UniquenessCard total="5000+" text={item} key={item} />
+          ))}
+          {/* <UniquenessCard total="5000+" text="Годин особистої терапії" />
+          <UniquenessCard total="2000+" text="Сеансів з клієнтами" />
+          <UniquenessCard
+            total="200+"
+            text="Задоволених клієнтів з різних країн"
+          /> */}
+        </div>
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>

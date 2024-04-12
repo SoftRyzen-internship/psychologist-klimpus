@@ -25,6 +25,7 @@ export const FormInput: React.FC<FormInputProps> = ({
         <textarea
           id={name}
           placeholder={placeholder}
+          {...register(name)}
           className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6"
         />
       ) : (
