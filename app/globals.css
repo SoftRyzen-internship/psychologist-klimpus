@@ -77,3 +77,14 @@
 .navbar-btn:active .navbar-icon path {
   fill: #900c32;
 }
+
+/*-----Slider Buttons-------*/
+
+.slider-button {
+  @apply h-[40px] w-[40px] text-accent transition hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent;
+}
+
+.button-next.swiper-button-disabled,
+.button-prev.swiper-button-disabled {
+  @apply text-disabled;
+}
