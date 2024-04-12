@@ -1,6 +1,6 @@
-type DescriptionItem = {
+type InfoItem = {
   id: number;
-  descrText: string;
+  infoText: string;
 };
 
 export type ConsultationsCardProps = {
@@ -8,7 +8,9 @@ export type ConsultationsCardProps = {
     id: number;
     title: string;
     text: string;
-    description: DescriptionItem[];
+    linkText: string;
+    href: string;
+    info: InfoItem[];
   };
   className?: string;
   isConsultations?: boolean;

@@ -92,10 +92,16 @@ export const TestComponent = () => {
       </div>
       <NavBar />
       <FormSection />
-      <div className="container gap-5 pb-6 pt-6 xl:flex">
-        {consultationsList.map(item => {
-          return <ConsultationsCard key={item.id} card={item} />;
-        })}
+      <div className="container pb-6 pt-6 ">
+        <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
+          {consultationsList.map(item => {
+            return (
+              <li key={item.id}>
+                <ConsultationsCard card={item} />
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
