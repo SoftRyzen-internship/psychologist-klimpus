@@ -123,3 +123,11 @@ Here you may find a list of the most common components and their API:
 | Prop   | Value                           | Description             |
 | ------ | ------------------------------- | ----------------------- |
 | `data` | `{text: string, owner: string}` | required, set card data |
+
+- #### UniquenessCard
+
+| Prop        | Value    | Description                                            |
+| ----------- | -------- | ------------------------------------------------------ |
+| `total`     | `string` | required, sets amount at card                          |
+| `text`      | `string` | required, sets text at card                            |
+| `className` | `string` | optional, you can add some additional styles if needed |
