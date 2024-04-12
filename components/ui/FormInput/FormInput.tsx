@@ -1,9 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
-
 import classNames from 'classnames';
-
 import { FormInputProps } from './types';
+import Error from '@/public/icons/inputError.svg';
 
 export const FormInput: React.FC<FormInputProps> = ({
   textarea,
@@ -27,16 +25,7 @@ export const FormInput: React.FC<FormInputProps> = ({
         <textarea
           id={name}
           placeholder={placeholder}
-          {...register(name, {
-            ...validation,
-            required: isRequired,
-            pattern: {
-              value: validation?.pattern
-                ? new RegExp(validation.pattern.value)
-                : new RegExp(''),
-              message: validation?.pattern ? validation?.pattern?.message : '',
-            },
-          })}
+          {...register(name)}
           className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6"
         />
       ) : (
@@ -86,13 +75,10 @@ export const FormInput: React.FC<FormInputProps> = ({
             className="text-left font-roboto text-sm leading-[1.35] "
           >
             {isError.message}
-
-            <Image
-              src="/icons/inputError.svg"
-              alt="error icon"
+            <Error
               width={24}
               height={24}
-              className="absolute right-[18px] top-[-40px]  z-10 "
+              className="absolute right-[18px] top-[-40px] z-10"
             />
           </span>
         </div>
