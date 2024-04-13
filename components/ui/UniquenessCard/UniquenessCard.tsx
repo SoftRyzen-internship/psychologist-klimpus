@@ -7,7 +7,7 @@ import { UniquenessCardProps } from './type';
 import { Card } from '../Card';
 
 export const UniquenessCard: React.FC<UniquenessCardProps> = ({
-  total,
+  quantity,
   text,
   className,
 }) => {
@@ -19,10 +19,10 @@ export const UniquenessCard: React.FC<UniquenessCardProps> = ({
         className,
       )}
     >
-      <span className="font w-[124px] font-roboto text-[27px] font-medium leading-[1.5] text-accent md:w-[130px] md:text-[30px] xl:w-[275px] xl:text-[36px]">
-        {total}
+      <span className="font w-[124px] font-roboto text-[27px] font-medium leading-[1.5] text-accent md:w-[117px] md:text-[30px] xl:w-[275px] xl:text-[36px]">
+        {quantity}
       </span>
-      <p className="cardTextLg xl:pr-18 w-[124px] whitespace-pre-line leading-[1.35] md:h-16 md:w-[130px] xl:w-[275px] xl:leading-[1.35] smOnly:pr-2">
+      <p className="cardTextLg xl:pr-18 w-[124px] whitespace-pre-line leading-[1.35] md:h-16 md:w-[117px] xl:w-[275px] xl:leading-[1.35] smOnly:pr-2">
         {text}
       </p>
     </Card>
