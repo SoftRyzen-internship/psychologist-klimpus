@@ -32,6 +32,7 @@ import { Icons } from '@/components/ui/Icons';
 import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { UniquenessCard } from '@/components/ui/UniquenessCard';
+import { RequestCard } from '@/components/ui/RequestsCard';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
@@ -66,13 +67,16 @@ export const TestComponent = () => {
           {uniqueData.uniquenessess.map(item => (
             <UniquenessCard total="5000+" text={item} key={item} />
           ))}
-          {/* <UniquenessCard total="5000+" text="Годин особистої терапії" />
-          <UniquenessCard total="2000+" text="Сеансів з клієнтами" />
-          <UniquenessCard
-            total="200+"
-            text="Задоволених клієнтів з різних країн"
-          /> */}
         </div>
+        <RequestCard
+          image={{
+            mob: '/images/requests/request-card-mob-1@2x.webp',
+            tab: '/images/requests/request-card-tab-1@2x.webp',
+            pc: '/images/requests/request-card-pc-1@2x.webp',
+          }}
+          requestSet={['1', '2', '3']}
+          alt=""
+        />
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
