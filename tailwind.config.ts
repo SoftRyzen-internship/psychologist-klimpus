@@ -23,8 +23,8 @@ const config: Config = {
         padding: {
           DEFAULT: '1rem',
           sm: '1rem',
-          md: '2rem',
-          xl: '2rem',
+          md: '1.875rem',
+          xl: '1.875rem',
         },
       },
       backgroundImage: {
