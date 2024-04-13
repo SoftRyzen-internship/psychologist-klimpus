@@ -1,10 +1,10 @@
 import React from 'react';
 
 export interface RequestCardProps {
-  image: {
-    mob: string;
-    tab: string;
-    pc: string;
+  images: {
+    mobImage: string;
+    tabImage: string;
+    pcImage: string;
   };
   alt: string;
   requestSet: string[];

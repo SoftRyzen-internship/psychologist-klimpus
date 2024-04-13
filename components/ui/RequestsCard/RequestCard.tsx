@@ -8,7 +8,7 @@ import { useScreen } from '@/utils/useScreen';
 import { RequestCardProps } from './type';
 
 export const RequestCard: React.FC<RequestCardProps> = ({
-  image,
+  images,
   alt,
   requestSet,
   className,
@@ -17,18 +17,26 @@ export const RequestCard: React.FC<RequestCardProps> = ({
 
   const styles = classNames(
     className,
-    'rounded-[20px] outline-dotted w-[328px] md:w-[255px] xl:w-[237px] relative',
+    'rounded-[20px] smOnly:max-w-[428px] md:w-[255px] xl:w-[237px] relative',
   );
 
   return (
     <div className={styles}>
-      {isMobile && <Image width={328} height={230} src={image.mob} alt={alt} />}
-      {isTablet && <Image width={255} height={327} src={image.tab} alt={alt} />}
-      {isDesktop && <Image width={237} height={327} src={image.pc} alt={alt} />}
-      <ul className="absolute bottom-2 left-2 flex flex-wrap">
+      {isMobile && (
+        <Image width={428} height={300} src={images.mobImage} alt={alt} />
+      )}
+      {isTablet && (
+        <Image width={255} height={327} src={images.tabImage} alt={alt} />
+      )}
+      {isDesktop && (
+        <Image width={237} height={327} src={images.pcImage} alt={alt} />
+      )}
+      <ul className="absolute bottom-4 left-5 flex flex-wrap gap-2">
         {requestSet.map(item => (
           <li key={item}>
-            <span>{item}</span>
+            <p className="cardTextSm rounded-[20px] bg-plashkaBlack px-3 py-1 text-white smOnly:leading-[1.35]">
+              {item}
+            </p>
           </li>
         ))}
       </ul>

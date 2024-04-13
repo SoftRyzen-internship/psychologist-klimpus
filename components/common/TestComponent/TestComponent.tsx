@@ -39,6 +39,7 @@ import dataJson from '@/data/features.json';
 import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
 import uniqueData from '@/data/uniqueness.json';
+import requestData from '@/data/requests.json';
 
 import { Socials } from '@/components/ui/Socials';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
@@ -68,15 +69,18 @@ export const TestComponent = () => {
             <UniquenessCard total="5000+" text={item} key={item} />
           ))}
         </div>
-        <RequestCard
-          image={{
-            mob: '/images/requests/request-card-mob-1@2x.webp',
-            tab: '/images/requests/request-card-tab-1@2x.webp',
-            pc: '/images/requests/request-card-pc-1@2x.webp',
-          }}
-          requestSet={['1', '2', '3']}
-          alt=""
-        />
+        <ul className="flex flex-col flex-wrap gap-4 md:flex-row">
+          {requestData.cards.map(item => (
+            <li key={item.id}>
+              <RequestCard
+                images={item.images}
+                requestSet={item.requestSet}
+                alt={item.alt}
+              />
+            </li>
+          ))}
+        </ul>
+
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
