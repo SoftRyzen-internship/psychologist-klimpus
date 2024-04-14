@@ -3,6 +3,8 @@
 import React from 'react';
 
 import classNames from 'classnames';
+// import { performRequest } from '@/lib/datocms';
+// import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
 import { ConsultationsCardProps } from './type';
 
@@ -13,7 +15,12 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
   className = '',
   card,
 }) => {
+  // const { data } = await performRequest({ query: consultancyPlatesQuery });
+  // const plates = data.consultancyPlate.plates;
+  // console.log(plates);
+
   const { title, text, info, linkText, href } = card;
+
   return (
     <Card
       isConsultations
