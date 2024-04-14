@@ -3,7 +3,7 @@ import { ConsultationsList } from '@/components/ui/ConsultationsList';
 import consultations from '@/data/consultations.json';
 
 export const ConsultationsSection = () => {
-  const { preTitle, sectionTitle } = consultations;
+  const { preTitle, sectionTitle, sectionText } = consultations;
   return (
     <section className="section">
       <div className="container gap-4 md:flex xl:gap-[18px]">
@@ -14,6 +14,7 @@ export const ConsultationsSection = () => {
           <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
           </h2>
+          <p className="subtitleConsultation">{sectionText}</p>
           <ConsultationsList />
         </div>
       </div>

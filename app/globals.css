@@ -58,8 +58,9 @@
 /*-----ContactsLink styles end-------*/
 /*-----featuresCard styles start-------*/
 @media (min-width: 1280px) {
-  .featuresCard:nth-child(2) p {
-    width: 160px;
+  .featuresCard:nth-child(2) p,
+  .featuresCard:nth-child(3) p {
+    width: 150px;
   }
 }
 /*-----featuresCard styles end-------*/
@@ -82,7 +83,7 @@
 @media (min-width: 1280px) {
   .consultationsCard:hover a,
   .consultationsCard:focus a {
-    display: inline-flex;
+    opacity: 1;
   }
 }
 /*-----ConsultationsCard styles end-------*/
