@@ -1,23 +1,19 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { Swiper as SwiperType } from 'swiper';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
 import { SliderBtn } from '@/components/ui/SliderBtn/SliderBtn';
 
-type SliderProps = {
-  data: any[];
-  component: any;
-  section: 'community' | 'requestsMain' | 'requestsConsultancy' | 'reviews';
-  className?: string;
-};
+import { SliderProps } from './type';
 
-export const Slider = ({
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+export const Slider: React.FC<SliderProps> = ({
   data,
   component: Card,
   section,
@@ -33,7 +29,6 @@ export const Slider = ({
       nextEl: `.button-next-${section}`,
       prevEl: `.button-prev-${section}`,
     },
-    //   slidesPerView: section === 'requestsMain' ? 2 : 1,
     slidesPerView: 1,
     spaceBetween: 16,
     onSlideChange: (swiper: SwiperType) => {
@@ -43,7 +38,6 @@ export const Slider = ({
     breakpoints: {
       768: {
         slidesPerView: section === 'requestsConsultancy' ? 3 : 2,
-        // spaceBetween: 16,
       },
 
       1280: {
@@ -51,8 +45,6 @@ export const Slider = ({
         spaceBetween: 20,
       },
     },
-
-    // lazyPreloadPrevNext: 1,
   };
 
   return (

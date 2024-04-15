@@ -29,27 +29,19 @@ import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
+import { SliderTestComponent } from '../Slider/SliderTestComponent';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => setIsMenuOpen(false);
+  const requestDatas = requestData.cards[0];
 
   return (
     <div>
       <div className="container bg-white pb-6 pt-6">
-        <ul className="flex flex-col flex-wrap gap-4 md:flex-row">
-          {requestData.cards.map(item => (
-            <li key={item.id}>
-              <RequestCard
-                images={item.images}
-                requestSet={item.requestSet}
-                alt={item.alt}
-              />
-            </li>
-          ))}
-        </ul>
+        <RequestCard data={requestDatas} />
       </div>
 
       <div className="container gap-5 bg-white pb-6 pt-6 xl:flex">
@@ -64,6 +56,7 @@ export const TestComponent = () => {
         Відкрити
       </button>
       <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
+      <SliderTestComponent />
     </div>
   );
 };

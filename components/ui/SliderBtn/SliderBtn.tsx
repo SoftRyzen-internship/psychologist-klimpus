@@ -1,15 +1,13 @@
+import React from 'react';
+
 import classNames from 'classnames';
 
 import ArrowLeft from '@/public/icons/arrowLeftMd.svg';
 import ArrowRight from '@/public/icons/arrowRightMd.svg';
 
-type SliderBtnProps = {
-  section: string;
-  isNextSlide: boolean;
-  isPrevSlide: boolean;
-};
+import { SliderBtnProps } from './types';
 
-export const SliderBtn = ({
+export const SliderBtn: React.FC<SliderBtnProps> = ({
   section,
   isNextSlide,
   isPrevSlide,
