@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card1-mob@2x.webp",
+        "mob480Image": "/images/consultationsRequests/family/card1-mob@2x.webp",
+        "tabImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp",
+        "pcImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp"
+      },
+      "requestText": "Втрата почуттів"
+    },
+    {
+      "id": 2,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card2-mob@2x.webp",
+        "mob480Image": "/images/consultationsRequests/family/card2-mob@2x.webp",
+        "tabImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp",
+        "pcImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp"
+      },
+      "requestText": "Конфлікти та насилля"
+    },
+    {
+      "id": 3,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card3-mob@2x.webp",
+        "mob480Image": "/images/consultationsRequests/family/card3-mob@2x.webp",
+        "tabImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp",
+        "pcImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp"
+      },
+      "requestText": "Ревнощі та зрада"
+    },
+    {
+      "id": 4,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card4-mob@2x.webp",
+        "mob480Image": "/images/consultationsRequests/family/card4-mob@2x.webp",
+        "tabImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp",
+        "pcImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp"
+      },
+      "requestText": "Відносини при розлученні"
+    },
+    {
+      "id": 5,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card5-mob@2x.webp",
+        "mob480Image": "/images/consultationsRequests/family/card5-mob@2x.webp",
+        "tabImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp",
+        "pcImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp"
+      },
+      "requestText": "Проблеми батьківства"
+    }
+  ]
+}

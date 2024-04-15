@@ -24,15 +24,18 @@ import { RequestCard } from '@/components/ui/RequestsCard';
 
 import dataJson from '@/data/features.json';
 import requestData from '@/data/requests.json';
+import consultationsRequests from '@/data/consultationsRequests.json';
 
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
 
 import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
 import { SliderTestComponent } from '../Slider/SliderTestComponent';
+import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
+  const { cards } = consultationsRequests;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => setIsMenuOpen(false);
@@ -57,6 +60,11 @@ export const TestComponent = () => {
       </button>
       <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
       <SliderTestComponent />
+      <div className="container gap-5  pb-6 pt-6 xl:flex">
+        {cards.map(item => {
+          return <ConsultationsRequestCard key={item.id} card={item} />;
+        })}
+      </div>
     </div>
   );
 };
