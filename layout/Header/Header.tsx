@@ -33,9 +33,15 @@ export const Header = () => {
         <div className="hidden xl:flex">
           <NavBar />
         </div>
-        <SiteLink href={common.url.contacts} linkType="scroll" isAccent={false}>
+        <SiteLink
+          href={common.url.contacts}
+          linkType="scroll"
+          isAccent={false}
+          className="ml-auto notXL:hidden"
+        >
           {common.linksText.contacts}
         </SiteLink>
+
         <button
           type="button"
           className="block transition hover:scale-110 xl:hidden"
