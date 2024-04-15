@@ -32,12 +32,14 @@ import { Icons } from '@/components/ui/Icons';
 import { Card } from '@/components/ui/Card';
 import { SectionTitle } from '@/components/ui/SectionTitle';
 import { UniquenessCard } from '@/components/ui/UniquenessCard';
+import { RequestCard } from '@/components/ui/RequestsCard';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
 import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
 import uniqueData from '@/data/uniqueness.json';
+import requestData from '@/data/requests.json';
 
 import { Socials } from '@/components/ui/Socials';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
@@ -66,13 +68,19 @@ export const TestComponent = () => {
           {uniqueData.uniquenessess.map(item => (
             <UniquenessCard total="5000+" text={item} key={item} />
           ))}
-          {/* <UniquenessCard total="5000+" text="Годин особистої терапії" />
-          <UniquenessCard total="2000+" text="Сеансів з клієнтами" />
-          <UniquenessCard
-            total="200+"
-            text="Задоволених клієнтів з різних країн"
-          /> */}
         </div>
+        <ul className="flex flex-col flex-wrap gap-4 md:flex-row">
+          {requestData.cards.map(item => (
+            <li key={item.id}>
+              <RequestCard
+                images={item.images}
+                requestSet={item.requestSet}
+                alt={item.alt}
+              />
+            </li>
+          ))}
+        </ul>
+
         <Card isConsultations className="mb-6">
           <h2>Consultations Card</h2>
         </Card>
