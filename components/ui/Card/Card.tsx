@@ -14,14 +14,14 @@ export const Card: React.FC<CardProps> = ({
   isCommunities,
 }) => {
   const classname = classNames(
-    'rounded-[20px] bg-bgBeige w-full h-full',
+    'rounded-[20px] bg-bgBeige w-full ',
     {
       'py-4 px-[31px] xl:px-6 md:w-[255px] xl:w-[238px]': isFeatures,
-      'py-4 xl:py-6 px-6 md:w-[178px] xl:w-[323px]': isUniqueness,
+      'py-4 xl:py-6 px-6 md:w-[178px] xl:w-[323px] h-full': isUniqueness,
       'py-6 xl:py-12 px-4 md:px-[46px] xl:px-8 md:w-[527px] xl:w-[316px]':
         isConsultations,
       'py-6 px-4 md:px-6 md:w-[255px] xl:w-[323px]': isReviews,
-      'py-3 px-[51px] md:w-[346px] xl:w-[289px]': isCommunities,
+      'py-3 px-[51px] md:w-[346px] xl:w-[289px] h-full': isCommunities,
     },
     className,
   );
