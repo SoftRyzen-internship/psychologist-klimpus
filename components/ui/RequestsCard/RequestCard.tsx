@@ -34,7 +34,7 @@ export const RequestCard: React.FC<RequestCardProps> = ({
       <ul className="absolute bottom-4 left-5 flex flex-wrap gap-2">
         {requestSet.map(item => (
           <li key={item}>
-            <p className="cardTextSm rounded-[20px] bg-plashkaBlack px-3 py-1 text-white smOnly:leading-[1.35]">
+            <p className="cardTextSm rounded-[20px] bg-plashkaBlack px-3 py-1 text-white md:leading-[1.5] smOnly:leading-[1.35]">
               {item}
             </p>
           </li>
