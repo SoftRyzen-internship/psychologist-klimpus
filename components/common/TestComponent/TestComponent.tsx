@@ -44,11 +44,10 @@ import requestData from '@/data/requests.json';
 import { Socials } from '@/components/ui/Socials';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
-import { FormSection } from '@/sections/FormSection';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
 import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
-import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+// import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
 import { AboutSection } from '@/sections/Main/AboutSection';
 
 export const TestComponent = () => {
@@ -105,13 +104,12 @@ export const TestComponent = () => {
         })}
       </div>
       <NavBar />
-      <ButtonTestComponent />
+      {/* <ButtonTestComponent /> */}
       <div className="container bg-white">
         <FeedbackCard data={firstFeedback} />
       </div>
       <NavBar />
       <AboutSection />
-      <FormSection />
       <div className="container pb-6 pt-6 ">
         <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
           {consultationsList.map(item => {
