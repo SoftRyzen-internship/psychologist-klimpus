@@ -1,6 +1,7 @@
 import { TestComponent } from '@/components/common/TestComponent';
 import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
+import { FormSection } from '@/sections/FormSection';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <FeaturesSection />
       <ConsultationsSection />
       <TestComponent />
+      <FormSection />
     </>
   );
 }
