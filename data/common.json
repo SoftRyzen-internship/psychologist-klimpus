@@ -6,6 +6,24 @@
   "header": {
     "logo": "Ірина Климпуш"
   },
+  "footer": {
+    "title": "Контакти:",
+    "text": "Створено при підтримці",
+    "copyright": "© 2024 Ірина Климпуш. Всі права захищені.",
+    "policyText": "Terms of Service & Privacy Policy",
+    "links": [
+      {
+        "name": "softryzen",
+        "path": "https://www.softryzen.com/",
+        "ariaLabel": "посилання на веб-сайт SoftRyzen"
+      },
+      {
+        "name": "goit",
+        "path": "https://goit.global/ua/",
+        "ariaLabel": "посилання на веб-сайт GoIT"
+      }
+    ]
+  },
   "DropdownList": [
     {
       "text": "Індивідуальна консультація",
