@@ -34,6 +34,7 @@ const config: Config = {
         cardOverlay:
           'linear-gradient(180deg, rgba(0, 0, 0, 0.65) 15.4%, rgba(0, 0, 0, 0.39) 23.9%, rgba(0, 0, 0, 0.00) 34.4%)',
         checkmark: `url(/icons/checkmark.svg)`,
+        backdrop: `linear-gradient(rgba(41, 41, 41, 0.40),rgba(41, 41, 41, 0.40))`,
       },
       content: {
         arrowDiagonal: `url(/icons/arrowDiagonal.svg)`,

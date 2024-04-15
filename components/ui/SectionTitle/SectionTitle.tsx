@@ -1,5 +1,8 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
+import classNames from 'classnames';
+import { SectionTitleProps } from './types';
 
-export const SectionTitle = ({ children }: { children: ReactNode }) => {
-  return <h2 className="sectionTitle">{children}</h2>;
+export const SectionTitle = ({ children, className }: SectionTitleProps) => {
+  const titleStyles = classNames('sectionTitle', className);
+  return <h2 className={titleStyles}>{children}</h2>;
 };

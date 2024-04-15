@@ -131,3 +131,12 @@ Here you may find a list of the most common components and their API:
 | `total`     | `string` | required, sets amount at card                          |
 | `text`      | `string` | required, sets text at card                            |
 | `className` | `string` | optional, you can add some additional styles if needed |
+
+- #### RequestCard
+
+| Prop         | Value                                                  | Description                                            |
+| ------------ | ------------------------------------------------------ | ------------------------------------------------------ |
+| `images`     | `{mobImage: string, tabImage: string, pcImage:string}` | required, set of images for card                       |
+| `alt`        | `string`                                               | required, alt of image                                 |
+| `requestSet` | `string[]`                                             | required, set of client's requests                     |
+| `className`  | `string`                                               | optional, you can add some additional styles if needed |
