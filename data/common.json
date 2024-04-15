@@ -70,5 +70,10 @@
     "contacts": "/contacts",
     "individual": "/individual"
   },
-  "ariaLabelClose": "Закрити мобільне меню"
+  "ariaLabelClose": "Закрити мобільне меню",
+  "layout": {
+    "aria-label": {
+      "burger": "Бургер меню"
+    }
+  }
 }
