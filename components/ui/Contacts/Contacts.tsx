@@ -32,36 +32,34 @@ export const Contacts: React.FC<ContactsProps> = ({
   });
 
   return (
-    <div className="container">
-      <ul className={classList}>
-        {contacts.map(contact => {
-          const { name, value } = contact;
-          return (
-            <li key={name} className="h-[25px]">
-              <Link
-                href={name === 'email' ? `mailto:${value}` : `tel:${value}`}
-                className={classLink}
-              >
-                {name === 'email' && (
-                  <Email
-                    className={classNames('h-[25px] w-[25px]', {
-                      'text-accent': !isFooter,
-                    })}
-                  />
-                )}
-                {name === 'tel' && (
-                  <Tel
-                    className={classNames('h-[25px] w-[25px]', {
-                      'text-accent': !isFooter,
-                    })}
-                  />
-                )}
-                <span className="py-[3px] md:py-[2px] xl:py-0">{value}</span>
-              </Link>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+    <ul className={classList}>
+      {contacts.map(contact => {
+        const { name, value } = contact;
+        return (
+          <li key={name} className="h-[25px]">
+            <Link
+              href={name === 'email' ? `mailto:${value}` : `tel:${value}`}
+              className={classLink}
+            >
+              {name === 'email' && (
+                <Email
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
+              )}
+              {name === 'tel' && (
+                <Tel
+                  className={classNames('h-[25px] w-[25px]', {
+                    'text-accent': !isFooter,
+                  })}
+                />
+              )}
+              <span className="py-[3px] md:py-[2px] xl:py-0">{value}</span>
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 };
