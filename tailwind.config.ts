@@ -21,10 +21,10 @@ const config: Config = {
       container: {
         center: true,
         padding: {
-          DEFAULT: '16px',
-          sm: '16px',
-          md: '30px',
-          xl: '30px',
+          DEFAULT: '1rem',
+          sm: '1rem',
+          md: '1.875rem',
+          xl: '1.875rem',
         },
       },
       backgroundImage: {
