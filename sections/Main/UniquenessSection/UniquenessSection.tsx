@@ -1,15 +1,31 @@
-//import { UniquenessCard } from '@/components/ui/UniquenessCard';
 import { UniquenessCard } from '@/components/ui/UniquenessCard';
 import uniquenessData from '@/data/uniqueness.json';
 import { performRequest } from '@/lib/datocms';
 import { uniquenessQuery } from '@/lib/queries/uniquenessQuery';
 import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+//import { StaticUniquenessData } from './types';
 
 export const UniquenessSection = async () => {
-  const { preTitle, sectionTitle } = uniquenessData;
+  const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;
   const { data } = await performRequest({ query: uniquenessQuery });
-  const uniqueness: UniquenessCardProps[] = data.uniqueness.cards;
-  //console.log(data, error);
+  const uniquenessess: UniquenessCardProps[] = data.uniqueness.cards;
+
+  console.log('dato: ', uniquenessess);
+
+  const mergeData = (
+    datoData: UniquenessCardProps[],
+    staticData: UniquenessCardProps[],
+  ) => {
+    const result = staticData.map(y =>
+      Object.assign(
+        y,
+        datoData.find(x => x.text === y.text),
+      ),
+    );
+    return result;
+  };
+  mergeData(uniquenessess, staticUniquenessess);
+
   return (
     <section className="section">
       <div className="container gap-4 md:flex xl:gap-[18px]">
@@ -21,7 +37,7 @@ export const UniquenessSection = async () => {
             {sectionTitle}
           </h2>
           <ul className="flex flex-col gap-4 md:flex-row xl:gap-5">
-            {uniqueness.map(item => (
+            {uniquenessess.map(item => (
               <li key={item.id}>
                 <UniquenessCard
                   id={item.id}
@@ -31,7 +47,6 @@ export const UniquenessSection = async () => {
               </li>
             ))}
           </ul>
-          {/* <p>{error.message}</p> */}
         </div>
       </div>
     </section>
