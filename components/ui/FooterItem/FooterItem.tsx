@@ -11,7 +11,7 @@ export const FooterItem: React.FC<FooterItemProps> = ({
   ariaL,
 }) => {
   return (
-    <li key={name} className="p-3">
+    <li key={name} className="p-3 first:pl-0">
       <a
         href={href}
         aria-label={ariaL}
@@ -19,7 +19,7 @@ export const FooterItem: React.FC<FooterItemProps> = ({
         rel="noopener noreferrer nofollow"
         className=" text-white transition hover:text-rose focus-visible:text-accent active:text-accent"
       >
-        {name === 'goit' && <GoItIcon className="h-10 w-[92px]" />}
+        {name === 'goit' && <GoItIcon className="h-10 w-[92px] pl-0" />}
         {name === 'softryzen' && <SoftRyzenIcon className=" h-10 w-[149px]" />}
       </a>
     </li>
