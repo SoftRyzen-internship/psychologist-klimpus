@@ -1,5 +1,3 @@
-'use client';
-
 import { ConsultationsList } from '@/components/ui/ConsultationsList';
 
 import consultations from '@/data/consultations.json';

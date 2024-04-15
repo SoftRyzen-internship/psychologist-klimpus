@@ -1,6 +1,8 @@
-type InfoItem = {
-  id: number;
-  infoText: string;
+export type Plate = {
+  id: string;
+  format: string;
+  frequency: string;
+  duration: string;
 };
 
 export type ConsultationsCardProps = {
@@ -10,7 +12,6 @@ export type ConsultationsCardProps = {
     text: string;
     linkText: string;
     href: string;
-    info: InfoItem[];
   };
   className?: string;
   isConsultations?: boolean;

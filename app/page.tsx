@@ -1,4 +1,5 @@
 import { TestComponent } from '@/components/common/TestComponent';
+import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <p>Homepage</p>
       <FeaturesSection />
+      <ConsultationsSection />
       <TestComponent />
     </>
   );
