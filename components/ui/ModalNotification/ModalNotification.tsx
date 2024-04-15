@@ -22,13 +22,11 @@ export const ModalNotification: React.FC<ModalNotificationProps> = ({
     };
   }, [isOpen]);
 
-  const notificationType = type === 'success' ? 'success' : 'error';
-
   return (
     <>
       {isOpen && (
         <Modal onClose={onClose} className={modalClassName}>
-          <Notification type={notificationType} />
+          <Notification type={type} />
         </Modal>
       )}
     </>
