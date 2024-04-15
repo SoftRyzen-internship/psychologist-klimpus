@@ -48,7 +48,6 @@ import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
 import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
 // import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
-import { AboutSection } from '@/sections/Main/AboutSection';
 
 export const TestComponent = () => {
   const { logo } = data.header;
@@ -109,7 +108,7 @@ export const TestComponent = () => {
         <FeedbackCard data={firstFeedback} />
       </div>
       <NavBar />
-      <AboutSection />
+
       <div className="container pb-6 pt-6 ">
         <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
           {consultationsList.map(item => {
