@@ -16,6 +16,7 @@
     "test-all": "npm run check-format && npm run check-lint && npm run check-types && npm run build"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
     "classnames": "^2.5.1",
     "graphql-request": "^6.1.0",
     "next": "14.1.4",

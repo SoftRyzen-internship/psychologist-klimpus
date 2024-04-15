@@ -4,7 +4,7 @@
     { "name": "tel", "value": "+447404864095" }
   ],
   "header": {
-    "logo": "Климпуш Ірина"
+    "logo": "Ірина Климпуш"
   },
   "DropdownList": [
     {
@@ -69,5 +69,6 @@
   "url": {
     "contacts": "/contacts",
     "individual": "/individual"
-  }
+  },
+  "ariaLabelClose": "Закрити мобільне меню"
 }

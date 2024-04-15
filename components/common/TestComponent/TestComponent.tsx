@@ -1,6 +1,6 @@
 // import Image from 'next/image';
 // import { ReactNode } from 'react';
-// import { useState, useEffect } from 'react';
+// import { useState } from 'react';
 
 // import classNames from 'classnames';
 // import { useMediaQuery } from 'react-responsive';
@@ -26,6 +26,7 @@
 // export const TestComponent = ({ children, className = '' }: ITestComponent) => {
 //   return <div className={classNames('container', className)}>{children}</div>;
 // };
+'use client';
 import { Contacts } from '@/components/ui/Contacts';
 import { Icons } from '@/components/ui/Icons';
 
@@ -36,7 +37,7 @@ import { RequestCard } from '@/components/ui/RequestsCard';
 
 import data from '@/data/common.json';
 import dataJson from '@/data/features.json';
-import consultations from '@/data/consultations.json';
+// import consultations from '@/data/consultations.json';
 import feedbackData from '@/data/feedback.json';
 import uniqueData from '@/data/uniqueness.json';
 import requestData from '@/data/requests.json';
@@ -46,14 +47,18 @@ import { Socials } from '@/components/ui/Socials';
 import { FeaturesCard } from '@/components/ui/FeaturesCard';
 import { NavBar } from '../NavBar';
 import { FeedbackCard } from '../FeedbackCard';
-import { ConsultationsCard } from '@/components/ui/ConsultationsCard';
-// import { ButtonTestComponent } from '@/components/ui/Button/ButtonTestComponent';
+
+import { BurgerMenu } from '@/components/common/BurgerMenu';
+import { useState } from 'react';
 
 export const TestComponent = () => {
   const { logo } = data.header;
   const { featuresList } = dataJson;
-  const { consultationsList } = consultations;
+  // const { consultationsList } = consultations;
   const firstFeedback = feedbackData.data[0];
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <div>
@@ -104,21 +109,17 @@ export const TestComponent = () => {
       </div>
       <NavBar />
       {/* <ButtonTestComponent /> */}
+      {/* <ButtonTestComponent /> */}
       <div className="container bg-white">
         <FeedbackCard data={firstFeedback} />
       </div>
       <NavBar />
-      <div className="container pb-6 pt-6 ">
-        <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
-          {consultationsList.map(item => {
-            return (
-              <li key={item.id}>
-                <ConsultationsCard card={item} />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      {/* <FormSection /> */}
+
+      <button type="button" onClick={() => setIsMenuOpen(true)}>
+        Відкрити
+      </button>
+      <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
     </div>
   );
 };
