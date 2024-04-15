@@ -8,7 +8,7 @@
 
 @layer utilities {
   .section {
-    @apply mb-[54px] w-full md:mb-20 xl:mb-[100px];
+    @apply w-full pb-[54px] md:pb-20 xl:pb-[100px];
   }
   .sectionTitle {
     @apply font-raleway text-medium font-semibold uppercase md:text-lightLarge xl:text-large;
