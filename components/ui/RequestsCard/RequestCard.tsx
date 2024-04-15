@@ -8,12 +8,12 @@ import { useScreen } from '@/utils/useScreen';
 import { RequestCardProps } from './type';
 
 export const RequestCard: React.FC<RequestCardProps> = ({
-  images,
-  alt,
-  requestSet,
+  data,
   className,
 }) => {
   const { isMobile, isTablet, isDesktop } = useScreen();
+
+  const { images, requestSet, alt } = data;
 
   const styles = classNames(
     className,
