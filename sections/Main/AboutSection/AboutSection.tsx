@@ -17,7 +17,7 @@ export const AboutSection = () => {
 
   return (
     <section className="section">
-      <div className="container md:grid md:grid-cols-[162px_527px] md:gap-4 xl:grid-cols-[186px_1010px]">
+      <div className="container md:grid md:grid-cols-[162px_527px] md:gap-4 xl:grid-cols-[186px_1010px] xl:gap-[18px]">
         <p className="mb-3 py-2 font-roboto text-base font-normal leading-[1.35] text-miniTitles  md:mb-0 md:py-3 xl:text-lg xl:leading-[1.35]">
           {preTitle}
         </p>
