@@ -7,6 +7,8 @@ import { BurgerMenu } from '@/components/common/BurgerMenu';
 
 import { Logo } from '@/components/ui/Logo';
 
+import { SiteLink } from '@/components/ui/SiteLink';
+
 import Burger from '@/public/icons/burger.svg';
 
 import common from '@/data/common.json';
@@ -31,11 +33,9 @@ export const Header = () => {
         <div className="hidden xl:flex">
           <NavBar />
         </div>
-        <button type="button" className="notXL:hidden">
-          <p className="text-cardTextLg relative inline-block font-roboto text-accent after:absolute after:left-[80px] after:top-0 after:h-[25px] after:w-[25px] after:content-arrowDiagonal hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent">
-            Контакти
-          </p>
-        </button>
+        <SiteLink href={common.url.contacts} linkType="scroll" isAccent={false}>
+          {common.linksText.contacts}
+        </SiteLink>
         <button
           type="button"
           className="block transition hover:scale-110 xl:hidden"
