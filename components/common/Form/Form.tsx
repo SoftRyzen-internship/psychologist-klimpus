@@ -7,8 +7,7 @@ import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
 import { Loader } from '@/components/ui/Loader/Loader';
 import { Button } from '@/components/ui/Button';
-import { ModalSuccess } from '@/components/ui/ModalSuccess';
-import { ModalError } from '@/components/ui/ModalError';
+import { ModalNotification } from '@/components/ui/ModalNotification';
 
 import { FormData } from './types';
 
@@ -25,8 +24,11 @@ export const Form = () => {
   } = useForm<FormData>();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [showSuccessModal, setShowSuccessModal] = useState<boolean>(false);
-  const [showErrorModal, setShowErrorModal] = useState<boolean>(false);
+  const [notificationType, setNotificationType] = useState<'error' | 'success'>(
+    'error',
+  );
+
+  const [isNotificationOpen, setIsNotificationOpen] = useState<boolean>(false);
 
   useFormPersist('FormData', {
     watch,
@@ -44,17 +46,18 @@ export const Form = () => {
 
       reset();
       window.sessionStorage.removeItem('FormData');
-      setShowSuccessModal(true);
+      setNotificationType('success');
+      setIsNotificationOpen(true);
     } catch (error) {
-      setShowErrorModal(true);
+      setNotificationType('error');
+      setIsNotificationOpen(true);
     } finally {
       setIsLoading(false);
     }
   };
 
-  const onClickCloseModal = () => {
-    setShowSuccessModal(false);
-    setShowErrorModal(false);
+  const onClickCloseNotification = () => {
+    setIsNotificationOpen(false);
   };
 
   return (
@@ -84,16 +87,16 @@ export const Form = () => {
           {isLoading ? <Loader /> : form.buttonText}
         </Button>
       </form>
-      {showSuccessModal && (
-        <ModalSuccess
-          isModalSuccessOpen={showSuccessModal}
-          onClickCloseModal={onClickCloseModal}
-        />
-      )}
-      {showErrorModal && (
-        <ModalError
-          isModalErrorOpen={showErrorModal}
-          onClickCloseModal={onClickCloseModal}
+      {isNotificationOpen && (
+        <ModalNotification
+          isOpen={isNotificationOpen}
+          onClose={onClickCloseNotification}
+          type={notificationType}
+          modalClassName={
+            notificationType === 'success'
+              ? 'top-1/4 px-7 py-[108px] md:w-[624px] md:p-12 md:px-24 xl:w-[802px] xl:px-[116px] xl:py-[119px]'
+              : 'top-1/4 px-5 py-[120px] md:w-[624px] md:p-12 md:px-[97px] md:py-[108px] xl:w-[802px] xl:px-[110px] xl:py-[119px]'
+          }
         />
       )}
     </>
