@@ -4,7 +4,6 @@ import { FormSection } from '@/sections/FormSection';
 import { Hero } from '@/sections/Hero/Hero';
 import { UniquenessSection } from '@/sections/Main/UniquenessSection';
 
-
 export default function Home() {
   return (
     <>
