@@ -140,3 +140,12 @@ Here you may find a list of the most common components and their API:
 | `alt`        | `string`                                               | required, alt of image                                 |
 | `requestSet` | `string[]`                                             | required, set of client's requests                     |
 | `className`  | `string`                                               | optional, you can add some additional styles if needed |
+
+- #### Slider
+
+| Prop        | Value                                                            | Description                                                  |
+| ----------- | ---------------------------------------------------------------- | ------------------------------------------------------------ |
+| `data`      | `array[]`                                                        | required, data that is needed to render a list of components |
+| `component` | `component`                                                      | required, set it as slide component                          |
+| `section`   | `community` / `reviews` / `requestsMain` / `requestsConsultancy` | required, set specific options                               |
+| `className` | `string`                                                         | optional, you can add some additional styles if needed       |
