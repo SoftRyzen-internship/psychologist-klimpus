@@ -2,29 +2,17 @@ import { UniquenessCard } from '@/components/ui/UniquenessCard';
 import uniquenessData from '@/data/uniqueness.json';
 import { performRequest } from '@/lib/datocms';
 import { uniquenessQuery } from '@/lib/queries/uniquenessQuery';
+import { mergeData } from '@/utils/mergeData';
 import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
-//import { StaticUniquenessData } from './types';
 
 export const UniquenessSection = async () => {
   const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;
   const { data } = await performRequest({ query: uniquenessQuery });
   const uniquenessess: UniquenessCardProps[] = data.uniqueness.cards;
 
-  console.log('dato: ', uniquenessess);
-
-  const mergeData = (
-    datoData: UniquenessCardProps[],
-    staticData: UniquenessCardProps[],
-  ) => {
-    const result = staticData.map(y =>
-      Object.assign(
-        y,
-        datoData.find(x => x.text === y.text),
-      ),
-    );
-    return result;
-  };
-  mergeData(uniquenessess, staticUniquenessess);
+  const dataToShow = uniquenessess
+    ? mergeData(uniquenessess, staticUniquenessess)
+    : staticUniquenessess;
 
   return (
     <section className="section">
@@ -37,12 +25,12 @@ export const UniquenessSection = async () => {
             {sectionTitle}
           </h2>
           <ul className="flex flex-col gap-4 md:flex-row xl:gap-5">
-            {uniquenessess.map(item => (
+            {dataToShow.map(item => (
               <li key={item.id}>
                 <UniquenessCard
                   id={item.id}
                   quantity={item.quantity}
-                  text={item.text}
+                  text={item.staticText!}
                 />
               </li>
             ))}
