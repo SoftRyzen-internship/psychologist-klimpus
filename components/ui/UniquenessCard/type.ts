@@ -1,5 +1,7 @@
 export interface UniquenessCardProps {
-  total: string;
+  id: string;
+  quantity: string;
   text: string;
+  staticText?: string;
   className?: string;
 }
