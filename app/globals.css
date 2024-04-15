@@ -65,6 +65,7 @@
 }
 /*-----featuresCard styles end-------*/
 
+/*-----navbar-------*/
 .navbar-icon path {
   fill: currentColor;
   transition: fill 300ms ease-out;
@@ -87,3 +88,26 @@
   }
 }
 /*-----ConsultationsCard styles end-------*/
+
+/*-----slider-------*/
+.swiper .swiper-slide {
+  height: auto;
+}
+
+.slider-arrow path {
+  fill: #ca1246;
+  transition: fill 300ms ease-out;
+}
+
+.slider-inactive-arrow path {
+  fill: #c7c7c7;
+}
+
+.slider-arrow:hover path,
+.slider-arrow:focus path {
+  fill: #ab123e;
+}
+
+.slider-arrow:active path {
+  fill: #900c32;
+}
