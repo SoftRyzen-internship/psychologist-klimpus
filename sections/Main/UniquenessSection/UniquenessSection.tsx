@@ -1,6 +1,4 @@
-// import { FeaturesList } from '@/components/ui/FeaturesList';
 //import { UniquenessCard } from '@/components/ui/UniquenessCard';
-
 import { UniquenessCard } from '@/components/ui/UniquenessCard';
 import uniquenessData from '@/data/uniqueness.json';
 import { performRequest } from '@/lib/datocms';
@@ -11,9 +9,7 @@ export const UniquenessSection = async () => {
   const { preTitle, sectionTitle } = uniquenessData;
   const { data } = await performRequest({ query: uniquenessQuery });
   const uniqueness: UniquenessCardProps[] = data.uniqueness.cards;
-
-  console.log('uniqueness: ', uniqueness);
-
+  //console.log(data, error);
   return (
     <section className="section">
       <div className="container gap-4 md:flex xl:gap-[18px]">
@@ -35,6 +31,7 @@ export const UniquenessSection = async () => {
               </li>
             ))}
           </ul>
+          {/* <p>{error.message}</p> */}
         </div>
       </div>
     </section>
