@@ -1,53 +1,81 @@
 'use client';
 
-import React, { useEffect } from 'react';
-
-import classNames from 'classnames';
+import React, { useEffect, Fragment } from 'react';
+import { Notification } from '../Notification';
+import { ModalNotificationProps } from './types';
+import { Dialog, Transition } from '@headlessui/react';
 
 import CloseIcon from '@/public/icons/cross.svg';
-
-import { ModalProps } from './types';
-
+import classNames from 'classnames';
 import data from '@/data/common.json';
 
-export const Modal = ({ onClose, children, className }: ModalProps) => {
+export const Modal: React.FC<ModalNotificationProps> = ({
+  isOpen,
+  onClose,
+  type,
+  className,
+}) => {
   const { ariaLabel } = data.modal;
 
-  useEffect(() => {
-    const close = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', close);
-    return () => window.removeEventListener('keydown', close);
-  }, [onClose]);
-
-  const OnBackDropClick = (e: React.MouseEvent<HTMLElement>) => {
-    if (e.target === e.currentTarget) onClose();
-  };
+  const notificationType = type === 'success' ? 'success' : 'error';
 
   const modalClasses = classNames(
-    'relative mx-auto flex flex-col w-[328px] bg-white shadow-md rounded-[10px] border-solid border-[1px] border-strokeForm',
+    'relative flex flex-col w-[328px] bg-white shadow-md rounded-[10px] border-solid border-[1px] border-strokeForm',
     className,
   );
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
-    <div
-      onClick={OnBackDropClick}
-      className="fixed bottom-0 right-0 z-10 h-full w-full overscroll-none bg-backdrop backdrop-blur-2xl"
-    >
-      <div className={modalClasses}>
-        <button
-          type="button"
-          aria-label={ariaLabel}
-          onClick={onClose}
-          className="duration-250 absolute right-[21px] top-[21px] transform transition hover:scale-110"
+    <Transition appear show={isOpen} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={onClose}>
+        <Transition.Child
+          as={Fragment}
+          enter="ease-out duration-300"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="ease-in duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
         >
-          <CloseIcon width={24} height={24} />
-        </button>
-        {children}
-      </div>
-    </div>
+          <div className="backdrop-blur-2x z-1 fixed inset-0 bottom-0 right-0 h-full w-full overscroll-none bg-backdrop" />
+        </Transition.Child>
+
+        <div className="fixed inset-0 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4 ">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <Dialog.Panel className={modalClasses}>
+                <button
+                  type="button"
+                  aria-label={ariaLabel}
+                  onClick={onClose}
+                  className="duration-250 absolute right-[21px] top-[21px] transform transition hover:scale-110"
+                >
+                  <CloseIcon width={24} height={24} />
+                </button>
+                <Notification type={notificationType} />
+              </Dialog.Panel>
+            </Transition.Child>
+          </div>
+        </div>
+      </Dialog>
+    </Transition>
   );
 };

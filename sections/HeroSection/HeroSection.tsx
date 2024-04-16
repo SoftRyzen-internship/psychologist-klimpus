@@ -1,11 +1,9 @@
-'use client';
-
 import React from 'react';
 import Image from 'next/image';
 import { SiteLink } from '../../components/ui/SiteLink';
 import data from '@/data/common.json';
 
-export const Hero = () => {
+export const HeroSection = () => {
   return (
     <section className="section">
       <div className="container">
