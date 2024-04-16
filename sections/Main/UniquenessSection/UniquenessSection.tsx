@@ -1,9 +1,12 @@
-import { UniquenessCard } from '@/components/ui/UniquenessCard';
-import uniquenessData from '@/data/uniqueness.json';
+import { UniquenessCard } from '@/components/common/UniquenessCard';
+import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
+
 import { performRequest } from '@/lib/datocms';
 import { uniquenessQuery } from '@/lib/queries/uniquenessQuery';
+
 import { mergeData } from '@/utils/mergeData';
-import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+
+import uniquenessData from '@/data/uniqueness.json';
 
 export const UniquenessSection = async () => {
   const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;

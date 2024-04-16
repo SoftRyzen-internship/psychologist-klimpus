@@ -1,4 +1,4 @@
-import { FeaturesCard } from '@/components/ui/FeaturesCard';
+import { FeaturesCard } from '@/components/common/FeaturesCard';
 
 import features from '@/data/features.json';
 
