@@ -1,13 +1,11 @@
-'use client';
-
 import React from 'react';
 
 import classNames from 'classnames';
 
 import { ConsultationsCardProps } from './type';
 
-import { Card } from '../Card';
-import { SiteLink } from '../SiteLink';
+import { Card } from '@/components/ui/Card';
+import { SiteLink } from '@/components/ui/SiteLink';
 
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
   className = '',
