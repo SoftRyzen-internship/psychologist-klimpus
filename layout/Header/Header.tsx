@@ -5,7 +5,7 @@ import { NavBar } from '@/components/common/NavBar';
 
 import { BurgerMenu } from '@/components/common/BurgerMenu';
 
-import { Logo } from '@/components/ui/Logo';
+import { Logo } from '@/components/common/Logo';
 
 import { SiteLink } from '@/components/ui/SiteLink';
 
