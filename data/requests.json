@@ -2,41 +2,25 @@
   "cards": [
     {
       "id": 1,
-      "images": {
-        "mobImage": "/images/requests/request-card-mob-1@2x.webp",
-        "tabImage": "/images/requests/request-card-tab-1@2x.webp",
-        "pcImage": "/images/requests/request-card-pc-1@2x.webp"
-      },
+      "image": "/images/requests/request-1.webp",
       "alt": "Групова консультація у психолога",
       "requestSet": ["Депресія", "Тривоги", "Панічні атаки"]
     },
     {
       "id": 2,
-      "images": {
-        "mobImage": "/images/requests/request-card-mob-2@2x.webp",
-        "tabImage": "/images/requests/request-card-tab-2@2x.webp",
-        "pcImage": "/images/requests/request-card-pc-2@2x.webp"
-      },
+      "image": "/images/requests/request-2.webp",
       "alt": "Консультація клієнта з приводу зниження мотивації",
       "requestSet": ["Зниження мотивації", "Втрата сенсу життя"]
     },
     {
       "id": 3,
-      "images": {
-        "mobImage": "/images/requests/request-card-mob-3@2x.webp",
-        "tabImage": "/images/requests/request-card-tab-3@2x.webp",
-        "pcImage": "/images/requests/request-card-pc-3@2x.webp"
-      },
+      "image": "/images/requests/request-3.webp",
       "alt": "Співучасть на консультації",
       "requestSet": ["Переживання", "Втрата близьких"]
     },
     {
       "id": 4,
-      "images": {
-        "mobImage": "/images/requests/request-card-mob-4@2x.webp",
-        "tabImage": "/images/requests/request-card-tab-4@2x.webp",
-        "pcImage": "/images/requests/request-card-pc-4@2x.webp"
-      },
+      "image": "/images/requests/request-4.webp",
       "alt": "Консультація клієнта з приводу низької самооцінки",
       "requestSet": ["Низька самооцінка", "Невпевненість в собі"]
     }
