@@ -6,8 +6,8 @@ import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
 import { ConsultationsCardProps, Plate } from './type';
 
-import { Card } from '../Card';
-import { SiteLink } from '../SiteLink';
+import { Card } from '@/components/ui/Card';
+import { SiteLink } from '@/components/ui/SiteLink';
 
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   className = '',

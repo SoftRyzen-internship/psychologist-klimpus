@@ -137,16 +137,6 @@ export const Icons = () => {
           <EmailAccent className="h-[25px] w-[25px]" />
           <PhoneAccent className="h-[25px] w-[25px]" />
         </div>
-        <div className="py-[100px]">
-          <div className="relative flex flex-col md:w-[346px] xl:w-[495px]">
-            <h1 className="font-raleway text-large font-semibold uppercase text-mainBlack md:text-[50px] xl:text-[86px] xl:text-extraLarge">
-              Климпуш
-            </h1>
-            <h2 className="static right-[-50px] top-[80px] font-raleway text-large font-semibold uppercase text-mainBlack md:absolute md:text-right md:text-[50px] xl:text-[86px] xl:text-extraLarge">
-              Ірина
-            </h2>
-          </div>
-        </div>
       </div>
     </div>
   );

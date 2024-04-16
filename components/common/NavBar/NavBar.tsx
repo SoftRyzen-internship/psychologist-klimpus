@@ -13,6 +13,8 @@ import ArrowUp from '@/public/icons/arrowUp.svg';
 
 import jsonData from '@/data/common.json';
 
+import css from './NavBar.module.css';
+
 export const NavBar = () => {
   const linkData = jsonData.NavBar.link;
   const btnData = jsonData.NavBar.btn;
@@ -26,7 +28,8 @@ export const NavBar = () => {
   };
 
   const buttonClassName = classNames(
-    'navbar-btn flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35] transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
+    css['navbar-btn'],
+    'flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35] transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
     {
       'text-hoverAccent':
         pathname === '/family-consultation' ||
@@ -59,9 +62,11 @@ export const NavBar = () => {
           >
             {btnData}
             {!isModalVisible ? (
-              <ArrowDown className="navbar-icon h-[15px] w-[15px]" />
+              <ArrowDown
+                className={`${css['navbar-icon']} h-[15px] w-[15px]`}
+              />
             ) : (
-              <ArrowUp className="navbar-icon h-[15px] w-[15px]" />
+              <ArrowUp className={`${css['navbar-icon']} h-[15px] w-[15px]`} />
             )}
           </button>
           <NavBarDropdownList isOpen={isModalVisible} pathname={pathname} />

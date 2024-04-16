@@ -1,4 +1,17 @@
 {
+  "hero": {
+    "title1": "Климпуш",
+    "title2": "Ірина",
+    "title3": "Климпуш Ірина",
+    "src": "/images/hero.webp",
+    "alt": "жінка в червоному піджаку, яка тримає в руках окуляри",
+    "profession": [
+      "Енергопрактик",
+      "Коуч-консультант",
+      "Клінічний психолог",
+      "Системний терапевт"
+    ]
+  },
   "contacts": [
     { "name": "email", "value": "therapybyirena@gmail.com" },
     { "name": "tel", "value": "+447404864095" }
@@ -70,5 +83,9 @@
     "contacts": "/contacts",
     "individual": "/individual"
   },
-  "ariaLabelClose": "Закрити мобільне меню"
+  "ariaLabelClose": "Закрити мобільне меню",
+  "sliderBtn": {
+    "rightArrow": "Наступний слайд",
+    "leftArrow": "Попередній слайд"
+  }
 }

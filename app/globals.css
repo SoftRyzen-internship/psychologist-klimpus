@@ -8,7 +8,7 @@
 
 @layer utilities {
   .section {
-    @apply w-full pb-[54px] md:pb-20 xl:pb-[100px];
+    @apply w-full py-[27px] md:py-10 xl:py-[50px];
   }
   .sectionTitle {
     @apply font-raleway text-medium font-semibold uppercase md:text-lightLarge xl:text-large;
@@ -51,63 +51,6 @@
   }
 }
 
-/*-----ContactsLink styles start-------*/
-.contactsLink:active svg {
-  color: #900c32;
-}
-/*-----ContactsLink styles end-------*/
-/*-----featuresCard styles start-------*/
-@media (min-width: 1280px) {
-  .featuresCard:nth-child(2) p,
-  .featuresCard:nth-child(3) p {
-    width: 150px;
-  }
-}
-/*-----featuresCard styles end-------*/
-
-/*-----navbar-------*/
-.navbar-icon path {
-  fill: currentColor;
-  transition: fill 300ms ease-out;
-}
-
-.navbar-btn:hover .navbar-icon path,
-.navbar-btn:focus .navbar-icon path {
-  fill: #ab123e;
-}
-
-.navbar-btn:active .navbar-icon path {
-  fill: #900c32;
-}
-
-/*-----ConsultationsCard styles start-------*/
-@media (min-width: 1280px) {
-  .consultationsCard:hover a,
-  .consultationsCard:focus a {
-    opacity: 1;
-  }
-}
-/*-----ConsultationsCard styles end-------*/
-
-/*-----slider-------*/
 .swiper .swiper-slide {
   height: auto;
-}
-
-.slider-arrow path {
-  fill: #ca1246;
-  transition: fill 300ms ease-out;
-}
-
-.slider-inactive-arrow path {
-  fill: #c7c7c7;
-}
-
-.slider-arrow:hover path,
-.slider-arrow:focus path {
-  fill: #ab123e;
-}
-
-.slider-arrow:active path {
-  fill: #900c32;
 }
