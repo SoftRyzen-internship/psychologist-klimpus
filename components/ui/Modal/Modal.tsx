@@ -20,7 +20,7 @@ export const Modal: React.FC<ModalNotificationProps> = ({
   const notificationType = type === 'success' ? 'success' : 'error';
 
   const modalClasses = classNames(
-    'relative mx-auto flex flex-col w-[328px] bg-white shadow-md rounded-[10px] border-solid border-[1px] border-strokeForm',
+    'relative flex flex-col w-[328px] bg-white shadow-md rounded-[10px] border-solid border-[1px] border-strokeForm',
     className,
   );
 
