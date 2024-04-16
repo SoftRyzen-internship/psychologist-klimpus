@@ -1,4 +1,4 @@
-import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
 
 export const mergeData = (
   datoData: UniquenessCardProps[],

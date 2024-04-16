@@ -1,11 +1,14 @@
 import React from 'react';
+
 import Image from 'next/image';
-import { SiteLink } from '../../components/ui/SiteLink';
+
+import { SiteLink } from '@/components/ui/SiteLink';
+
 import data from '@/data/common.json';
 
 export const HeroSection = () => {
   return (
-    <section className="pb-[27px] md:pb-10 xl:pb-[50px]">
+    <section className="pb-[27px] pt-10 md:pb-10 md:pt-12 xl:pb-[50px] xl:pt-14">
       <div className="container">
         <div className="flex flex-col items-start md:flex-row md:items-center md:gap-[34px] xl:gap-[69px]">
           <h1 className="mb-3 inline font-raleway text-large font-semibold uppercase text-mainBlack md:hidden">

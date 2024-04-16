@@ -1,9 +1,9 @@
 import { performRequest } from '@/lib/datocms';
 import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
-import { Plate, StaticData } from '@/components/ui/ConsultationsCard/type';
+import { Plate, StaticData } from '@/components/common/ConsultationsCard/type';
 
-import { ConsultationsCard } from '../ConsultationsCard';
+import { ConsultationsCard } from '@/components/common/ConsultationsCard';
 
 import consultations from '@/data/consultations.json';
 

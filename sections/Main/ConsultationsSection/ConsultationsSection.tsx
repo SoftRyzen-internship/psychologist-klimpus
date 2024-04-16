@@ -1,5 +1,5 @@
 import { ConsultationsList } from '@/components/ui/ConsultationsList';
-import { SectionTitle } from '@/components/ui/SectionTitle';
+import { SectionTitle } from '@/components/common/SectionTitle';
 
 import consultations from '@/data/consultations.json';
 

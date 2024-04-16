@@ -1,9 +1,13 @@
-import { UniquenessCard } from '@/components/ui/UniquenessCard';
-import uniquenessData from '@/data/uniqueness.json';
+import { SectionTitle } from '@/components/common/SectionTitle';
+import { UniquenessCard } from '@/components/common/UniquenessCard';
+import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
+
 import { performRequest } from '@/lib/datocms';
 import { uniquenessQuery } from '@/lib/queries/uniquenessQuery';
+
 import { mergeData } from '@/utils/mergeData';
-import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+
+import uniquenessData from '@/data/uniqueness.json';
 
 export const UniquenessSection = async () => {
   const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;
@@ -21,9 +25,9 @@ export const UniquenessSection = async () => {
           {preTitle}
         </p>
         <div className="md:w-[527px] xl:w-[1012px]">
-          <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
+          <SectionTitle className="mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
-          </h2>
+          </SectionTitle>
           <ul className="flex flex-col gap-4 md:flex-row xl:gap-5">
             {dataToShow.map(item => (
               <li key={item.id}>

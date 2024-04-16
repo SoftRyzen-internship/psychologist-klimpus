@@ -1,5 +1,5 @@
-import { FeaturesList } from '@/components/ui/FeaturesList';
-import { SectionTitle } from '@/components/ui/SectionTitle';
+import { SectionTitle } from '@/components/common/SectionTitle';
+import { FeaturesList } from '@/components/common/FeaturesList';
 
 import features from '@/data/features.json';
 
