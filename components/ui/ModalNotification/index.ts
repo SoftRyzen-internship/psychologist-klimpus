@@ -1,1 +1,1 @@
-export * from './ModalNotification';
+export * from './Modal';

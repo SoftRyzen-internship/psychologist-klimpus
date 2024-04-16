@@ -7,7 +7,7 @@ import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
 import { Loader } from '@/components/ui/Loader/Loader';
 import { Button } from '@/components/ui/Button';
-import { ModalNotification } from '@/components/ui/ModalNotification';
+import { Modal } from '@/components/ui/ModalNotification';
 
 import { FormData } from './types';
 
@@ -88,11 +88,11 @@ export const Form = () => {
         </Button>
       </form>
       {isNotificationOpen && (
-        <ModalNotification
+        <Modal
           isOpen={isNotificationOpen}
           onClose={onClickCloseNotification}
           type={notificationType}
-          modalClassName={
+          className={
             notificationType === 'success'
               ? 'top-1/4 px-7 py-[108px] md:w-[624px] md:p-12 md:px-24 xl:w-[802px] xl:px-[116px] xl:py-[119px]'
               : 'top-1/4 px-5 py-[120px] md:w-[624px] md:p-12 md:px-[97px] md:py-[108px] xl:w-[802px] xl:px-[110px] xl:py-[119px]'
