@@ -1,14 +1,12 @@
 export type ConsultationsRequestCardProps = {
   card: {
     id: number;
+    image: string;
     images: {
       mobImage: string;
-      mob480Image: string;
-      tabImage: string;
-      pcImage: string;
+      tabdeskImage: string;
     };
     requestText: string;
   };
-
   className?: string;
 };

@@ -39,7 +39,7 @@ import { CommunityCard } from '@/components/ui/CommunityCard';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
-  const { cards } = consultationsRequests;
+  const { familyCards, individualCards, groupCards } = consultationsRequests;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => setIsMenuOpen(false);
@@ -71,8 +71,19 @@ export const TestComponent = () => {
       </button>
       <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
       <SliderTestComponent />
-      <div className="container gap-5  pb-6 pt-6 xl:flex">
-        {cards.map(item => {
+      <div className="container flex  flex-col gap-5 pb-6 pt-6">
+        {familyCards.map(item => {
+          return <ConsultationsRequestCard key={item.id} card={item} />;
+        })}
+      </div>
+
+      <div className="container flex  flex-col gap-5 pb-6 pt-6">
+        {individualCards.map(item => {
+          return <ConsultationsRequestCard key={item.id} card={item} />;
+        })}
+      </div>
+      <div className="container flex  flex-col gap-5 pb-6 pt-6">
+        {groupCards.map(item => {
           return <ConsultationsRequestCard key={item.id} card={item} />;
         })}
       </div>
