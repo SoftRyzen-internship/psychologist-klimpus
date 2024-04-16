@@ -23,7 +23,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
       >
         <Image src={data.logo} alt={data.text} width={133} height={133} />
       </Card>
-      <span className="textBold md:leading-[1.35]">{data.text}</span>
+      <p className="textBold md:pr-2 md:pr-4 md:leading-[1.35]">{data.text}</p>
     </div>
   );
 };
