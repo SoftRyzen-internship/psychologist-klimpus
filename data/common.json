@@ -83,5 +83,9 @@
     "contacts": "/contacts",
     "individual": "/individual"
   },
-  "ariaLabelClose": "Закрити мобільне меню"
+  "ariaLabelClose": "Закрити мобільне меню",
+  "sliderBtn": {
+    "rightArrow": "Наступний слайд",
+    "leftArrow": "Попередній слайд"
+  }
 }

@@ -6,7 +6,7 @@ import form from '@/data/form.json';
 
 export const FormSection = () => {
   return (
-    <section className="section">
+    <section className="pb-[57px] pt-[27px] md:pb-24 md:pt-10 xl:pb-[116px] xl:pt-[50px]">
       <div className="container">
         <SectionTitle className="mf:mb-9 m-auto mb-6 flex justify-center">
           <div
