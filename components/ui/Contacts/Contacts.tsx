@@ -9,6 +9,7 @@ import Email from '@/public/icons/mail.svg';
 import Tel from '@/public/icons/phone.svg';
 
 import common from '@/data/common.json';
+import './Contacts.modules.css';
 
 export const Contacts: React.FC<ContactsProps> = ({
   className = '',

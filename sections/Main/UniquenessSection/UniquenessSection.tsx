@@ -8,7 +8,7 @@ import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
 export const UniquenessSection = async () => {
   const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;
   const { data } = await performRequest({ query: uniquenessQuery });
-  const uniquenessess: UniquenessCardProps[] = data.uniqueness.cards;
+  const uniquenessess: UniquenessCardProps[] = data?.uniqueness.cards;
 
   const dataToShow = uniquenessess
     ? mergeData(uniquenessess, staticUniquenessess)
