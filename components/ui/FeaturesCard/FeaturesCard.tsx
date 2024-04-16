@@ -4,7 +4,8 @@ import classNames from 'classnames';
 
 import { FeaturesCardProps } from './type';
 
-import { Card } from '../Card';
+import { Card } from '@/components/ui/Card';
+import './FeaturesCard.modules.css';
 
 export const FeaturesCard: React.FC<FeaturesCardProps> = ({
   className = '',
