@@ -1,7 +1,7 @@
 import React from 'react';
 import { FooterItem } from '@/components/ui/FooterItem';
-import { Contacts } from '@/components/ui/Contacts';
-import { Socials } from '@/components/ui/Socials';
+import { Contacts } from '@/components/common/Contacts';
+import { Socials } from '@/components/common/Socials';
 import data from '@/data/common.json';
 
 export const Footer = () => {
