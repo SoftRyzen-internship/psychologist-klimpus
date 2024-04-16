@@ -8,7 +8,7 @@
 
 @layer utilities {
   .section {
-    @apply mb-[54px] w-full md:mb-20 xl:mb-[100px];
+    @apply w-full py-[27px] md:py-10 xl:py-[50px];
   }
   .sectionTitle {
     @apply font-raleway text-medium font-semibold uppercase md:text-lightLarge xl:text-large;
@@ -51,38 +51,6 @@
   }
 }
 
-/*-----ContactsLink styles start-------*/
-.contactsLink:active svg {
-  color: #900c32;
+.swiper .swiper-slide {
+  height: auto;
 }
-/*-----ContactsLink styles end-------*/
-/*-----featuresCard styles start-------*/
-@media (min-width: 1280px) {
-  .featuresCard:nth-child(2) p {
-    width: 160px;
-  }
-}
-/*-----featuresCard styles end-------*/
-
-.navbar-icon path {
-  fill: currentColor;
-  transition: fill 300ms ease-out;
-}
-
-.navbar-btn:hover .navbar-icon path,
-.navbar-btn:focus .navbar-icon path {
-  fill: #ab123e;
-}
-
-.navbar-btn:active .navbar-icon path {
-  fill: #900c32;
-}
-
-/*-----ConsultationsCard styles start-------*/
-@media (min-width: 1280px) {
-  .consultationsCard:hover a,
-  .consultationsCard:focus a {
-    display: inline-flex;
-  }
-}
-/*-----ConsultationsCard styles end-------*/
