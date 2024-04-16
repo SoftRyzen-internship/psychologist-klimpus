@@ -1,6 +1,9 @@
 import React from 'react';
+
 import Image from 'next/image';
-import { SiteLink } from '../../components/ui/SiteLink';
+
+import { SiteLink } from '@/components/ui/SiteLink';
+
 import data from '@/data/common.json';
 
 export const HeroSection = () => {
