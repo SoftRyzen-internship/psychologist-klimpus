@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import classNames from 'classnames';
-import { useScreen } from '@/utils/useScreen';
 
 import { RequestCardProps } from './type';
 
@@ -10,9 +9,8 @@ export const RequestCard: React.FC<RequestCardProps> = ({
   data,
   className,
 }) => {
-  const { isMobile, isTablet, isDesktop } = useScreen();
-
-  const { images, requestSet, alt } = data;
+  const { image, requestSet, alt } = data;
+  console.log(image);
 
   const styles = classNames(
     className,
@@ -21,15 +19,14 @@ export const RequestCard: React.FC<RequestCardProps> = ({
 
   return (
     <div className={styles}>
-      {isMobile && (
-        <Image width={428} height={300} src={images.mobImage} alt={alt} />
-      )}
-      {isTablet && (
-        <Image width={255} height={327} src={images.tabImage} alt={alt} />
-      )}
-      {isDesktop && (
-        <Image width={237} height={327} src={images.pcImage} alt={alt} />
-      )}
+      <Image
+        className="width={428} height={300} rounded-[20px] object-cover object-[center] md:h-[327px] md:w-[255px] md:object-top xl:h-[327px] xl:w-[237px] smOnly:mb-4 smOnly:aspect-[1.426]"
+        src={image}
+        width={765}
+        height={981}
+        priority
+        alt={alt}
+      />
       <ul className="absolute bottom-4 left-5 flex flex-wrap gap-2">
         {requestSet.map(item => (
           <li key={item}>
