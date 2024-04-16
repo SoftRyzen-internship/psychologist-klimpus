@@ -1,8 +1,11 @@
 import React from 'react';
+
 import { Form } from '@/components/common/Form';
-import { SectionTitle } from '@/components/ui/SectionTitle';
-import s from './FormSection.module.css';
+import { SectionTitle } from '@/components/common/SectionTitle';
+
 import form from '@/data/form.json';
+
+import s from './FormSection.module.css';
 
 export const FormSection = () => {
   return (

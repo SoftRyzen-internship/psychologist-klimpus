@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 
 import { NavBar } from '@/components/common/NavBar';
-import { Logo } from '@/components/ui/Logo';
-import { Contacts } from '@/components/ui/Contacts';
+import { Logo } from '@/components/common/Logo';
+import { Contacts } from '@/components/common/Contacts';
 
 import CloseIcon from '@/public/icons/cross.svg';
 
@@ -60,7 +60,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                         </button>
                       </div>
                       <div className=" px-[20px] md:px-[18px]">
-                        <NavBar />
+                        <NavBar onClose={onClose} />
                       </div>
                     </div>
                     <div className=" px-[20px] md:px-[18px]">

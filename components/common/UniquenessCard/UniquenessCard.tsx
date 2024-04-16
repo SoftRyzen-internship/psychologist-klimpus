@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import { UniquenessCardProps } from './type';
 
-import { Card } from '../Card';
+import { Card } from '../../ui/Card';
 
 export const UniquenessCard: React.FC<UniquenessCardProps> = ({
   quantity,
