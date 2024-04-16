@@ -16,18 +16,10 @@ import common from '@/data/common.json';
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    setIsOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
-
-  const handleClose = () => {
-    setIsOpen(false);
-    document.body.style.overflow = 'auto';
-  };
+  const handleClose = () => setIsOpen(false);
 
   return (
-    <header className="w-full py-9">
+    <header className="w-full sm:pb-[52px] sm:pt-3 md:pb-[66px] md:pt-[18px] xl:pb-[91px] xl:pt-9">
       <div className="container flex items-center xl:gap-24 notXL:justify-between">
         <Logo />
         <div className="hidden xl:flex">
@@ -46,11 +38,11 @@ export const Header = () => {
           type="button"
           className="block transition hover:scale-110 xl:hidden"
           aria-label={common.layout['aria-label'].burger}
-          onClick={handleOpen}
+          onClick={() => setIsOpen(true)}
         >
           <Burger width={32} height={32} />
         </button>
-        {isOpen && <BurgerMenu isOpen={isOpen} onClose={handleClose} />}
+        <BurgerMenu isOpen={isOpen} onClose={handleClose} />
       </div>
     </header>
   );
