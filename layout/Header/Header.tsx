@@ -19,7 +19,7 @@ export const Header = () => {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <header className="w-full sm:pb-[52px] sm:pt-3 md:pb-[66px] md:pt-[18px] xl:pb-[91px] xl:pt-9">
+    <header className="w-full py-3 md:py-[18px] xl:py-9">
       <div className="container flex items-center xl:gap-24 notXL:justify-between">
         <Logo />
         <div className="hidden xl:flex">
