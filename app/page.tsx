@@ -10,10 +10,17 @@ import { AboutSection } from '@/sections/Main/AboutSection';
 import Link from 'next/link';
 import { ROUTING } from '@/utils/routing';
 
-export default async function Home() {
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: Record<string, string>;
+}) {
+  const page = Number.parseInt(searchParams['page'] ?? 1);
   const allСonsultations = await getAllСonsultations();
+
   return (
     <>
+      <h1>Drag13 blog, page {page}</h1>
       <ul>
         {allСonsultations.map(consultation => (
           <li key={consultation.name}>
