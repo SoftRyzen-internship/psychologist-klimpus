@@ -5,7 +5,7 @@ import data from '@/data/common.json';
 
 export const HeroSection = () => {
   return (
-    <section className="section">
+    <section className="pb-[27px] md:pb-10 xl:pb-[50px]">
       <div className="container">
         <div className="flex flex-col items-start md:flex-row md:items-center md:gap-[34px] xl:gap-[69px]">
           <h1 className="mb-3 inline font-raleway text-large font-semibold uppercase text-mainBlack md:hidden">
