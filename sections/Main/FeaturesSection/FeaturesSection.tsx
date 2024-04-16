@@ -1,4 +1,4 @@
-import { FeaturesList } from '@/components/ui/FeaturesList';
+import { FeaturesList } from '@/components/common/FeaturesList';
 
 import features from '@/data/features.json';
 

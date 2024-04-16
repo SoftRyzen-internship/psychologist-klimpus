@@ -1,13 +1,13 @@
-import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
 
 export const mergeData = (
   datoData: UniquenessCardProps[],
   staticData: UniquenessCardProps[],
 ) => {
-  const result = staticData.map(y =>
+  const result = staticData.map(staticItem =>
     Object.assign(
-      y,
-      datoData.find(x => x.text === y.text),
+      staticItem,
+      datoData.find(datoItem => datoItem.text === staticItem.text),
     ),
   );
   return result;

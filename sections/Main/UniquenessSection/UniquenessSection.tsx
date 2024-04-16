@@ -1,15 +1,18 @@
-import { SectionTitle } from '@/components/ui/SectionTitle';
-import { UniquenessCard } from '@/components/ui/UniquenessCard';
-import uniquenessData from '@/data/uniqueness.json';
+import { SectionTitle } from '@/components/common/SectionTitle';
+import { UniquenessCard } from '@/components/common/UniquenessCard';
+import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
+
 import { performRequest } from '@/lib/datocms';
 import { uniquenessQuery } from '@/lib/queries/uniquenessQuery';
+
 import { mergeData } from '@/utils/mergeData';
-import { UniquenessCardProps } from '@/components/ui/UniquenessCard/type';
+
+import uniquenessData from '@/data/uniqueness.json';
 
 export const UniquenessSection = async () => {
   const { preTitle, sectionTitle, staticUniquenessess } = uniquenessData;
   const { data } = await performRequest({ query: uniquenessQuery });
-  const uniquenessess: UniquenessCardProps[] = data.uniqueness.cards;
+  const uniquenessess: UniquenessCardProps[] = data?.uniqueness.cards;
 
   const dataToShow = uniquenessess
     ? mergeData(uniquenessess, staticUniquenessess)

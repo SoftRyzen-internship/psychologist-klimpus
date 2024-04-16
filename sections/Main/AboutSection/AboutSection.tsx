@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { SectionTitle } from '@/components/ui/SectionTitle';
+import { SectionTitle } from '@/components/common/SectionTitle';
 import { SiteLink } from '@/components/ui/SiteLink';
 
 import aboutData from '@/data/about.json';

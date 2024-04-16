@@ -20,13 +20,13 @@
 
 'use client';
 
-import { RequestCard } from '@/components/ui/RequestsCard';
+import { RequestCard } from '@/components/common/RequestsCard';
 
 import dataJson from '@/data/features.json';
 import requestData from '@/data/requests.json';
 import communityData from '@/data/communities.json';
 
-import { FeaturesCard } from '@/components/ui/FeaturesCard';
+import { FeaturesCard } from '@/components/common/FeaturesCard';
 
 import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
