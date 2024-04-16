@@ -60,7 +60,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                         </button>
                       </div>
                       <div className=" px-[20px] md:px-[18px]">
-                        <NavBar />
+                        <NavBar onClose={onClose} />
                       </div>
                     </div>
                     <div className=" px-[20px] md:px-[18px]">
