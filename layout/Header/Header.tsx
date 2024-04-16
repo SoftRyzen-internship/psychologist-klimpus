@@ -23,7 +23,7 @@ export const Header = () => {
       <div className="container flex items-center xl:gap-24 notXL:justify-between">
         <Logo />
         <div className="hidden xl:flex">
-          <NavBar />
+          <NavBar onClose={handleClose} />
         </div>
         <SiteLink
           href={common.url.contacts}

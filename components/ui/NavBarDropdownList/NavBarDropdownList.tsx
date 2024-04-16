@@ -10,6 +10,7 @@ import jsonData from '@/data/common.json';
 export const NavBarDropdownList: React.FC<DropdownListProps> = ({
   isOpen,
   pathname,
+  onClose,
 }) => {
   const data = jsonData.DropdownList;
 
@@ -31,6 +32,7 @@ export const NavBarDropdownList: React.FC<DropdownListProps> = ({
             }`}
           >
             <Link
+              onClick={onClose}
               href={`${item.moveTo}`}
               className="font-roboto text-[18px] font-normal leading-[1.35]"
             >
