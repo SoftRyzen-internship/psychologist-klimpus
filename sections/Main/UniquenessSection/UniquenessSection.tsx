@@ -1,3 +1,4 @@
+import { SectionTitle } from '@/components/common/SectionTitle';
 import { UniquenessCard } from '@/components/common/UniquenessCard';
 import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
 
@@ -24,9 +25,9 @@ export const UniquenessSection = async () => {
           {preTitle}
         </p>
         <div className="md:w-[527px] xl:w-[1012px]">
-          <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
+          <SectionTitle className="mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
-          </h2>
+          </SectionTitle>
           <ul className="flex flex-col gap-4 md:flex-row xl:gap-5">
             {dataToShow.map(item => (
               <li key={item.id}>

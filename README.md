@@ -149,3 +149,10 @@ Here you may find a list of the most common components and their API:
 | `component` | `component`                                                      | required, set it as slide component                          |
 | `section`   | `community` / `reviews` / `requestsMain` / `requestsConsultancy` | required, set specific options                               |
 | `className` | `string`                                                         | optional, you can add some additional styles if needed       |
+
+- #### CommunityCard
+
+| Prop        | Value                          | Description                                            |
+| ----------- | ------------------------------ | ------------------------------------------------------ |
+| `data`      | `{text: string, logo: string}` | required, set card data                                |
+| `className` | `string`                       | optional, you can add some additional styles if needed |
