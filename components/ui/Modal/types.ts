@@ -1,7 +1,6 @@
-import React from 'react';
-
-export type ModalProps = {
+export type ModalNotificationProps = {
+  isOpen: boolean;
   onClose: () => void;
-  children?: React.ReactNode;
-  className?: string;
+  type: 'success' | 'error';
+  className: string;
 };
