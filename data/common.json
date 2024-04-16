@@ -103,6 +103,11 @@
     "individual": "/individual"
   },
   "ariaLabelClose": "Закрити мобільне меню",
+  "layout": {
+    "aria-label": {
+      "burger": "Бургер меню"
+    }
+  },
   "sliderBtn": {
     "rightArrow": "Наступний слайд",
     "leftArrow": "Попередній слайд"
