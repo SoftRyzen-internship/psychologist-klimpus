@@ -1,17 +1,16 @@
 import React from 'react';
 
 import classNames from 'classnames';
-// import { performRequest } from '@/lib/datocms';
-// import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
 import { ConsultationsCardProps } from './type';
 
 import { Card } from '@/components/ui/Card';
 import { SiteLink } from '@/components/ui/SiteLink';
 
+import './ConsultationsCard.modules.css';
+
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   className = '',
-  // card,
   title,
   textCard,
   format,
@@ -20,27 +19,6 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   linkText,
   href,
 }) => {
-  // const { data } = await performRequest({ query: consultancyPlatesQuery });
-  // const plates = data?.consultancyPlate.plates;
-  // console.log(plates);
-
-  // // const { id, title, textCard, linkText, href } = card;
-
-  // const mergeData = (datoData: Plate[], staticData: StaticData[]) => {
-  //   const result = staticData.map(staticItem =>
-  //     Object.assign(
-  //       staticItem,
-  //       datoData.find(datoItem => datoItem.text === staticItem.title),
-  //     ),
-  //   );
-  //   console.log(result);
-  //   return result;
-  // };
-
-  // const dataToShow = plates
-  //   ? mergeData(plates, staticUniquenessess)
-  //   : staticUniquenessess;
-
   const classPlate = classNames(
     className,
     ' inline-block rounded-[20px] bg-plashka px-4 py-[6px] font-roboto text-xs font-medium leading-[1.35] text-mainBlack md:text-sm md:leading-[1.35]',
@@ -62,74 +40,6 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
         <p className={classPlate}>{frequency}</p>
         <p className={classPlate}>{duration}</p>
       </div>
-      {/* {id === 1 && (
-        <ul>
-          {plates.map((plate: Plate, index: number) => {
-            const { id, format, frequency, duration } = plate;
-            if (index === 0) {
-              return (
-                <li key={id} className="inline-flex flex-wrap gap-2">
-                  <p className={classPlate}>{format}</p>
-                  <p className={classPlate}>{frequency}</p>
-                  <p className={classPlate}>{duration}</p>
-                </li>
-              );
-            }
-            return null;
-          })}
-        </ul>
-      )} */}
-      {/* {id === 1 && (
-        <ul>
-          {plates.map((plate: Plate, index: number) => {
-            const { id, format, frequency, duration } = plate;
-            if (index === 0) {
-              return (
-                <li key={id} className="inline-flex flex-wrap gap-2">
-                  <p className={classPlate}>{format}</p>
-                  <p className={classPlate}>{frequency}</p>
-                  <p className={classPlate}>{duration}</p>
-                </li>
-              );
-            }
-            return null;
-          })}
-        </ul>
-      )}
-      {id === 2 && (
-        <ul>
-          {plates.map((plate: Plate, index: number) => {
-            const { id, format, frequency, duration } = plate;
-            if (index === 1) {
-              return (
-                <li key={id} className="inline-flex flex-wrap gap-2">
-                  <p className={classPlate}>{format}</p>
-                  <p className={classPlate}>{frequency}</p>
-                  <p className={classPlate}>{duration}</p>
-                </li>
-              );
-            }
-            return null;
-          })}
-        </ul>
-      )}
-      {id === 3 && (
-        <ul>
-          {plates.map((plate: Plate, index: number) => {
-            const { id, format, frequency, duration } = plate;
-            if (index === 2) {
-              return (
-                <li key={id} className="inline-flex flex-wrap gap-2">
-                  <p className={classPlate}>{format}</p>
-                  <p className={classPlate}>{frequency}</p>
-                  <p className={classPlate}>{duration}</p>
-                </li>
-              );
-            }
-            return null;
-          })}
-        </ul>
-      )} */}
       <SiteLink
         href={href}
         linkType="link"

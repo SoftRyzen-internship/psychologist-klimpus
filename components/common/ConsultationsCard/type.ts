@@ -18,7 +18,6 @@ export type StaticData = {
 };
 
 export type ConsultationsCardProps = {
-  // card: StaticData;
   title: string;
   textCard: string;
   linkText: string;

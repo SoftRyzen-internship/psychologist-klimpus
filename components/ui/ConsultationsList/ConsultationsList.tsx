@@ -1,34 +1,19 @@
 import { performRequest } from '@/lib/datocms';
 import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
-import { Plate, StaticData } from '@/components/common/ConsultationsCard/type';
-
 import { ConsultationsCard } from '@/components/common/ConsultationsCard';
 
 import consultations from '@/data/consultations.json';
+import { mergeConsultationsData } from '@/utils/mergeData';
 
 export const ConsultationsList = async () => {
   const { consultationsList } = consultations;
 
   const { data } = await performRequest({ query: consultancyPlatesQuery });
   const plates = data?.consultancyPlate.plates;
-  // console.log(plates);
-
-  // const { id, title, textCard, linkText, href } = card;
-
-  const mergeData = (datoData: Plate[], staticData: StaticData[]) => {
-    const result = staticData.map(staticItem =>
-      Object.assign(
-        staticItem,
-        datoData.find(datoItem => datoItem.text === staticItem.title),
-      ),
-    );
-    // console.log(result);
-    return result;
-  };
 
   const dataToShow = plates
-    ? mergeData(plates, consultationsList)
+    ? mergeConsultationsData(plates, consultationsList)
     : consultationsList;
 
   return (
