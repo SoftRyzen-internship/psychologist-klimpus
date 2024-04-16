@@ -51,6 +51,13 @@ details.
 
 Here you may find a list of the most common components and their API:
 
+- #### component Logo
+
+| Prop        | Default | Description                                                         |
+| ----------- | ------- | ------------------------------------------------------------------- |
+| `onClick`   | --      | optional, `() => void`, add the function of closing the mobile-menu |
+| `className` | --      | optional, `string`, adds custom css class to the Logo               |
+
 - #### Socials
 
 | Prop        | Value    | Description                                    |
@@ -64,6 +71,37 @@ Here you may find a list of the most common components and their API:
 | `name`  | `string` | required, specifies the name of the SocialsItem     |
 | `href`  | `string` | required, specifies the URL of the link             |
 | `ariaL` | `string` | optional, adds custom aria-label to the SocialsItem |
+
+- #### component Modal
+
+| Prop        | Default | Description                                                   |
+| ----------- | ------- | ------------------------------------------------------------- |
+| `onClose`   | --      | required, `() => void`, add the function of closing the modal |
+| `children`  | --      | optional, `React.ReactNode`, React components                 |
+| `className` | --      | optional, `string`, adds custom css class to the Modal        |
+
+- #### component Notification
+
+| Prop   | Default | Description                                       |
+| ------ | ------- | ------------------------------------------------- |
+| `type` | --      | required, `sucess`, `error`, type of notification |
+
+- #### component FormInput
+
+| Prop       | Default | Description                                                                       |
+| ---------- | ------- | --------------------------------------------------------------------------------- |
+| `config`   | --      | required, `FormInputsConfig`, config props - name, label, placeholder, validation |
+| `textarea` | --      | required, `boolean`, specifies if component input or textarea                     |
+| `register` | --      | required, `UseFormRegister`, register an input element and apply validation rules |
+| `errors`   | --      | optional, `object`, contains inputs' errors data                                  |
+
+- #### component Checkbox
+
+| Prop            | Default | Description                                                                       |
+| --------------- | ------- | --------------------------------------------------------------------------------- |
+| `register`      | --      | required, `UseFormRegister`, register an input element and apply validation rules |
+| `errors`        | --      | optional, `object`, contains inputs' errors data                                  |
+| `checkboxInput` | --      | optional, `string`                                                                |
 
 - #### Card
 

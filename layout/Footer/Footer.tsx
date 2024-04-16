@@ -20,8 +20,10 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start md:flex-row md:items-center md:gap-6 ">
-          <p className="text font-roboto">{data.footer.text}</p>
+        <div className="flex flex-col items-start py-8 md:flex-row md:items-center md:gap-6 md:py-6 xl:py-8">
+          <p className="font-roboto text-xs font-normal leading-[1.35] text-white xl:text-sm smOnly:mb-2">
+            {data.footer.text}
+          </p>
           <ul className="flex items-center ">
             {footer.links.map(item => (
               <FooterItem
@@ -39,6 +41,9 @@ export const Footer = () => {
             {data.footer.policyText}
           </a>
         </div>
+        <p className="font-roboto text-xs font-normal leading-[1.35] text-white xl:text-sm">
+          {data.footer.copyright}
+        </p>
       </div>
     </footer>
   );
