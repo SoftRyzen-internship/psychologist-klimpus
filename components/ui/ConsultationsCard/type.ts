@@ -3,6 +3,7 @@ export type Plate = {
   format: string;
   frequency: string;
   duration: string;
+  text: string;
 };
 export type StaticData = {
   id: number;
@@ -17,7 +18,14 @@ export type StaticData = {
 };
 
 export type ConsultationsCardProps = {
-  card: StaticData;
+  // card: StaticData;
+  title: string;
+  textCard: string;
+  linkText: string;
+  href: string;
+  format: string;
+  frequency: string;
+  duration: string;
   className?: string;
   isConsultations?: boolean;
 };

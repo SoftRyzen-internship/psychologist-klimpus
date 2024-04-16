@@ -1,37 +1,45 @@
 import React from 'react';
 
 import classNames from 'classnames';
-import { performRequest } from '@/lib/datocms';
-import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
+// import { performRequest } from '@/lib/datocms';
+// import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
-import { ConsultationsCardProps, Plate } from './type';
+import { ConsultationsCardProps } from './type';
 
 import { Card } from '@/components/ui/Card';
 import { SiteLink } from '@/components/ui/SiteLink';
 
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   className = '',
-  card,
+  // card,
+  title,
+  textCard,
+  format,
+  frequency,
+  duration,
+  linkText,
+  href,
 }) => {
-  const { data } = await performRequest({ query: consultancyPlatesQuery });
-  const plates = data?.consultancyPlate.plates;
-  console.log(plates);
+  // const { data } = await performRequest({ query: consultancyPlatesQuery });
+  // const plates = data?.consultancyPlate.plates;
+  // console.log(plates);
 
-  const { id, title, textCard, linkText, href } = card;
+  // // const { id, title, textCard, linkText, href } = card;
 
-  // const mergeData = (
-  //   datoData: Plate[],
-  //   staticData: StaticData[],
-  // ) => {
+  // const mergeData = (datoData: Plate[], staticData: StaticData[]) => {
   //   const result = staticData.map(staticItem =>
   //     Object.assign(
   //       staticItem,
-  //       datoData.find(datoItem => datoItem.text === staticItem.text),
+  //       datoData.find(datoItem => datoItem.text === staticItem.title),
   //     ),
   //   );
   //   console.log(result);
   //   return result;
   // };
+
+  // const dataToShow = plates
+  //   ? mergeData(plates, staticUniquenessess)
+  //   : staticUniquenessess;
 
   const classPlate = classNames(
     className,
@@ -49,7 +57,12 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
       <p className="mb-6 font-roboto text-base font-normal leading-[1.35] text-gray md:text-sm md:leading-[1.5] xl:text-base">
         {textCard}
       </p>
-      {id === 1 && (
+      <div className="inline-flex flex-wrap gap-2">
+        <p className={classPlate}>{format}</p>
+        <p className={classPlate}>{frequency}</p>
+        <p className={classPlate}>{duration}</p>
+      </div>
+      {/* {id === 1 && (
         <ul>
           {plates.map((plate: Plate, index: number) => {
             const { id, format, frequency, duration } = plate;
@@ -65,7 +78,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
             return null;
           })}
         </ul>
-      )}
+      )} */}
       {/* {id === 1 && (
         <ul>
           {plates.map((plate: Plate, index: number) => {
