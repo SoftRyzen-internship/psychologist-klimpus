@@ -88,5 +88,9 @@
     "aria-label": {
       "burger": "Бургер меню"
     }
+  },
+  "sliderBtn": {
+    "rightArrow": "Наступний слайд",
+    "leftArrow": "Попередній слайд"
   }
 }
