@@ -1,7 +1,7 @@
 import { FeedbackCard } from '../FeedbackCard';
 import feedbackData from '@/data/feedback.json';
 import { Slider } from './Slider';
-import { RequestCard } from '@/components/ui/RequestsCard';
+import { RequestCard } from '@/components/common/RequestsCard';
 import requestData from '@/data/requests.json';
 
 export const SliderTestComponent = () => {

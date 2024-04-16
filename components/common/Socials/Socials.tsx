@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import { SocialsItem } from '../SocialsItem';
+import { SocialsItem } from '../../ui/SocialsItem';
 
 import { SocialsProps } from './types';
 

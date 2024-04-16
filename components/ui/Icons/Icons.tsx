@@ -15,7 +15,7 @@ import EmailAccent from '@/public/icons/mailRed.svg';
 import Phone from '@/public/icons/phone.svg';
 import PhoneAccent from '@/public/icons/phoneRed.svg';
 import s from './Icons.module.css';
-import { Logo } from '../Logo';
+import { Logo } from '../../common/Logo';
 
 export const Icons = () => {
   const [isOpen, setIsOpen] = useState(false);
