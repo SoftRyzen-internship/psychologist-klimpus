@@ -31,7 +31,7 @@ import { FeaturesCard } from '@/components/common/FeaturesCard';
 import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
 import { SliderTestComponent } from '../Slider/SliderTestComponent';
-import { CommunityCard } from '@/components/ui/CommunityCard';
+import { CommunityCard } from '@/components/common/CommunityCard';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
