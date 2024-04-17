@@ -33,7 +33,7 @@ export const SliderBtn: React.FC<SliderBtnProps> = ({
       <button
         aria-label={ariaLabel.rightArrow}
         type="button"
-        className={`button-prev-${section} mr-[40px] cursor-pointer`}
+        className={`button-prev-${section} mr-10 cursor-pointer md:mr-16`}
       >
         <ArrowLeft className={arrowLeftClass} />
       </button>
