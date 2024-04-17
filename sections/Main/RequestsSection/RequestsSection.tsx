@@ -33,9 +33,9 @@ export const RequestsSection: React.FC = () => {
               data={request}
             />
           </div>
-          <div className="hidden flex-wrap md:flex">
+          <div className="hidden flex-wrap gap-4 md:flex">
             {request.map(card => (
-              <div key={card.id} className="md:w-1/2 md:py-2 xl:w-1/4">
+              <div key={card.id}>
                 <RequestCard data={card} />
               </div>
             ))}
