@@ -1,0 +1,13 @@
+/* .coursesList p {
+  color: red;
+} */
+
+.coursesList {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.listItem {
+  color: #1c1c1c;
+}

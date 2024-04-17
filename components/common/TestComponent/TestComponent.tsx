@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-// import { ReactNode } from 'react';
+
 // import { useState } from 'react';
 
 // import classNames from 'classnames';
@@ -19,7 +19,7 @@
 // import css from './TestComponent.module.css';
 
 'use client';
-
+import { ReactNode } from 'react';
 import { RequestCard } from '@/components/common/RequestsCard';
 
 import dataJson from '@/data/features.json';
@@ -31,7 +31,11 @@ import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
 import { SliderTestComponent } from '../Slider/SliderTestComponent';
 
-export const TestComponent = () => {
+type TestComponentProps = {
+  children?: ReactNode;
+};
+
+export const TestComponent = ({ children }: TestComponentProps) => {
   const { featuresList } = dataJson;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,6 +61,7 @@ export const TestComponent = () => {
       </button>
       <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
       <SliderTestComponent />
+      {children}
     </div>
   );
 };
