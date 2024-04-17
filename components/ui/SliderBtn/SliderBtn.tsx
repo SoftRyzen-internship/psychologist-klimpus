@@ -29,9 +29,10 @@ export const SliderBtn: React.FC<SliderBtnProps> = ({
   });
 
   const containerClass = classNames(
-    'mt-[16px] flex md:absolute md:right-0 md:top-[-56px] md:z-10 md:mt-0 xl:top-[-68px]',
+    'mt-[16px] flex md:absolute md:right-0 md:z-10 md:mt-0',
     {
       'md:top-[-78px] xl:top-[-105px]': section === 'consultancyReviews',
+      'md:top-[-56px] xl:top-[-68px]': section !== 'consultancyReviews',
     },
   );
 

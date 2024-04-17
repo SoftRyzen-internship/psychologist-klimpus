@@ -1,0 +1,128 @@
+{
+  "familyCards": [
+    {
+      "id": 1,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card1-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp"
+      },
+      "requestText": "Втрата почуттів"
+    },
+    {
+      "id": 2,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card2-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp"
+      },
+      "requestText": "Конфлікти та насилля"
+    },
+    {
+      "id": 3,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card3-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp"
+      },
+      "requestText": "Ревнощі та зрада"
+    },
+    {
+      "id": 4,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card4-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp"
+      },
+      "requestText": "Відносини при розлученні"
+    },
+    {
+      "id": 5,
+      "images": {
+        "mobImage": "/images/consultationsRequests/family/card5-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp"
+      },
+      "requestText": "Проблеми батьківства"
+    }
+  ],
+  "individualCards": [
+    {
+      "id": 1,
+      "images": {
+        "mobImage": "/images/consultationsRequests/individual/card1-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/individual/card1-tabdesk@2x.webp"
+      },
+      "requestText": "Постійна фізична втома"
+    },
+    {
+      "id": 2,
+      "images": {
+        "mobImage": "/images/consultationsRequests/individual/card2-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/individual/card2-tabdesk@2x.webp"
+      },
+      "requestText": "Конфлікти на роботі та в сім'ї"
+    },
+    {
+      "id": 3,
+      "images": {
+        "mobImage": "/images/consultationsRequests/individual/card3-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/individual/card3-tabdesk@2x.webp"
+      },
+      "requestText": "Самооцінка та самоприйняття"
+    },
+    {
+      "id": 4,
+      "images": {
+        "mobImage": "/images/consultationsRequests/individual/card4-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/individual/card4-tabdesk@2x.webp"
+      },
+      "requestText": "Зміни в кар'єрі та житті"
+    },
+    {
+      "id": 5,
+      "images": {
+        "mobImage": "/images/consultationsRequests/individual/card5-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/individual/card5-tabdesk@2x.webp"
+      },
+      "requestText": "Неконтрольована агресія"
+    }
+  ],
+  "groupCards": [
+    {
+      "id": 1,
+      "images": {
+        "mobImage": "/images/consultationsRequests/group/card1-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/group/card1-tabdesk@2x.webp"
+      },
+      "requestText": "Стрес і вигорання"
+    },
+    {
+      "id": 2,
+      "images": {
+        "mobImage": "/images/consultationsRequests/group/card2-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/group/card2-tabdesk@2x.webp"
+      },
+      "requestText": "Психологічні травми"
+    },
+    {
+      "id": 3,
+      "images": {
+        "mobImage": "/images/consultationsRequests/group/card3-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/group/card3-tabdesk@2x.webp"
+      },
+      "requestText": "Панічні атаки"
+    },
+    {
+      "id": 4,
+      "images": {
+        "mobImage": "/images/consultationsRequests/group/card4-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/group/card4-tabdesk@2x.webp"
+      },
+      "requestText": "Порушення харчової поведінки"
+    },
+    {
+      "id": 5,
+      "images": {
+        "mobImage": "/images/consultationsRequests/group/card5-mob@2x.webp",
+        "tabdeskImage": "/images/consultationsRequests/group/card5-tabdesk@2x.webp"
+      },
+      "requestText": "Міжособистісні відносини"
+    }
+  ]
+}

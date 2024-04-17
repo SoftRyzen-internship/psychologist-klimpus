@@ -21,7 +21,9 @@ export const CommunitySection = () => {
         </div>
         <ul className="hidden grid-cols-1 gap-4 md:grid md:grid-cols-2 xl:grid-cols-4">
           {communityData.map((community, index) => (
-            <CommunityCard key={index} data={community} />
+            <li key={index}>
+              <CommunityCard data={community} />
+            </li>
           ))}
         </ul>
       </div>
