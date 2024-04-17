@@ -1,17 +1,25 @@
-import { FeaturesList } from '@/components/common/FeaturesList';
+'use client';
+
+import { RequestsList } from '@/components/common/RequestsList';
+// import { Slider } from '@/components/common/Slider';
 
 import dataJson from '@/data/consultationsRequests.json';
+import { useScreen } from '@/utils/useScreen';
 
 export const RequestSection = () => {
   const { sectionText } = dataJson;
+  const { isMobile } = useScreen();
   return (
     <section className="section">
       <div className="container ">
-        <p className="mb-3 py-2 font-roboto text-base font-normal leading-[1.35] text-miniTitles md:w-[165px] md:py-3 xl:w-[186px] xl:text-lg xl:leading-[1.35]">
+        <p className="subtitleConsultation mb-6 w-[328px] uppercase md:mb-10 md:w-[436px] md:leading-[1.5] xl:mb-12 xl:w-[598px]">
           {sectionText}
         </p>
 
-        <FeaturesList />
+        {/* {isMobile ? <RequestsList /> : <Slider />} */}
+        {isMobile ? <RequestsList isFamily /> : <p>slider</p>}
+        {isMobile ? <RequestsList isIndividual /> : <p>slider</p>}
+        {isMobile ? <RequestsList isGroup /> : <p>slider</p>}
       </div>
     </section>
   );
