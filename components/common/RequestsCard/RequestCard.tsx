@@ -15,13 +15,13 @@ export const RequestCard: React.FC<RequestCardProps> = ({
 
   const styles = classNames(
     className,
-    'rounded-[20px] smOnly:max-w-[428px] md:w-[255px] xl:w-[237px] relative',
+    'rounded-[20px] md:w-[255px] xl:w-[237px] relative',
   );
 
   return (
     <div className={styles}>
       <Image
-        className="width={428} height={300} rounded-[20px] object-cover object-[center] md:h-[327px] md:w-[255px] md:object-top xl:h-[327px] xl:w-[237px] smOnly:mb-4 smOnly:aspect-[1.426]"
+        className="width={428} height={300} rounded-[20px] object-cover object-[center] md:h-[327px] md:w-[255px] md:object-top xl:h-[327px] xl:w-[237px] smOnly:aspect-[1.426]"
         src={image}
         width={765}
         height={981}
