@@ -8,10 +8,10 @@ import { ConsultationsRequestCardProps } from './type';
 
 export const ConsultationsRequestCard: React.FC<
   ConsultationsRequestCardProps
-> = ({ card, className }) => {
+> = ({ data, className }) => {
   const { isMobile, isTabletOrDesktop } = useScreen();
 
-  const { images, requestText } = card;
+  const { images, requestText } = data;
 
   const styles = classNames(
     className,

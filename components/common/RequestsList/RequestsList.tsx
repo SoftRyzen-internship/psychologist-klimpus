@@ -35,7 +35,7 @@ export const RequestsList: React.FC<RequestsListProps> = () =>
         {familyCards.map(item => {
           return (
             <li key={item.id}>
-              <ConsultationsRequestCard card={item} />
+              <ConsultationsRequestCard data={item} />
             </li>
           );
         })}

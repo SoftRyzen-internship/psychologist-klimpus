@@ -1,5 +1,5 @@
 export type ConsultationsRequestCardProps = {
-  card: {
+  data: {
     id: number;
     images: {
       mobImage: string;
