@@ -1,5 +1,5 @@
 import React from 'react';
-import { CommunityCard } from '@/components/ui/CommunityCard';
+import { CommunityCard } from '@/components/common/CommunityCard';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { Slider } from '@/components/common/Slider';
 import communityData from '@/data/communities.json';

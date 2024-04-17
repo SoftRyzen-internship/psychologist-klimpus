@@ -8,7 +8,7 @@ import classNames from 'classnames';
 
 import { CommunityCardProps } from './types';
 
-import { Card } from '../Card';
+import { Card } from '../../ui/Card';
 
 export const CommunityCard: React.FC<CommunityCardProps> = ({
   data,
