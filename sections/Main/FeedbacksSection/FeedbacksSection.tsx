@@ -41,7 +41,7 @@ export const FeedbacksSection: React.FC<IFeedbacksSectionProps> = ({
           </SectionTitle>
 
           {page === 'main' && (
-            <p className=" mb-5 font-roboto text-[16px] font-semibold leading-[1.35] text-mainBlack  md:mb-[92px] md:text-[19px]  xl:mb-[120px] xl:w-[701px] xl:text-[20px]">
+            <p className=" mb-5 font-roboto text-[16px] font-medium leading-[1.35] text-mainBlack  md:mb-[92px] md:text-[19px]  xl:mb-[120px] xl:w-[701px] xl:text-[20px]">
               {afterTitle}
             </p>
           )}
