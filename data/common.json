@@ -12,6 +12,9 @@
       "Системний терапевт"
     ]
   },
+  "communities": {
+    "title": "Членство в професійних спільнотах"
+  },
   "contacts": [
     { "name": "email", "value": "therapybyirena@gmail.com" },
     { "name": "tel", "value": "+447404864095" }
