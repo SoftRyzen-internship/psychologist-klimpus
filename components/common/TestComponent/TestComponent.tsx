@@ -73,18 +73,18 @@ export const TestComponent = () => {
       <SliderTestComponent />
       <div className="container flex  flex-col gap-5 pb-6 pt-6">
         {familyCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} card={item} />;
+          return <ConsultationsRequestCard key={item.id} data={item} />;
         })}
       </div>
 
       <div className="container flex  flex-col gap-5 pb-6 pt-6">
         {individualCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} card={item} />;
+          return <ConsultationsRequestCard key={item.id} data={item} />;
         })}
       </div>
       <div className="container flex  flex-col gap-5 pb-6 pt-6">
         {groupCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} card={item} />;
+          return <ConsultationsRequestCard key={item.id} data={item} />;
         })}
       </div>
     </div>
