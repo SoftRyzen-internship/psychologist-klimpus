@@ -23,7 +23,9 @@ export const RequestsSection: React.FC = () => {
           <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
           </h2>
-          <p className="textBold mb-5 md:mb-10 xl:mb-16">{sectionText}</p>
+          <p className="mb-5 font-roboto text-base font-semibold leading-[1.35] md:mb-10 md:text-lg xl:mb-16 xl:text-xl">
+            {sectionText}
+          </p>
           <div className="md:hidden">
             <Slider
               component={RequestCard}
@@ -31,9 +33,9 @@ export const RequestsSection: React.FC = () => {
               data={request}
             />
           </div>
-          <div className="hidden flex-col flex-wrap md:flex xl:flex-row">
+          <div className="hidden flex-wrap md:flex">
             {request.map(card => (
-              <div key={card.id} className="md:w-1/4 md:p-2">
+              <div key={card.id} className="md:w-1/2 md:py-2 xl:w-1/4">
                 <RequestCard data={card} />
               </div>
             ))}
