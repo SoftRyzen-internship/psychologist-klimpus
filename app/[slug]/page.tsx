@@ -1,4 +1,6 @@
-import consultations from '@/data/consultation.json';
+import { FormSection } from '@/sections/Main/FormSection';
+import { ConsultationsHeroSections } from '@/sections/Consultations/ConsultationsHeroSection';
+import consultationsData from '@/data/consultations.json';
 
 interface Props {
   params: {
@@ -7,18 +9,16 @@ interface Props {
 }
 
 const SinglePage = ({ params }: Props) => {
-  const consultation = consultations.find(
-    consultation => consultation.name === params.slug,
+  const consultation = consultationsData.consultationsList.find(
+    item => item.name === params.slug,
   );
 
   console.log(consultation);
 
   return (
     <div className="container">
-      <div>
-        <p>{consultation?.name}</p>
-        <p>{consultation?.title}</p>
-      </div>
+      <ConsultationsHeroSections consultation={consultation} />
+      <FormSection />
     </div>
   );
 };
