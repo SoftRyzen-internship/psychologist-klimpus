@@ -14,7 +14,7 @@ export const Card: React.FC<CardProps> = ({
   isCommunities,
 }) => {
   const classname = classNames(
-    'rounded-[20px] bg-bgBeige w-full ',
+    'rounded-[20px] bg-bgBeige w-full',
     {
       'py-4 px-[31px] xl:px-6 md:w-[255px] xl:w-[238px]': isFeatures,
       'py-4 xl:py-6 px-6 mdOnly:px-4 md:w-[165px] xl:w-[323px]': isUniqueness,

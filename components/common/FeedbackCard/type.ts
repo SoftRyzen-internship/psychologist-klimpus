@@ -3,4 +3,5 @@ export type FeedbackCardProps = {
     text: string;
     owner: string;
   };
+  section?: string;
 };
