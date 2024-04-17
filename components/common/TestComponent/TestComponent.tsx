@@ -35,7 +35,7 @@ import { SliderTestComponent } from '../Slider/SliderTestComponent';
 
 import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
 
-import { CommunityCard } from '@/components/ui/CommunityCard';
+import { CommunityCard } from '@/components/common/CommunityCard';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
