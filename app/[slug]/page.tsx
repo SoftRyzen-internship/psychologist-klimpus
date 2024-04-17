@@ -14,10 +14,10 @@ const SinglePage = ({ params }: Props) => {
   console.log(consultation);
 
   return (
-    <div>
+    <div className="container">
       <div>
         <p>{consultation?.name}</p>
-        <p>{consultation?.text}</p>
+        <p>{consultation?.title}</p>
       </div>
     </div>
   );
