@@ -6,6 +6,7 @@ query MyQuery {
       format
       frequency
       duration
+      text
     }
   }
 }

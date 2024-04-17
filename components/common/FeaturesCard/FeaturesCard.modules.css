@@ -1,5 +1,6 @@
 @media (min-width: 1280px) {
-  .featuresCard:nth-child(2) p {
-    width: 160px;
+  .featuresCard:nth-child(2) p,
+  .featuresCard:nth-child(3) p {
+    width: 155px;
   }
 }
