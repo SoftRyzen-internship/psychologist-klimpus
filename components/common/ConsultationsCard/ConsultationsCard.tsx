@@ -11,7 +11,7 @@ import './ConsultationsCard.modules.css';
 
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   className = '',
-  title,
+  text,
   textCard,
   format,
   frequency,
@@ -30,7 +30,7 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
       className={classNames('consultationsCard xl:h-[430px]', className)}
     >
       <h3 className="mb-4 font-roboto text-xl font-semibold leading-[1.35] text-accent md:text-[22px] xl:w-[215px] xl:text-2xl xl:leading-[1.35]">
-        {title}
+        {text}
       </h3>
       <p className="mb-6 font-roboto text-base font-normal leading-[1.35] text-gray md:text-sm md:leading-[1.5] xl:text-base">
         {textCard}

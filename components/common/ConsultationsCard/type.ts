@@ -5,9 +5,8 @@ export type Plate = {
   duration: string;
   text: string;
 };
-export type StaticData = {
-  id: number;
-  title: string;
+
+export type ConsultationsCardProps = {
   textCard: string;
   linkText: string;
   href: string;
@@ -15,16 +14,7 @@ export type StaticData = {
   frequency: string;
   duration: string;
   text: string;
-};
-
-export type ConsultationsCardProps = {
-  title: string;
-  textCard: string;
-  linkText: string;
-  href: string;
-  format: string;
-  frequency: string;
-  duration: string;
+  id?: string;
   className?: string;
   isConsultations?: boolean;
 };
