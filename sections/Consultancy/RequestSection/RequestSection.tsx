@@ -1,13 +1,16 @@
 'use client';
 
-import { RequestsList } from '@/components/common/RequestsList';
-// import { Slider } from '@/components/common/Slider';
+// import { RequestsList } from '@/components/common/RequestsList';
+import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
+import { Slider } from '@/components/common/Slider';
 
 import dataJson from '@/data/consultationsRequests.json';
 import { useScreen } from '@/utils/useScreen';
 
 export const RequestSection = () => {
-  const { sectionText } = dataJson;
+  const { sectionText, familyCards } = dataJson;
+  // const { familyCards, individualCards, groupCards } = dataJson;
+
   const { isMobile } = useScreen();
   return (
     <section className="section">
@@ -16,10 +19,28 @@ export const RequestSection = () => {
           {sectionText}
         </p>
 
+        {isMobile ? (
+          <ul className="flex flex-col gap-4">
+            {familyCards.map(item => {
+              return (
+                <li key={item.id}>
+                  <ConsultationsRequestCard data={item} />
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <Slider
+            component={ConsultationsRequestCard}
+            section={'requestsConsultancy'}
+            data={familyCards}
+          />
+        )}
+
         {/* {isMobile ? <RequestsList /> : <Slider />} */}
-        {isMobile ? <RequestsList isFamily /> : <p>slider</p>}
+        {/* {isMobile ? <RequestsList isFamily /> : <p>slider</p>}
         {isMobile ? <RequestsList isIndividual /> : <p>slider</p>}
-        {isMobile ? <RequestsList isGroup /> : <p>slider</p>}
+        {isMobile ? <RequestsList isGroup /> : <p>slider</p>} */}
       </div>
     </section>
   );
