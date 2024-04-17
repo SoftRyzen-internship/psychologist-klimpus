@@ -28,8 +28,15 @@ export const SliderBtn: React.FC<SliderBtnProps> = ({
     [css['slider-arrow']]: !isNextSlide,
   });
 
+  const containerClass = classNames(
+    'mt-[16px] flex md:absolute md:right-0 md:top-[-56px] md:z-10 md:mt-0 xl:top-[-68px]',
+    {
+      'md:top-[-82px] xl:top-[-106px]': section === 'consultancyReviews',
+    },
+  );
+
   return (
-    <div className="mt-[16px] flex md:absolute md:right-0 md:top-[-56px] md:z-10 md:mt-0 xl:top-[-68px]">
+    <div className={containerClass}>
       <button
         aria-label={ariaLabel.rightArrow}
         type="button"
