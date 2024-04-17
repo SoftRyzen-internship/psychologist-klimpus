@@ -1,14 +1,10 @@
-import { UniquenessCardProps } from '@/components/common/UniquenessCard/type';
-
-export const mergeData = (
-  datoData: UniquenessCardProps[],
-  staticData: UniquenessCardProps[],
-) => {
-  const result = staticData.map(staticItem =>
+export const mergeData = (datoData: any, staticData: any) => {
+  const result = staticData.map((staticItem: any) =>
     Object.assign(
       staticItem,
-      datoData.find(datoItem => datoItem.text === staticItem.text),
+      datoData.find((datoItem: any) => datoItem.text === staticItem.text),
     ),
   );
+
   return result;
 };
