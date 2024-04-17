@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
 
@@ -21,14 +20,6 @@ export const ConsultationsRequestCard: React.FC<
 
   return (
     <div className={styles}>
-      {/* <Image
-        className="aspect-video h-[168px] w-full rounded-[20px] object-cover object-top md:h-[301px] md:w-[225px] md:object-center xl:h-[525px] xl:w-[392px]"
-        src={image}
-        width={328}
-        height={168}
-        priority
-        alt={requestText}
-      /> */}
       {isMobile && (
         <Image
           width={428}

@@ -2,7 +2,6 @@
   "familyCards": [
     {
       "id": 1,
-      "image": "/images/consultationsRequests/family/card1@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/family/card1-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp"
@@ -11,7 +10,6 @@
     },
     {
       "id": 2,
-      "image": "/images/consultationsRequests/family/card2@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/family/card2-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp"
@@ -20,7 +18,6 @@
     },
     {
       "id": 3,
-      "image": "/images/consultationsRequests/family/card3@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/family/card3-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp"
@@ -29,7 +26,6 @@
     },
     {
       "id": 4,
-      "image": "/images/consultationsRequests/family/card4@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/family/card4-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp"
@@ -38,7 +34,6 @@
     },
     {
       "id": 5,
-      "image": "/images/consultationsRequests/family/card5@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/family/card5-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp"
@@ -49,7 +44,6 @@
   "individualCards": [
     {
       "id": 1,
-      "image": "/images/consultationsRequests/individual/card1@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/individual/card1-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/individual/card1-tabdesk@2x.webp"
@@ -58,7 +52,6 @@
     },
     {
       "id": 2,
-      "image": "/images/consultationsRequests/individual/card2@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/individual/card2-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/individual/card2-tabdesk@2x.webp"
@@ -67,7 +60,6 @@
     },
     {
       "id": 3,
-      "image": "/images/consultationsRequests/individual/card3@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/individual/card3-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/individual/card3-tabdesk@2x.webp"
@@ -76,7 +68,6 @@
     },
     {
       "id": 4,
-      "image": "/images/consultationsRequests/individual/card4@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/individual/card4-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/individual/card4-tabdesk@2x.webp"
@@ -85,7 +76,6 @@
     },
     {
       "id": 5,
-      "image": "/images/consultationsRequests/individual/card5@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/individual/card5-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/individual/card5-tabdesk@2x.webp"
@@ -96,7 +86,6 @@
   "groupCards": [
     {
       "id": 1,
-      "image": "/images/consultationsRequests/group/card1@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/group/card1-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/group/card1-tabdesk@2x.webp"
@@ -105,7 +94,6 @@
     },
     {
       "id": 2,
-      "image": "/images/consultationsRequests/group/card2@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/group/card2-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/group/card2-tabdesk@2x.webp"
@@ -114,7 +102,6 @@
     },
     {
       "id": 3,
-      "image": "/images/consultationsRequests/group/card3@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/group/card3-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/group/card3-tabdesk@2x.webp"
@@ -123,7 +110,6 @@
     },
     {
       "id": 4,
-      "image": "/images/consultationsRequests/group/card4@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/group/card4-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/group/card4-tabdesk@2x.webp"
@@ -132,7 +118,6 @@
     },
     {
       "id": 5,
-      "image": "/images/consultationsRequests/group/card5@3x.webp",
       "images": {
         "mobImage": "/images/consultationsRequests/group/card5-mob@2x.webp",
         "tabdeskImage": "/images/consultationsRequests/group/card5-tabdesk@2x.webp"
