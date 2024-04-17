@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { usePathname } from 'next/navigation';
 
 import classNames from 'classnames';
@@ -11,11 +11,13 @@ import { NavBarDropdownList } from '@/components/ui/NavBarDropdownList';
 import ArrowDown from '@/public/icons/arrowDown.svg';
 import ArrowUp from '@/public/icons/arrowUp.svg';
 
+import { INavBarProps } from './type';
+
 import jsonData from '@/data/common.json';
 
 import css from './NavBar.module.css';
 
-export const NavBar = () => {
+export const NavBar: React.FC<INavBarProps> = ({ onClose }) => {
   const linkData = jsonData.NavBar.link;
   const btnData = jsonData.NavBar.btn;
 
@@ -44,6 +46,7 @@ export const NavBar = () => {
         {linkData.map((item, index) => (
           <li key={index}>
             <Link
+              onClick={onClose}
               href={`${item.moveTo}`}
               className={`font-roboto text-[18px] font-normal leading-[1.35] transition-[color]
                   duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent ${
@@ -69,7 +72,11 @@ export const NavBar = () => {
               <ArrowUp className={`${css['navbar-icon']} h-[15px] w-[15px]`} />
             )}
           </button>
-          <NavBarDropdownList isOpen={isModalVisible} pathname={pathname} />
+          <NavBarDropdownList
+            isOpen={isModalVisible}
+            pathname={pathname}
+            onClose={onClose}
+          />
         </li>
       </ul>
     </nav>
