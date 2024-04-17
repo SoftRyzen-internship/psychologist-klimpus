@@ -1,4 +1,4 @@
-import { TestComponent } from '@/components/common/TestComponent';
+// import { TestComponent } from '@/components/common/TestComponent';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 import { FormSection } from '@/sections/Main/FormSection';
 import { HeroSection } from '@/sections/Main/HeroSection/HeroSection';
@@ -8,7 +8,7 @@ import { AboutSection } from '@/sections/Main/AboutSection';
 import { FeedbacksSection } from '@/sections/Main/FeedbacksSection/FeedbacksSection';
 import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <HeroSection />
@@ -18,7 +18,7 @@ export default function Home() {
       <UniquenessSection />
       <ConsultationsSection />
       <FeedbacksSection page="main" />
-      <TestComponent />
+      {/* <TestComponent /> */}
       <FormSection />
     </>
   );
