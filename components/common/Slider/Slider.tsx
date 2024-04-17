@@ -53,7 +53,11 @@ export const Slider: React.FC<SliderProps> = ({
         {data?.map((card, index) => {
           return (
             <SwiperSlide key={index}>
-              <Card data={card} />
+              {section === 'consultancyReviews' ? (
+                <Card data={card} section={section} />
+              ) : (
+                <Card data={card} />
+              )}
             </SwiperSlide>
           );
         })}
