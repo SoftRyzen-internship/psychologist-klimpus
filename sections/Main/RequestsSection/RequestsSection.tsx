@@ -23,7 +23,7 @@ export const RequestsSection: React.FC = () => {
           <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
           </h2>
-          <p className="mb-5 font-roboto text-base font-semibold leading-[1.35] md:mb-10 md:text-lg xl:mb-16 xl:text-xl">
+          <p className="mb-5 font-roboto text-base font-semibold leading-[1.35] md:mb-9 md:text-lg xl:mb-10 xl:text-xl">
             {sectionText}
           </p>
           <div className="md:hidden">
