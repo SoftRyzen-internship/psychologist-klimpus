@@ -15,7 +15,7 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
   className,
 }) => {
   return (
-    <li className="md:max-w-[346px] xl:max-w-[289px]">
+    <div className="md:max-w-[346px] xl:max-w-[289px]">
       <Card
         isCommunities
         className={classNames(
@@ -28,6 +28,6 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
       <p className="textBold flex text-darkBlue md:leading-[1.35] mdOnly:max-w-[280px]">
         {data.text}
       </p>
-    </li>
+    </div>
   );
 };
