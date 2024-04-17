@@ -1,4 +1,5 @@
-import { FeaturesList } from '@/components/ui/FeaturesList';
+import { SectionTitle } from '@/components/common/SectionTitle';
+import { FeaturesList } from '@/components/common/FeaturesList';
 
 import features from '@/data/features.json';
 
@@ -11,9 +12,9 @@ export const FeaturesSection = () => {
           {preTitle}
         </p>
         <div className="md:w-[527px] xl:w-[1012px]">
-          <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
+          <SectionTitle className="mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
-          </h2>
+          </SectionTitle>
           <FeaturesList />
         </div>
       </div>

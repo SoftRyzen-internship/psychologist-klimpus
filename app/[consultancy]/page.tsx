@@ -1,7 +1,7 @@
 export default function Page() {
   return (
     <>
-      <div>About page</div>
+      <div>Consultancy page</div>
     </>
   );
 }
