@@ -1,4 +1,4 @@
-import { TestComponent } from '@/components/common/TestComponent';
+// import { TestComponent } from '@/components/common/TestComponent';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 import { FormSection } from '@/sections/Main/FormSection';
 import { HeroSection } from '@/sections/Main/HeroSection/HeroSection';
@@ -18,7 +18,7 @@ export default async function Home() {
       <UniquenessSection />
       <ConsultationsSection />
       <FeedbacksSection page="main" />
-      <TestComponent />
+      {/* <TestComponent /> */}
       <FormSection />
     </>
   );
