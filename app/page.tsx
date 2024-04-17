@@ -1,4 +1,4 @@
-import { TestComponent } from '@/components/common/TestComponent';
+// import { TestComponent } from '@/components/common/TestComponent';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 import { FormSection } from '@/sections/Main/FormSection';
 import { HeroSection } from '@/sections/Main/HeroSection/HeroSection';
@@ -13,7 +13,7 @@ export default function Home() {
       <AboutSection />
       <FeaturesSection />
       <UniquenessSection />
-      <TestComponent />
+      {/* <TestComponent /> */}
       <FormSection />
     </>
   );
