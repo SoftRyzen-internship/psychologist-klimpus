@@ -1,5 +1,7 @@
 import React from 'react';
 
+import classNames from 'classnames';
+
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { FeedbackCard } from '@/components/common/FeedbackCard';
 import { Slider } from '@/components/common/Slider';
@@ -15,14 +17,18 @@ export const FeedbacksSection: React.FC<IFeedbacksSectionProps> = ({
 }) => {
   const { preTitle, title, secondTitle, afterTitle, data } = feedbacksData;
 
-  const mainPageContainerStyles =
-    'md:grid md:grid-cols-[162px_527px] md:gap-4 xl:grid-cols-[186px_1010px] xl:gap-[18px]';
+  const containerStyles = classNames('container', {
+    'md:grid md:grid-cols-[162px_527px] md:gap-4 xl:grid-cols-[186px_1010px] xl:gap-[18px]':
+      page === 'main',
+  });
+
+  const titleStyles = classNames('mb-6 md:mb-[40px] xl:mb-16', {
+    [styles.title]: page === 'consultancy',
+  });
 
   return (
     <section className="section">
-      <div
-        className={`container ${page === 'main' ? mainPageContainerStyles : ''}`}
-      >
+      <div className={containerStyles}>
         {page === 'main' && (
           <p className="mb-3 py-2 font-roboto text-base font-normal leading-[1.35] text-miniTitles  md:mb-0 md:py-3 xl:text-lg xl:leading-[1.35]">
             {preTitle}
@@ -30,9 +36,7 @@ export const FeedbacksSection: React.FC<IFeedbacksSectionProps> = ({
         )}
 
         <div>
-          <SectionTitle
-            className={`${page === 'consultancy' ? styles.title : ''} mb-6 md:mb-[40px] xl:mb-16`}
-          >
+          <SectionTitle className={titleStyles}>
             {page === 'main' ? title : secondTitle}
           </SectionTitle>
 
