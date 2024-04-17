@@ -29,7 +29,7 @@ export const UniquenessSection = async () => {
             {sectionTitle}
           </SectionTitle>
           <ul className="flex flex-col gap-4 md:flex-row xl:gap-5">
-            {dataToShow.map(item => (
+            {dataToShow.map((item: UniquenessCardProps) => (
               <li key={item.id}>
                 <UniquenessCard
                   id={item.id}
