@@ -12,4 +12,5 @@ interface Consultation {
 export interface ConsultationProps {
   consultation: Consultation | undefined;
   className?: string;
+  info?: string[];
 }

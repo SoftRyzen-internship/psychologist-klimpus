@@ -5,66 +5,54 @@ import { ConsultationProps } from './types';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { SiteLink } from '@/components/ui/SiteLink';
 import data from '@/data/common.json';
-
 export const ConsultationsHeroSections = ({
   consultation,
   className = '',
 }: ConsultationProps) => {
+  const { format, frequency, duration } = consultation || {};
+
+  const info = [format, frequency, duration];
+
   const classPlate = classNames(
     className,
-    ' inline-block rounded-[20px] bg-plashka px-4 py-[6px] font-roboto text-xs font-medium leading-[1.35] text-mainBlack md:text-sm md:leading-[1.35]',
+    'inline-block rounded-[9px] bg-plashka px-4 py-2 font-roboto text-base font-medium leading-[1.35] text-mainBlack xl:text-lg md:leading-[1.35]',
   );
-
   return (
     <section className="w-full pb-5 pt-10 md:pb-10 md:pt-12 xl:pb-[50px] xl:pt-14">
       <div className="container">
         {consultation && (
           <div className="flex flex-col">
-            <div className="hidden flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:flex xl:pb-12">
+            <div className="flex flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:pb-12">
               <div className="flex w-full flex-col justify-between md:w-[346px] xl:w-[598px]">
-                <SectionTitle className="smOnly:mb-4">
+                <SectionTitle className="smOnly:mb-4 ">
                   {consultation.text}
                 </SectionTitle>
-                <div className="flex flex-wrap gap-[10px] md:gap-5 smOnly:mb-4">
-                  <p className={classPlate}>{consultation.format}</p>
-                  <p className={classPlate}>{consultation.frequency}</p>
-                  <p className={classPlate}>{consultation.duration}</p>
-                </div>
+                <ul className="hidden flex-wrap gap-[10px] md:flex md:gap-[10px] smOnly:mb-4">
+                  {info.map((item, index) => {
+                    return (
+                      <li key={index} className={classPlate}>
+                        <p>{item}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
-              <div className="xl: flex w-full flex-col md:w-[346px] xl:w-[495px]">
-                <p className="mainText hidden pb-6 md:flex">
-                  {consultation.description}
-                </p>
+              <div className="w-full flex-col md:w-[346px] xl:flex xl:w-[495px]">
+                <p className="mainText mb-6 flex">{consultation.description}</p>
+                <ul className="flex flex-wrap gap-[10px] md:hidden md:gap-5 smOnly:mb-4">
+                  {info.map((item, index) => {
+                    return (
+                      <li key={index} className={classPlate}>
+                        <p>{item}</p>
+                      </li>
+                    );
+                  })}
+                </ul>
                 <SiteLink
                   linkType="scroll"
                   href={data.url.form}
                   isAccent={true}
-                  className="w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
-                >
-                  {data.btnText}
-                </SiteLink>
-              </div>
-            </div>
-            <div className="flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:hidden xl:pb-12">
-              <div className="flex w-full flex-col justify-between md:flex-row">
-                <SectionTitle className="w-full md:w-[346px] smOnly:mb-4">
-                  {consultation.text}
-                </SectionTitle>
-                <p className="mainText pb-6 md:w-[346px]">
-                  {consultation.description}
-                </p>
-              </div>
-              <div className="flex w-full flex-col  gap-4 md:flex-row">
-                <div className="mb-4 flex w-full flex-wrap gap-[10px] md:w-[346px]">
-                  <p className={classPlate}>{consultation.format}</p>
-                  <p className={classPlate}>{consultation.frequency}</p>
-                  <p className={classPlate}>{consultation.duration}</p>
-                </div>
-                <SiteLink
-                  linkType="scroll"
-                  href={data.url.form}
-                  isAccent={true}
-                  className="h-[62px] w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
+                  className="w-full rounded-[20px] md:w-[185px] md:py-4 xl:w-[289px] mdOnly:mb-8"
                 >
                   {data.btnText}
                 </SiteLink>
