@@ -35,7 +35,7 @@ import { SliderTestComponent } from '../Slider/SliderTestComponent';
 
 import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
 
-import { RequestSection } from '@/sections/Consultancy/RequestSection';
+// import { RequestSection } from '@/sections/Consultancy/RequestSection';
 import { CommunityCard } from '@/components/common/CommunityCard';
 
 export const TestComponent = () => {
@@ -88,7 +88,7 @@ export const TestComponent = () => {
           return <ConsultationsRequestCard key={item.id} data={item} />;
         })}
       </div>
-      <RequestSection />
+      {/* <RequestSection /> */}
     </div>
   );
 };
