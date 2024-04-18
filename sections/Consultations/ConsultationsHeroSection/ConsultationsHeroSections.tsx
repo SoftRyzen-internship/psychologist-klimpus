@@ -22,11 +22,13 @@ export const ConsultationsHeroSections = ({
           <div className="flex flex-col">
             <div className="flex flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:pb-12">
               <div className="flex w-full flex-col justify-between md:w-[346px] xl:w-[598px]">
-                <SectionTitle className="">{consultation.text}</SectionTitle>
-                <p className="mainText pb-6 md:hidden">
+                <SectionTitle className="smOnly:mb-4">
+                  {consultation.text}
+                </SectionTitle>
+                <p className="mainText md:hidden smOnly:mb-4">
                   {consultation.description}
                 </p>
-                <div className="flex flex-wrap gap-[10px] md:gap-5">
+                <div className="flex flex-wrap gap-[10px] md:gap-5 smOnly:mb-4">
                   <p className={classPlate}>{consultation.format}</p>
                   <p className={classPlate}>{consultation.frequency}</p>
                   <p className={classPlate}>{consultation.duration}</p>
@@ -38,7 +40,7 @@ export const ConsultationsHeroSections = ({
                 </p>
                 <SiteLink
                   linkType="scroll"
-                  href={data.url.contacts}
+                  href={data.url.form}
                   isAccent={true}
                   className="w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
                 >
