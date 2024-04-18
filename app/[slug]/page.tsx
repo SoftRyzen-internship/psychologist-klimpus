@@ -1,7 +1,7 @@
 import { FormSection } from '@/sections/FormSection';
 import { ConsultationsHeroSections } from '@/sections/Consultations/ConsultationsHeroSection';
 import consultationsData from '@/data/consultations.json';
-import { RequestSection } from '@/sections/Consultancy/RequestSection';
+import { RequestSection } from '@/sections/Consultations/RequestSection';
 import { FeedbacksSection } from '@/sections/FeedbacksSection';
 
 interface Props {
