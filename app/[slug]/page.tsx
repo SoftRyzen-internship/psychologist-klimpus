@@ -1,4 +1,4 @@
-import { FormSection } from '@/sections/Main/FormSection';
+import { FormSection } from '@/sections/FormSection';
 import { ConsultationsHeroSections } from '@/sections/Consultations/ConsultationsHeroSection';
 import consultationsData from '@/data/consultations.json';
 import { FeedbacksSection } from '@/sections/FeedbacksSection';
@@ -14,14 +14,14 @@ const SinglePage = ({ params }: Props) => {
     item => item.name === params.slug,
   );
 
-  console.log(consultation);
+  // console.log(consultation);
 
   return (
-    <div className="container">
+    <>
       <ConsultationsHeroSections consultation={consultation} />
       <FeedbacksSection page="consultancy" />
       <FormSection />
-    </div>
+    </>
   );
 };
 
