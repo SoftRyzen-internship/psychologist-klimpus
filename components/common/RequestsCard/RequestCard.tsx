@@ -11,7 +11,6 @@ export const RequestCard: React.FC<RequestCardProps> = ({
   className,
 }) => {
   const { image, requestSet, alt } = data;
-  //console.log(image);
 
   const styles = classNames(
     className,

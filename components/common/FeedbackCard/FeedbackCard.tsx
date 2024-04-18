@@ -15,8 +15,10 @@ export const FeedbackCard: React.FC<FeedbackCardProps> = ({
   const { text, owner } = data;
 
   const cardStyles = classNames('flex h-[288px] flex-col justify-between', {
-    'md:h-[379px] xl:h-[385px]': section === 'reviews',
-    'md:h-[270px] xl:h-[340px]': section === 'consultancyReviews',
+    'md:h-[379px] xl:h-[385px]':
+      section === 'reviews' || section !== 'consultancyReviews',
+    'md:max-h-auto xl:h-[340px]':
+      section === 'consultancyReviews' || section !== 'reviews',
   });
 
   return (
