@@ -1,5 +1,5 @@
 // import Image from 'next/image';
-// import { ReactNode } from 'react';
+
 // import { useState } from 'react';
 
 // import classNames from 'classnames';
@@ -19,7 +19,6 @@
 // import css from './TestComponent.module.css';
 
 'use client';
-
 import { RequestCard } from '@/components/common/RequestsCard';
 
 import dataJson from '@/data/features.json';
