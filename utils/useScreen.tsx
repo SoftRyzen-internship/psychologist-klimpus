@@ -16,9 +16,10 @@ export const useScreen = () => {
     };
   }, []);
 
-  const isMobile = width <= 768;
-  const isTablet = width > 768 && width <= 1280;
-  const isDesktop = width > 1280;
+  const isMobile = width < 768;
+  const isTablet = width >= 768 && width < 1280;
+  const isDesktop = width >= 1280;
+  const isTabletOrDesktop = width >= 768;
 
-  return { isMobile, isTablet, isDesktop };
+  return { isMobile, isTablet, isDesktop, isTabletOrDesktop };
 };

@@ -1,0 +1,3 @@
+.title {
+  @apply text-[19px] font-medium md:text-[24px] xl:text-[26px];
+}

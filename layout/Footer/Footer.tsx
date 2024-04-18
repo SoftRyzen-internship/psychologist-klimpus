@@ -2,13 +2,17 @@ import React from 'react';
 import { FooterItem } from '@/components/ui/FooterItem';
 import { Contacts } from '@/components/common/Contacts';
 import { Socials } from '@/components/common/Socials';
+import { FooterLink } from '@/components/ui/FooterLink';
 import data from '@/data/common.json';
 
 export const Footer = () => {
   const { footer } = data;
 
   return (
-    <footer className="w-full rounded-t-[20px] bg-mainBlack py-8">
+    <footer
+      id={data.section.contacts}
+      className="w-full rounded-t-[20px] bg-mainBlack py-8"
+    >
       <div className="container">
         <div className="flex w-full flex-col border-b-[1px] border-solid border-strokeFooter pb-8 md:pb-9 xl:pb-12">
           <p className="mb-[35px] font-raleway text-lg font-semibold leading-[1.35] text-white md:mb-[48px]  md:text-xl xl:text-[22px]">
@@ -34,12 +38,7 @@ export const Footer = () => {
               />
             ))}
           </ul>
-          <a
-            href={data.footer.href}
-            className="ml-0 text-white transition hover:text-rose focus:text-rose active:text-accent md:ml-auto"
-          >
-            {data.footer.policyText}
-          </a>
+          <FooterLink />
         </div>
         <p className="font-roboto text-xs font-normal leading-[1.35] text-white xl:text-sm">
           {data.footer.copyright}

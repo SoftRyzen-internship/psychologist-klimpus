@@ -12,6 +12,9 @@
       "Системний терапевт"
     ]
   },
+  "communities": {
+    "title": "Членство в професійних спільнотах"
+  },
   "contacts": [
     { "name": "email", "value": "therapybyirena@gmail.com" },
     { "name": "tel", "value": "+447404864095" }
@@ -24,6 +27,7 @@
     "text": "Створено при підтримці",
     "copyright": "© 2024 Ірина Климпуш. Всі права захищені.",
     "policyText": "Terms of Service & Privacy Policy",
+    "home": "На Головну",
     "href": "/policy",
     "links": [
       {
@@ -88,6 +92,10 @@
       "ariaLabel": "посилання на телефон в вотсапі"
     }
   ],
+  "section": {
+    "contacts": "footer",
+    "form": "form"
+  },
   "buttonsText": {
     "signUp": "Записатися на консультацію",
     "more": "Більше",
@@ -98,8 +106,10 @@
     "contacts": "Контакти",
     "inDetail": "Детальніше"
   },
+  "btnText": "Записатися",
   "url": {
     "contacts": "/contacts",
+    "form": "/form",
     "individual": "/individual"
   },
   "ariaLabelClose": "Закрити мобільне меню",

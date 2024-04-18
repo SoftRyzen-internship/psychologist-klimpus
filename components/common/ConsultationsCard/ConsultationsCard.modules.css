@@ -1,6 +1,6 @@
 @media (min-width: 1280px) {
   .consultationsCard:hover a,
   .consultationsCard:focus a {
-    display: inline-flex;
+    opacity: 1;
   }
 }
