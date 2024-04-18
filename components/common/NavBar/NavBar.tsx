@@ -76,6 +76,7 @@ export const NavBar: React.FC<INavBarProps> = ({ onClose }) => {
             isOpen={isModalVisible}
             pathname={pathname}
             onClose={onClose}
+            toggleModal={toggleModal}
           />
         </li>
       </ul>
