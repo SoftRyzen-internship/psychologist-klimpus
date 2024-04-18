@@ -13,13 +13,13 @@ const SinglePage = ({ params }: Props) => {
     item => item.name === params.slug,
   );
 
-  console.log(consultation);
+  // console.log(consultation);
 
   return (
-    <div className="container">
+    <>
       <ConsultationsHeroSections consultation={consultation} />
       <FormSection />
-    </div>
+    </>
   );
 };
 

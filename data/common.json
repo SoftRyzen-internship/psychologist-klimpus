@@ -91,6 +91,7 @@
       "ariaLabel": "посилання на телефон в вотсапі"
     }
   ],
+  "section": "contacts",
   "buttonsText": {
     "signUp": "Записатися на консультацію",
     "more": "Більше",
@@ -101,6 +102,7 @@
     "contacts": "Контакти",
     "inDetail": "Детальніше"
   },
+  "btnText": "Записатися",
   "url": {
     "contacts": "/contacts",
     "individual": "/individual"

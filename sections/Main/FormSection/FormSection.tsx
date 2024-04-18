@@ -1,15 +1,18 @@
 import React from 'react';
 
 import { Form } from '@/components/common/Form';
-// import { SectionTitle } from '@/components/common/SectionTitle';
 
 import form from '@/data/form.json';
+import data from '@/data/common.json';
 
 import s from './FormSection.module.css';
 
 export const FormSection = () => {
   return (
-    <section className="pb-[57px] pt-[27px] md:pb-24 md:pt-10 xl:pb-[116px] xl:pt-[50px]">
+    <section
+      id={data.section}
+      className="pb-[57px] pt-[27px] md:pb-24 md:pt-10 xl:pb-[116px] xl:pt-[50px]"
+    >
       <div className="container">
         <div className="sectionTitle mf:mb-9 m-auto mb-6 flex justify-center">
           <div
