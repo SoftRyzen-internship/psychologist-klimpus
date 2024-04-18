@@ -15,7 +15,7 @@ export const ConsultationsHeroSections = ({
 
   const classPlate = classNames(
     className,
-    ' inline-block rounded-[20px] bg-plashka px-4 py-[6px] font-roboto text-xs font-medium leading-[1.35] text-mainBlack md:text-sm md:leading-[1.35]',
+    'inline-block rounded-[9px] bg-plashka px-4 py-2 font-roboto text-base font-medium leading-[1.35] text-mainBlack xl:text-lg md:leading-[1.35]',
   );
   return (
     <section className="w-full pb-5 pt-10 md:pb-10 md:pt-12 xl:pb-[50px] xl:pt-14">
@@ -24,7 +24,7 @@ export const ConsultationsHeroSections = ({
           <div className="flex flex-col">
             <div className="flex flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:pb-12">
               <div className="flex w-full flex-col justify-between md:w-[346px] xl:w-[598px]">
-                <SectionTitle className="smOnly:mb-4">
+                <SectionTitle className="smOnly:mb-4 ">
                   {consultation.text}
                 </SectionTitle>
                 <ul className="hidden flex-wrap gap-[10px] md:flex md:gap-[10px] smOnly:mb-4">
@@ -37,8 +37,8 @@ export const ConsultationsHeroSections = ({
                   })}
                 </ul>
               </div>
-              <div className="xl: flex w-full flex-col md:w-[346px] xl:w-[495px]">
-                <p className="mainText flex pb-6">{consultation.description}</p>
+              <div className="w-full flex-col md:w-[346px] xl:flex xl:w-[495px]">
+                <p className="mainText mb-6 flex">{consultation.description}</p>
                 <ul className="flex flex-wrap gap-[10px] md:hidden md:gap-5 smOnly:mb-4">
                   {info.map((item, index) => {
                     return (
@@ -52,7 +52,7 @@ export const ConsultationsHeroSections = ({
                   linkType="scroll"
                   href={data.url.form}
                   isAccent={true}
-                  className="w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
+                  className="w-full rounded-[20px] md:w-[185px] md:py-4 xl:w-[289px] mdOnly:mb-8"
                 >
                   {data.btnText}
                 </SiteLink>
