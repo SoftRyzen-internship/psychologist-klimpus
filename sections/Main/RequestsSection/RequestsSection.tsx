@@ -4,6 +4,8 @@ import text from '@/data/requestsSection.json';
 
 import requests from '@/data/requests.json';
 
+import { SectionTitle } from '@/components/common/SectionTitle';
+
 import { Slider } from '@/components/common/Slider';
 
 import { RequestCard } from '@/components/common/RequestsCard';
@@ -20,9 +22,9 @@ export const RequestsSection: React.FC = () => {
           {preTitle}
         </p>
         <div className="md:w-[527px] xl:w-[1010px]">
-          <h2 className="sectionTitle mb-6 md:mb-10 xl:mb-16">
+          <SectionTitle className="mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
-          </h2>
+          </SectionTitle>
           <p className="textBold mb-5 md:mb-9 xl:mb-10">{sectionText}</p>
           <div className="md:hidden">
             <Slider
