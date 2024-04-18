@@ -197,3 +197,9 @@ Here you may find a list of the most common components and their API:
 | ----------- | ------------------------------ | ------------------------------------------------------ |
 | `data`      | `{text: string, logo: string}` | required, set card data                                |
 | `className` | `string`                       | optional, you can add some additional styles if needed |
+
+- #### CourseList
+
+| Prop        | Value    | Description                                            |
+| ----------- | -------- | ------------------------------------------------------ |
+| `className` | `string` | optional, you can add some additional styles if needed |
