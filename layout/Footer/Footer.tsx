@@ -2,6 +2,7 @@ import React from 'react';
 import { FooterItem } from '@/components/ui/FooterItem';
 import { Contacts } from '@/components/common/Contacts';
 import { Socials } from '@/components/common/Socials';
+import { FooterLink } from '@/components/ui/FooterLink';
 import data from '@/data/common.json';
 
 export const Footer = () => {
@@ -34,12 +35,7 @@ export const Footer = () => {
               />
             ))}
           </ul>
-          <a
-            href={data.footer.href}
-            className="ml-0 text-white transition hover:text-rose focus:text-rose active:text-accent md:ml-auto"
-          >
-            {data.footer.policyText}
-          </a>
+          <FooterLink />
         </div>
         <p className="font-roboto text-xs font-normal leading-[1.35] text-white xl:text-sm">
           {data.footer.copyright}
