@@ -20,7 +20,11 @@ export const ShowMoreButton: React.FC<IShowMoreButtonProps> = ({
   return (
     <>
       {showMore && children}
-      <Button type="button" onClick={toggleShowMore}>
+      <Button
+        type="button"
+        onClick={toggleShowMore}
+        className="mb-2 py-4 pr-[58px] md:hidden"
+      >
         {showMore ? hideText : showText}
       </Button>
     </>
