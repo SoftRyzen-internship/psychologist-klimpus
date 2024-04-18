@@ -92,6 +92,10 @@
       "ariaLabel": "посилання на телефон в вотсапі"
     }
   ],
+  "section": {
+    "contacts": "footer",
+    "form": "form"
+  },
   "buttonsText": {
     "signUp": "Записатися на консультацію",
     "more": "Більше",
@@ -102,8 +106,10 @@
     "contacts": "Контакти",
     "inDetail": "Детальніше"
   },
+  "btnText": "Записатися",
   "url": {
     "contacts": "/contacts",
+    "form": "/form",
     "individual": "/individual"
   },
   "ariaLabelClose": "Закрити мобільне меню",
