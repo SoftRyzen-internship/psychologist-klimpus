@@ -11,6 +11,7 @@ export const NavBarDropdownList: React.FC<DropdownListProps> = ({
   isOpen,
   pathname,
   onClose,
+  toggleModal,
 }) => {
   const data = jsonData.DropdownList;
 
@@ -27,12 +28,17 @@ export const NavBarDropdownList: React.FC<DropdownListProps> = ({
         {data.map((item, index) => (
           <li
             key={index}
-            className={`rounded-[20px] px-[20px] py-[10px] transition hover:bg-bgBeige focus:bg-bgBeige active:bg-clickAccent active:text-white ${
-              pathname === `${item.moveTo}` ? 'bg-clickAccent text-white' : ''
+            className={`rounded-[20px] px-[20px] py-[10px] transition active:bg-clickAccent active:text-white ${
+              pathname === `${item.moveTo}`
+                ? 'bg-clickAccent text-white'
+                : 'hover:bg-bgBeige focus:bg-bgBeige'
             }`}
           >
             <Link
-              onClick={onClose}
+              onClick={() => {
+                onClose();
+                toggleModal();
+              }}
               href={`${item.moveTo}`}
               className="font-roboto text-[18px] font-normal leading-[1.35]"
             >
