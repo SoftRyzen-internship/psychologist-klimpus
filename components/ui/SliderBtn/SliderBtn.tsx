@@ -32,7 +32,9 @@ export const SliderBtn: React.FC<SliderBtnProps> = ({
     'mt-[16px] flex md:absolute md:right-0 md:z-10 md:mt-0',
     {
       'md:top-[-78px] xl:top-[-105px]': section === 'consultancyReviews',
-      'md:top-[-56px] xl:top-[-68px]': section !== 'consultancyReviews',
+      'md:top-[-56px] xl:top-[-68px]':
+        section == 'requestsMain' || section == 'reviews',
+      'md:top-[-148px] xl:top-[-126px]': section == 'requestsConsultancy',
     },
   );
 
