@@ -5,7 +5,7 @@ import { HeroSection } from '@/sections/Main/HeroSection/HeroSection';
 import { UniquenessSection } from '@/sections/Main/UniquenessSection';
 import { RequestsSection } from '@/sections/Main/RequestsSection';
 import { AboutSection } from '@/sections/Main/AboutSection';
-import { FeedbacksSection } from '@/sections/Main/FeedbacksSection/FeedbacksSection';
+import { FeedbacksSection } from '@/sections/FeedbacksSection';
 import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 
 export default async function Home() {
