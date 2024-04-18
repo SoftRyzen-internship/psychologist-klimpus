@@ -23,10 +23,12 @@ export const CoursesList: React.FC<CoursesListProps> = ({ courses }) => {
   const checkedCourses = courses ? courses : education.staticCoursesData;
   const dataToShow = isFull ? checkedCourses : checkedCourses.slice(0, 4);
 
-  const styles = classNames('coursesList flex flex-col gap-3 md:gap-5');
+  const styles = classNames(
+    'coursesList flex flex-col gap-3 md:gap-5 max-h-[534px] md:max-h-[620px] overflow-y-scroll',
+  );
 
   return (
-    <>
+    <div className="flex-col gap-2">
       <ul className={styles}>
         {dataToShow
           .sort(
@@ -43,6 +45,7 @@ export const CoursesList: React.FC<CoursesListProps> = ({ courses }) => {
           ))}
       </ul>
       <Button
+        className="w-[87px] py-[15px]"
         type="button"
         onClick={() => {
           setIsFull(!isFull);
@@ -50,6 +53,6 @@ export const CoursesList: React.FC<CoursesListProps> = ({ courses }) => {
       >
         {isFull ? data.buttonsText.hide : data.buttonsText.more}
       </Button>
-    </>
+    </div>
   );
 };

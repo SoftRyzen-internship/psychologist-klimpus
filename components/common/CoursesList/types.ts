@@ -1,5 +1,6 @@
 export interface CoursesListProps {
   courses: CourseType[];
+  className?: string;
 }
 
 export interface CourseType {

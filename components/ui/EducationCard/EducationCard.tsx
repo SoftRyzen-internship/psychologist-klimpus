@@ -7,7 +7,10 @@ export const EducationCard: React.FC<EducationCardProps> = ({
   name,
 }) => {
   return (
-    <li key={id} className="mainText listItem flex gap-[31px] md:gap-5">
+    <li
+      key={id}
+      className="mainText listItem flex gap-[31px] md:w-[403px] md:gap-5"
+    >
       <p className="text-accent">{year}</p>
       {name}
     </li>
