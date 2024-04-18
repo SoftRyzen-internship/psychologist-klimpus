@@ -15,14 +15,14 @@ export const ConsultationsRequestCard: React.FC<
 
   const styles = classNames(
     className,
-    'rounded-[20px] smOnly:max-w-[428px] md:w-[225px] xl:w-[392px] relative',
+    'rounded-[20px] md:w-[225px] xl:w-[392px] relative',
   );
 
   return (
     <div className={styles}>
       {isMobile ? (
         <Image
-          width={428}
+          width={448}
           height={218}
           src={images.mobImage}
           alt={requestText}
