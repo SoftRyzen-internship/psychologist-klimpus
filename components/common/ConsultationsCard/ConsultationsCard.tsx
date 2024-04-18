@@ -11,14 +11,12 @@ import './ConsultationsCard.modules.css';
 
 export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
   className = '',
-  text,
-  textCard,
-  format,
-  frequency,
-  duration,
-  linkText,
-  href,
+  item,
 }) => {
+  const { text, textCard, format, frequency, duration, linkText, href } = item;
+
+  const info = [format, frequency, duration];
+
   const classPlate = classNames(
     className,
     ' inline-block rounded-[20px] bg-plashka px-4 py-[6px] font-roboto text-xs font-medium leading-[1.35] text-mainBlack md:text-sm md:leading-[1.35]',
@@ -35,11 +33,16 @@ export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
       <p className="mb-6 font-roboto text-base font-normal leading-[1.35] text-gray md:text-sm md:leading-[1.5] xl:text-base">
         {textCard}
       </p>
-      <div className="inline-flex flex-wrap gap-2">
-        <p className={classPlate}>{format}</p>
-        <p className={classPlate}>{frequency}</p>
-        <p className={classPlate}>{duration}</p>
-      </div>
+
+      <ul className="inline-flex flex-wrap gap-2">
+        {info.map((item, index) => {
+          return (
+            <li key={index} className={classPlate}>
+              <p>{item}</p>
+            </li>
+          );
+        })}
+      </ul>
       <SiteLink
         href={href}
         linkType="link"
