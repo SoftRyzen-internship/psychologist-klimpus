@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import Image from 'next/image';
@@ -6,7 +8,7 @@ import classNames from 'classnames';
 
 import { CommunityCardProps } from './types';
 
-import { Card } from '../Card';
+import { Card } from '../../ui/Card';
 
 export const CommunityCard: React.FC<CommunityCardProps> = ({
   data,
@@ -23,10 +25,9 @@ export const CommunityCard: React.FC<CommunityCardProps> = ({
       >
         <Image src={data.logo} alt={data.text} width={133} height={133} />
       </Card>
-      <span className="textBold text-mainBlack">{data.initWord}</span>
-      <span className="textBold text-darkBlue md:pr-2 md:pr-4 md:leading-[1.35]">
+      <p className="textBold flex text-darkBlue md:leading-[1.35] mdOnly:max-w-[280px]">
         {data.text}
-      </span>
+      </p>
     </div>
   );
 };

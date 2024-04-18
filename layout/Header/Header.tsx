@@ -19,7 +19,7 @@ export const Header = () => {
   const handleClose = () => setIsOpen(false);
 
   return (
-    <header className="w-full py-3 md:py-[18px] xl:py-9">
+    <header className="w-full py-4 md:py-5 xl:py-9">
       <div className="container flex items-center xl:gap-24 notXL:justify-between">
         <Logo />
         <div className="hidden xl:flex">
@@ -40,7 +40,7 @@ export const Header = () => {
           aria-label={common.layout['aria-label'].burger}
           onClick={() => setIsOpen(true)}
         >
-          <Burger width={32} height={32} />
+          <Burger width={24} height={24} />
         </button>
         <BurgerMenu isOpen={isOpen} onClose={handleClose} />
       </div>
