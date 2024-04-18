@@ -1,48 +1,55 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 import parse from 'html-react-parser';
 
-import { performRequest } from '@/lib/datocms';
-
-import { coursesQuery } from '@/lib/queries/coursesQuery';
-
 import classNames from 'classnames';
 
-import staticCoursesData from '@/data/courses.json';
+import { EducationCard } from '@/components/ui/EducationCard';
 
-import { CourseType, CoursesListProps } from './types';
+import { Button } from '@/components/ui/Button';
+
+import education from '@/data/education.json';
+
+import data from '@/data/common.json';
+
+import { CoursesListProps } from './types';
 
 import './CoursesList.modules.css';
 
-export const CoursesList: React.FC<CoursesListProps> = async ({
-  className,
-}) => {
-  const { data } = await performRequest({ query: coursesQuery });
-  const courses: CourseType[] = data?.allCourses;
+export const CoursesList: React.FC<CoursesListProps> = ({ courses }) => {
+  const [isFull, setIsFull] = useState(false);
+  const checkedCourses = courses ? courses : education.staticCoursesData;
+  const dataToShow = isFull ? checkedCourses : checkedCourses.slice(0, 4);
 
-  const datatoShow = courses ? courses : staticCoursesData;
-
-  const styles = classNames(
-    'coursesList flex flex-col gap-3 md:gap-5',
-    className,
-  );
+  const styles = classNames('coursesList flex flex-col gap-3 md:gap-5');
 
   return (
-    <ul className={styles}>
-      {datatoShow
-        .sort(
-          (firstCourse, secondCourse) =>
-            firstCourse.position - secondCourse.position,
-        )
-        .map(item => (
-          <li
-            key={item.id}
-            className="mainText listItem flex gap-[31px] md:gap-5"
-          >
-            <p className="text-accent">{item.year}</p>
-            {parse(item.name)}
-          </li>
-        ))}
-    </ul>
+    <>
+      <ul className={styles}>
+        {dataToShow
+          .sort(
+            (firstCourse, secondCourse) =>
+              firstCourse.position - secondCourse.position,
+          )
+          .map(item => (
+            <EducationCard
+              key={item.id}
+              id={item.id}
+              year={item.year}
+              name={parse(item.name)}
+            />
+          ))}
+      </ul>
+      <Button
+        type="button"
+        onClick={() => {
+          setIsFull(!isFull);
+        }}
+      >
+        {isFull ? data.buttonsText.hide : data.buttonsText.more}
+      </Button>
+    </>
   );
 };

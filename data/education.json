@@ -1,0 +1,59 @@
+{
+  "title": "ОСВІТА ТА КВАЛІФІКАЦІЯ",
+  "subtitleCollegeDegree": "Вища освіта",
+  "subtitleCourses": "Курси",
+  "collegeDegree": {
+    "year": 2021,
+    "name": "<p>Магістр за спеціальністю <b>“Клінічна та реабілітаційна психологія”.</b> Прикарпатський національний університет імені Василя Стефаника.</p>"
+  },
+  "staticCoursesData": [
+    {
+      "id": "JaSf7NuVRMSlaYbjOQSURw",
+      "name": "<p>Курс: <strong>Сімейне консультування та терапія,</strong>&nbsp;Alison Online Courses Platform.</p>",
+      "position": 1,
+      "year": 2023
+    },
+    {
+      "id": "UE3YHZwLS36mO07Bs7qkVw",
+      "name": "<p>Курс: <strong>КПТ в роботі з ПТСР,</strong>&nbsp;Міжнародний інститут психології.</p>",
+      "position": 2,
+      "year": 2023
+    },
+    {
+      "id": "BB-LoVHHRLCJsL5mpq98nA",
+      "name": "<p>Курс: <strong>Психологічні травми війни,</strong> Українська асоціація когнітивно-поведінкової терапії.</p>",
+      "position": 3,
+      "year": 2022
+    },
+    {
+      "id": "UEdzGvGDSO2Kytw47vOVYw",
+      "name": "<p>Курс: <strong>Гіпноз та гіпнотерапія,</strong> Udemy Online Platform.</p>",
+      "position": 4,
+      "year": 2022
+    },
+    {
+      "id": "CcWGx36bT7uexmnnJ8K3bw",
+      "name": "<p>Курс:<strong> Позитивна психіатрія та психічне здоровʼя, </strong>University of Sydney.</p>",
+      "position": 5,
+      "year": 2020
+    },
+    {
+      "id": "UElIOAwCTI60gGNLZZUVmg",
+      "name": "<p>Курс: <strong>Основи психосоматики,</strong> Krystal Sense Academy.</p>",
+      "position": 6,
+      "year": 2019
+    },
+    {
+      "id": "G3kQpfFmT6yD--AeQ5SrCA",
+      "name": "<p>Курс: <strong>Метафоричні карти,</strong> Інститут практичної психології &laquo;ЕРА&raquo;.</p>",
+      "position": 7,
+      "year": 2019
+    },
+    {
+      "id": "Brue9mdeSvOUaAfSoGy8Kg",
+      "name": "<p>Курс психотерапії: <strong>Алкогольна залежність.</strong></p>",
+      "position": 8,
+      "year": 2018
+    }
+  ]
+}
