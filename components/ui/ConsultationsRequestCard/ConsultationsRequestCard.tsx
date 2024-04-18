@@ -9,7 +9,7 @@ import { ConsultationsRequestCardProps } from './type';
 export const ConsultationsRequestCard: React.FC<
   ConsultationsRequestCardProps
 > = ({ data, className }) => {
-  const { isMobile, isTabletOrDesktop } = useScreen();
+  const { isMobile } = useScreen();
 
   const { images, requestText } = data;
 
@@ -20,7 +20,7 @@ export const ConsultationsRequestCard: React.FC<
 
   return (
     <div className={styles}>
-      {isMobile && (
+      {isMobile ? (
         <Image
           width={428}
           height={218}
@@ -28,8 +28,7 @@ export const ConsultationsRequestCard: React.FC<
           alt={requestText}
           className="rounded-[20px]"
         />
-      )}
-      {isTabletOrDesktop && (
+      ) : (
         <Image
           width={392}
           height={525}

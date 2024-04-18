@@ -1,7 +1,7 @@
 import { performRequest } from '@/lib/datocms';
 import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 
-import { ConsultationsCardProps } from '@/components/common/ConsultationsCard/type';
+import { Item } from '@/components/common/ConsultationsCard/type';
 
 import { ConsultationsCard } from '@/components/common/ConsultationsCard';
 
@@ -20,28 +20,10 @@ export const ConsultationsList = async () => {
 
   return (
     <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
-      {dataToShow.map((item: ConsultationsCardProps) => {
-        const {
-          id,
-          text,
-          textCard,
-          format,
-          frequency,
-          duration,
-          linkText,
-          href,
-        } = item;
+      {dataToShow.map((item: Item) => {
         return (
-          <li key={id}>
-            <ConsultationsCard
-              text={text}
-              textCard={textCard}
-              format={format}
-              frequency={frequency}
-              duration={duration}
-              linkText={linkText}
-              href={href}
-            />
+          <li key={item.id}>
+            <ConsultationsCard item={item} />
           </li>
         );
       })}
