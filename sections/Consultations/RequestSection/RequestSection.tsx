@@ -7,13 +7,11 @@ import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCa
 import { Slider } from '@/components/common/Slider';
 
 import consultations from '@/data/consultations.json';
-import { useScreen } from '@/utils/useScreen';
 
 export const RequestSection: React.FC<RequestSectionProps> = ({
   consultation,
 }) => {
   const { consultationSectionText } = consultations;
-  const { isMobile } = useScreen();
 
   return (
     <section className="section">
@@ -21,22 +19,24 @@ export const RequestSection: React.FC<RequestSectionProps> = ({
         <p className="subtitleConsultation mb-6 w-[328px] uppercase md:mb-10 md:w-[436px] md:leading-[1.5] xl:mb-12 xl:w-[598px]">
           {consultationSectionText}
         </p>
-        {consultation &&
-          (isMobile ? (
-            <ul className="flex flex-col gap-4">
-              {consultation.imageCards.map(item => (
-                <li key={item.id}>
-                  <ConsultationsRequestCard data={item} />
-                </li>
-              ))}
-            </ul>
-          ) : (
+        {consultation && (
+          <ul className="flex flex-col gap-4 md:hidden">
+            {consultation.imageCards.map(item => (
+              <li key={item.id}>
+                <ConsultationsRequestCard data={item} />
+              </li>
+            ))}
+          </ul>
+        )}
+        {consultation && (
+          <div className="hidden md:block">
             <Slider
               component={ConsultationsRequestCard}
               section={'requestsConsultancy'}
               data={consultation.imageCards}
             />
-          ))}
+          </div>
+        )}
       </div>
     </section>
   );
