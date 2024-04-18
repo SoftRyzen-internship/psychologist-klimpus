@@ -10,15 +10,13 @@ import { SectionTitle } from '@/components/common/SectionTitle';
 
 import { EducationCard } from '@/components/ui/EducationCard';
 
-import { EducationProps } from './types';
-
 import education from '@/data/education.json';
 
 import { CourseType } from '@/components/common/CoursesList/types';
 
 import { CoursesList } from '@/components/common/CoursesList';
 
-export const Education: React.FC<EducationProps> = async () => {
+export const EducationSection = async () => {
   const { data } = await performRequest({ query: coursesQuery });
   const courses: CourseType[] = data?.allCourses;
 

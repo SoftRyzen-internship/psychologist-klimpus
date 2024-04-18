@@ -1,10 +1,10 @@
-import { Education } from '@/sections/About/Education';
+import { EducationSection } from '@/sections/About/EducationSection';
 import { CommunitySection } from '@/sections/About/CommunitySection/CommunitySection';
 
 export default function Page() {
   return (
     <>
-      <Education />
+      <EducationSection />
       <CommunitySection />
     </>
   );
