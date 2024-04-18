@@ -20,14 +20,11 @@ export const ConsultationsHeroSections = ({
       <div className="container">
         {consultation && (
           <div className="flex flex-col">
-            <div className="flex flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:pb-12">
+            <div className="hidden flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:flex xl:pb-12">
               <div className="flex w-full flex-col justify-between md:w-[346px] xl:w-[598px]">
                 <SectionTitle className="smOnly:mb-4">
                   {consultation.text}
                 </SectionTitle>
-                <p className="mainText md:hidden smOnly:mb-4">
-                  {consultation.description}
-                </p>
                 <div className="flex flex-wrap gap-[10px] md:gap-5 smOnly:mb-4">
                   <p className={classPlate}>{consultation.format}</p>
                   <p className={classPlate}>{consultation.frequency}</p>
@@ -43,6 +40,31 @@ export const ConsultationsHeroSections = ({
                   href={data.url.form}
                   isAccent={true}
                   className="w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
+                >
+                  {data.btnText}
+                </SiteLink>
+              </div>
+            </div>
+            <div className="flex-col pb-8 md:flex-row md:justify-between md:pb-8 xl:hidden xl:pb-12">
+              <div className="flex w-full flex-col justify-between md:flex-row">
+                <SectionTitle className="w-full md:w-[346px] smOnly:mb-4">
+                  {consultation.text}
+                </SectionTitle>
+                <p className="mainText pb-6 md:w-[346px]">
+                  {consultation.description}
+                </p>
+              </div>
+              <div className="flex w-full flex-col  gap-4 md:flex-row">
+                <div className="mb-4 flex w-full flex-wrap gap-[10px] md:w-[346px]">
+                  <p className={classPlate}>{consultation.format}</p>
+                  <p className={classPlate}>{consultation.frequency}</p>
+                  <p className={classPlate}>{consultation.duration}</p>
+                </div>
+                <SiteLink
+                  linkType="scroll"
+                  href={data.url.form}
+                  isAccent={true}
+                  className="h-[62px] w-full rounded-[20px] md:w-[185px] xl:w-[289px]"
                 >
                   {data.btnText}
                 </SiteLink>
