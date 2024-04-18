@@ -8,7 +8,7 @@ import { AboutSection } from '@/sections/Main/AboutSection';
 import { FeedbacksSection } from '@/sections/FeedbacksSection';
 import { ConsultationsSection } from '@/sections/Main/ConsultationsSection';
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       <HeroSection />
