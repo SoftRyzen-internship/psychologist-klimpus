@@ -1,4 +1,4 @@
-import { FormSection } from '@/sections/Main/FormSection';
+import { FormSection } from '@/sections/FormSection';
 import { ConsultationsHeroSections } from '@/sections/Consultations/ConsultationsHeroSection';
 import consultationsData from '@/data/consultations.json';
 
