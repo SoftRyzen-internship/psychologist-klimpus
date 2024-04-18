@@ -5,8 +5,7 @@ export type Plate = {
   duration: string;
   text: string;
 };
-
-export type ConsultationsCardProps = {
+export type Item = {
   textCard: string;
   linkText: string;
   href: string;
@@ -14,6 +13,11 @@ export type ConsultationsCardProps = {
   frequency: string;
   duration: string;
   text: string;
+  id: string;
+};
+
+export type ConsultationsCardProps = {
+  item: Item;
   id?: string;
   className?: string;
   isConsultations?: boolean;

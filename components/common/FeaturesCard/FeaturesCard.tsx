@@ -13,7 +13,7 @@ export const FeaturesCard: React.FC<FeaturesCardProps> = ({
 }) => {
   const { title, text } = card;
   return (
-    <Card isFeatures className={classNames('h-auto', className)}>
+    <Card isFeatures className={classNames('h-full', className)}>
       <h3 className="cardTitleLight mb-4 leading-[1.35] xl:leading-[1.35]">
         {title}
       </h3>
