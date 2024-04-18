@@ -38,7 +38,7 @@ export const HeroSection = () => {
             </ul>
             <SiteLink
               linkType="scroll"
-              href={data.url.contacts}
+              href={data.url.form}
               isAccent={true}
               className="w-full rounded-[20px]"
             >
