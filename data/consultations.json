@@ -2,6 +2,7 @@
   "preTitle": "[Консультації]",
   "sectionTitle": "ВАРІАНТИ ПРОВЕДЕННЯ КОНСУЛЬТАЦІЙ",
   "sectionText": "Під час консультацій я проводжу глибокий внутрішній аналіз, застосувую різноманітні психологічні техніки від класичного психоаналізу до гіпнотерапії; підбираю найкращі методики для швидкого та ефективного розв'язання проблеми.",
+  "consultationSectionText": "Такий вид консультації - ідеальний варіант для наступних запитів:",
   "consultationsList": [
     {
       "id": "1",
@@ -15,7 +16,49 @@
       "text": "Індивідуальна консультація",
       "description": "Ми разом зннайдемо шляхи вирішення вашої ситуації, знайдемо внутрішній спокій та гармонію. Можете розраховувати на мою підтримку та розуміння, незалежно від того, потрібна вам одноразова порада, чи тривала терапія.",
       "imgSrc": "/images/heroIndividual.webp",
-      "alt": "Жінка лежить на дивані, а чоловік дивиться на неї збоку, щось записуючи олівцем"
+      "alt": "Жінка лежить на дивані, а чоловік дивиться на неї збоку, щось записуючи олівцем",
+      "imageCards": [
+        {
+          "id": 1,
+          "images": {
+            "mobImage": "/images/consultationsRequests/individual/card1-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/individual/card1-tabdesk@2x.webp"
+          },
+          "requestText": "Постійна фізична втома"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobImage": "/images/consultationsRequests/individual/card2-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/individual/card2-tabdesk@2x.webp"
+          },
+          "requestText": "Конфлікти на роботі та в сім'ї"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobImage": "/images/consultationsRequests/individual/card3-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/individual/card3-tabdesk@2x.webp"
+          },
+          "requestText": "Самооцінка та самоприйняття"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobImage": "/images/consultationsRequests/individual/card4-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/individual/card4-tabdesk@2x.webp"
+          },
+          "requestText": "Зміни в кар'єрі та житті"
+        },
+        {
+          "id": 5,
+          "images": {
+            "mobImage": "/images/consultationsRequests/individual/card5-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/individual/card5-tabdesk@2x.webp"
+          },
+          "requestText": "Неконтрольована агресія"
+        }
+      ]
     },
     {
       "id": "2",
@@ -29,7 +72,49 @@
       "text": "Сімейна консультація",
       "description": "Розуміння та розробка стратегій для подолання руйнівних відносин - ключ до особистого щастя та здоров'я. Тут ви знайдете підтримку та ресурси для позитивних змін. Участь можуть брати як пара, так і один член сім'ї.",
       "imgSrc": "/images/heroFamily.webp",
-      "alt": "Сім'я із трьох людей обіймаються і посміхаються один одному"
+      "alt": "Сім'я із трьох людей обіймаються і посміхаються один одному",
+      "imageCards": [
+        {
+          "id": 1,
+          "images": {
+            "mobImage": "/images/consultationsRequests/family/card1-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp"
+          },
+          "requestText": "Втрата почуттів"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobImage": "/images/consultationsRequests/family/card2-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp"
+          },
+          "requestText": "Конфлікти та насилля"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobImage": "/images/consultationsRequests/family/card3-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp"
+          },
+          "requestText": "Ревнощі та зрада"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobImage": "/images/consultationsRequests/family/card4-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp"
+          },
+          "requestText": "Відносини при розлученні"
+        },
+        {
+          "id": 5,
+          "images": {
+            "mobImage": "/images/consultationsRequests/family/card5-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp"
+          },
+          "requestText": "Проблеми батьківства"
+        }
+      ]
     },
     {
       "id": "3",
@@ -43,7 +128,49 @@
       "text": "Групова консультація",
       "description": "Групова консультація - це місце, де ви можете відчути, що вас розуміють і приймають таким, який ви є. Тут ви зможете поділитися своїмивикликами та досягненнями, знаходячи підтримку та натхнення в спільноті.",
       "imgSrc": "/images/heroGroup.webp",
-      "alt": "Група людей із 5 осіб, щось жваво обговорюють"
+      "alt": "Група людей із 5 осіб, щось жваво обговорюють",
+      "imageCards": [
+        {
+          "id": 1,
+          "images": {
+            "mobImage": "/images/consultationsRequests/group/card1-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/group/card1-tabdesk@2x.webp"
+          },
+          "requestText": "Стрес і вигорання"
+        },
+        {
+          "id": 2,
+          "images": {
+            "mobImage": "/images/consultationsRequests/group/card2-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/group/card2-tabdesk@2x.webp"
+          },
+          "requestText": "Психологічні травми"
+        },
+        {
+          "id": 3,
+          "images": {
+            "mobImage": "/images/consultationsRequests/group/card3-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/group/card3-tabdesk@2x.webp"
+          },
+          "requestText": "Панічні атаки"
+        },
+        {
+          "id": 4,
+          "images": {
+            "mobImage": "/images/consultationsRequests/group/card4-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/group/card4-tabdesk@2x.webp"
+          },
+          "requestText": "Порушення харчової поведінки"
+        },
+        {
+          "id": 5,
+          "images": {
+            "mobImage": "/images/consultationsRequests/group/card5-mob@2x.webp",
+            "tabdeskImage": "/images/consultationsRequests/group/card5-tabdesk@2x.webp"
+          },
+          "requestText": "Міжособистісні відносини"
+        }
+      ]
     }
   ]
 }
