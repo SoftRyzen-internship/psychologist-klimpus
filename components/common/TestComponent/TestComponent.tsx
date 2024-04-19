@@ -23,7 +23,6 @@ import { RequestCard } from '@/components/common/RequestsCard';
 
 import dataJson from '@/data/features.json';
 import requestData from '@/data/requests.json';
-import consultationsRequests from '@/data/consultationsRequests.json';
 import communityData from '@/data/communities.json';
 
 import { FeaturesCard } from '@/components/common/FeaturesCard';
@@ -32,13 +31,10 @@ import { BurgerMenu } from '@/components/common/BurgerMenu';
 import { useState } from 'react';
 import { SliderTestComponent } from '../Slider/SliderTestComponent';
 
-import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
-
 import { CommunityCard } from '@/components/common/CommunityCard';
 
 export const TestComponent = () => {
   const { featuresList } = dataJson;
-  const { familyCards, individualCards, groupCards } = consultationsRequests;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => setIsMenuOpen(false);
@@ -70,22 +66,6 @@ export const TestComponent = () => {
       </button>
       <BurgerMenu isOpen={isMenuOpen} onClose={closeMenu} />
       <SliderTestComponent />
-      <div className="container flex  flex-col gap-5 pb-6 pt-6">
-        {familyCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} data={item} />;
-        })}
-      </div>
-
-      <div className="container flex  flex-col gap-5 pb-6 pt-6">
-        {individualCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} data={item} />;
-        })}
-      </div>
-      <div className="container flex  flex-col gap-5 pb-6 pt-6">
-        {groupCards.map(item => {
-          return <ConsultationsRequestCard key={item.id} data={item} />;
-        })}
-      </div>
     </div>
   );
 };

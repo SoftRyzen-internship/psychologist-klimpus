@@ -9,7 +9,10 @@ export type ImageCard = {
   requestText: string;
 };
 
-export type ConsultationsRequestCardProps = {
-  data: ImageCard;
-  className?: string;
+type Consultation = {
+  imageCards: ImageCard[];
+};
+
+export type RequestSectionProps = {
+  consultation: Consultation | undefined;
 };
