@@ -132,17 +132,19 @@ Here you may find a list of the most common components and their API:
 
 - #### NavBarDropdownList
 
-| Prop       | Value     | Description                               |
-| ---------- | --------- | ----------------------------------------- |
-| `isOpen`   | `boolean` | required, set visibility of the component |
-| `pathname` | `string`  | required, set styles acc. to pathname     |
+| Prop          | Value      | Description                               |
+| ------------- | ---------- | ----------------------------------------- |
+| `isOpen`      | `boolean`  | required, set visibility of the component |
+| `pathname`    | `string`   | required, set styles acc. to pathname     |
+| `onClose`     | `function` | optional, add effect on click event       |
+| `toggleModal` | `function` | optional, add effect on click event       |
 
 - #### Button
 
 | Prop        | Value                       | Description                                            |
 | ----------- | --------------------------- | ------------------------------------------------------ |
 | `children`  | `React.ReactNode or string` | required, button content                               |
-| `type`      | `submit or button`          | required, type ofbutton                                |
+| `type`      | `submit or button`          | required, type of button                               |
 | `onClick`   | `function`                  | optional, add effect on click event                    |
 | `className` | `string`                    | optional, you can add some additional styles if needed |
 
@@ -158,9 +160,10 @@ Here you may find a list of the most common components and their API:
 
 - #### FeedbackCard
 
-| Prop   | Value                           | Description             |
-| ------ | ------------------------------- | ----------------------- |
-| `data` | `{text: string, owner: string}` | required, set card data |
+| Prop      | Value                           | Description                   |
+| --------- | ------------------------------- | ----------------------------- |
+| `data`    | `{text: string, owner: string}` | required, set card data       |
+| `section` | `string`                        | optional, set specific styles |
 
 - #### UniquenessCard
 
@@ -181,12 +184,12 @@ Here you may find a list of the most common components and their API:
 
 - #### Slider
 
-| Prop        | Value                                                            | Description                                                  |
-| ----------- | ---------------------------------------------------------------- | ------------------------------------------------------------ |
-| `data`      | `array[]`                                                        | required, data that is needed to render a list of components |
-| `component` | `component`                                                      | required, set it as slide component                          |
-| `section`   | `community` / `reviews` / `requestsMain` / `requestsConsultancy` | required, set specific options                               |
-| `className` | `string`                                                         | optional, you can add some additional styles if needed       |
+| Prop        | Value                                                                                   | Description                                                  |
+| ----------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| `data`      | `array[]`                                                                               | required, data that is needed to render a list of components |
+| `component` | `component`                                                                             | required, set it as slide component                          |
+| `section`   | `community` / `reviews` / `requestsMain` / `requestsConsultancy` / `consultancyReviews` | required, set specific options                               |
+| `className` | `string`                                                                                | optional, you can add some additional styles if needed       |
 
 - #### CommunityCard
 
@@ -194,3 +197,9 @@ Here you may find a list of the most common components and their API:
 | ----------- | ------------------------------ | ------------------------------------------------------ |
 | `data`      | `{text: string, logo: string}` | required, set card data                                |
 | `className` | `string`                       | optional, you can add some additional styles if needed |
+
+- #### CourseList
+
+| Prop        | Value    | Description                                            |
+| ----------- | -------- | ------------------------------------------------------ |
+| `className` | `string` | optional, you can add some additional styles if needed |

@@ -1,4 +1,3 @@
-// import { TestComponent } from '@/components/common/TestComponent';
 import { FeaturesSection } from '@/sections/Main/FeaturesSection';
 import { FormSection } from '@/sections/FormSection';
 import { HeroSection } from '@/sections/Main/HeroSection/HeroSection';
