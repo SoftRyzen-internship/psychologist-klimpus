@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
+import { sendMessage } from '@/api/telegram';
 import { FormInput } from '@/components/ui/FormInput/FormInput';
 import { CheckBox } from '@/components/ui/Checkbox/Checkbox';
 import { Loader } from '@/components/ui/Loader/Loader';
@@ -38,12 +39,12 @@ export const Form = () => {
 
   const checkboxInput = watch(form.checkBox.name);
 
-  const onSubmit: SubmitHandler<FormData> = data => {
-    console.log(data);
+  const onSubmit: SubmitHandler<FormData> = async data => {
     try {
       setIsLoading(true);
-      console.log("Ім'я:", data.name);
-      console.log('Телефон:', data.phone);
+
+      const message = `Ім'я: ${data.name} %0AТелефон: ${data.phone} %0A${data.email ? `Email: ${data.email}` : ''} %0A${data.message ? `Повідомлення: ${data.message}` : ''}`;
+      await sendMessage(message);
 
       reset();
       window.sessionStorage.removeItem('FormData');

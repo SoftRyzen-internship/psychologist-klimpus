@@ -11,7 +11,7 @@ import { SiteLink } from '@/components/ui/SiteLink';
 
 import Burger from '@/public/icons/burger.svg';
 
-import common from '@/data/common.json';
+import data from '@/data/common.json';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,18 +26,18 @@ export const Header = () => {
           <NavBar onClose={handleClose} />
         </div>
         <SiteLink
-          href={common.url.contacts}
           linkType="scroll"
+          href={data.url.footer}
           isAccent={false}
           className="ml-auto notXL:hidden"
         >
-          {common.linksText.contacts}
+          {data.linksText.contacts}
         </SiteLink>
 
         <button
           type="button"
           className="block transition hover:scale-110 xl:hidden"
-          aria-label={common.layout['aria-label'].burger}
+          aria-label={data.layout['aria-label'].burger}
           onClick={() => setIsOpen(true)}
         >
           <Burger width={24} height={24} />
