@@ -24,7 +24,8 @@
             "mobImage": "/images/consultationsRequests/individual/card1-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/individual/card1-tabdesk@2x.webp"
           },
-          "requestText": "Постійна фізична втома"
+          "requestText": "Постійна фізична втома",
+          "alt": "Втомлена жінка сидить на дивані, перед нею на столику відкритий ноутбук"
         },
         {
           "id": 2,
@@ -32,7 +33,8 @@
             "mobImage": "/images/consultationsRequests/individual/card2-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/individual/card2-tabdesk@2x.webp"
           },
-          "requestText": "Конфлікти на роботі та в сім'ї"
+          "requestText": "Конфлікти на роботі та в сім'ї",
+          "alt": "Чоловік та жінка сваряться на робочому місці"
         },
         {
           "id": 3,
@@ -40,7 +42,8 @@
             "mobImage": "/images/consultationsRequests/individual/card3-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/individual/card3-tabdesk@2x.webp"
           },
-          "requestText": "Самооцінка та самоприйняття"
+          "requestText": "Самооцінка та самоприйняття",
+          "alt": "Жінка стоїть дивиться на своє відображення у дзеркалі"
         },
         {
           "id": 4,
@@ -48,7 +51,8 @@
             "mobImage": "/images/consultationsRequests/individual/card4-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/individual/card4-tabdesk@2x.webp"
           },
-          "requestText": "Зміни в кар'єрі та житті"
+          "requestText": "Зміни в кар'єрі та житті",
+          "alt": "Три людини в офісі, всі посміхаються, дівчина простягає документ чоловіку"
         },
         {
           "id": 5,
@@ -56,7 +60,8 @@
             "mobImage": "/images/consultationsRequests/individual/card5-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/individual/card5-tabdesk@2x.webp"
           },
-          "requestText": "Неконтрольована агресія"
+          "requestText": "Неконтрольована агресія",
+          "alt": "Чоловік та жінка, жінка в сльозах, чоловік засмучено на неї дивиться"
         }
       ]
     },
@@ -80,7 +85,8 @@
             "mobImage": "/images/consultationsRequests/family/card1-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/family/card1-tabdesk@2x.webp"
           },
-          "requestText": "Втрата почуттів"
+          "requestText": "Втрата почуттів",
+          "alt": "Чоловік та жінка сидять на дивані, дивляться в різні сторони"
         },
         {
           "id": 2,
@@ -88,7 +94,8 @@
             "mobImage": "/images/consultationsRequests/family/card2-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/family/card2-tabdesk@2x.webp"
           },
-          "requestText": "Конфлікти та насилля"
+          "requestText": "Конфлікти та насилля",
+          "alt": "Хлопчик сидить з м'якою іграшкою біля дивану, на задньому фоні сваряться батьки"
         },
         {
           "id": 3,
@@ -96,7 +103,8 @@
             "mobImage": "/images/consultationsRequests/family/card3-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/family/card3-tabdesk@2x.webp"
           },
-          "requestText": "Ревнощі та зрада"
+          "requestText": "Ревнощі та зрада",
+          "alt": "Чоловік та жінка лежать у ліжку. Жінка відвернулась, читає щось в телефоні та посміхається, чоловік ревниво не неї дивиться."
         },
         {
           "id": 4,
@@ -104,7 +112,8 @@
             "mobImage": "/images/consultationsRequests/family/card4-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/family/card4-tabdesk@2x.webp"
           },
-          "requestText": "Відносини при розлученні"
+          "requestText": "Відносини при розлученні",
+          "alt": "Обручка в жіночих руках"
         },
         {
           "id": 5,
@@ -112,7 +121,8 @@
             "mobImage": "/images/consultationsRequests/family/card5-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/family/card5-tabdesk@2x.webp"
           },
-          "requestText": "Проблеми батьківства"
+          "requestText": "Проблеми батьківства",
+          "alt": "Чоловік та жінка тримають на руках маленького хлопчика, дитина посміхається"
         }
       ]
     },
@@ -136,7 +146,8 @@
             "mobImage": "/images/consultationsRequests/group/card1-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/group/card1-tabdesk@2x.webp"
           },
-          "requestText": "Стрес і вигорання"
+          "requestText": "Стрес і вигорання",
+          "alt": "Втомлена жінка сидить у жовтому кріслі"
         },
         {
           "id": 2,
@@ -144,7 +155,8 @@
             "mobImage": "/images/consultationsRequests/group/card2-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/group/card2-tabdesk@2x.webp"
           },
-          "requestText": "Психологічні травми"
+          "requestText": "Психологічні травми",
+          "alt": "Засмучена жінка на стільчику"
         },
         {
           "id": 3,
@@ -152,7 +164,8 @@
             "mobImage": "/images/consultationsRequests/group/card3-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/group/card3-tabdesk@2x.webp"
           },
-          "requestText": "Панічні атаки"
+          "requestText": "Панічні атаки",
+          "alt": "Занепокоєна жінка на стільчику"
         },
         {
           "id": 4,
@@ -160,7 +173,8 @@
             "mobImage": "/images/consultationsRequests/group/card4-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/group/card4-tabdesk@2x.webp"
           },
-          "requestText": "Порушення харчової поведінки"
+          "requestText": "Порушення харчової поведінки",
+          "alt": "Жінка з виделкою в руках сидить за столом, перед нею тарілка з двома горошинами"
         },
         {
           "id": 5,
@@ -168,7 +182,8 @@
             "mobImage": "/images/consultationsRequests/group/card5-mob@2x.webp",
             "tabdeskImage": "/images/consultationsRequests/group/card5-tabdesk@2x.webp"
           },
-          "requestText": "Міжособистісні відносини"
+          "requestText": "Міжособистісні відносини",
+          "alt": "Дві щасливі дівчини на вулиці посміхаються"
         }
       ]
     }

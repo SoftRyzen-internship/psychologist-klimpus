@@ -7,6 +7,7 @@ export type ImageCard = {
   id: number;
   images: Images;
   requestText: string;
+  alt: string;
 };
 
 type Consultation = {
