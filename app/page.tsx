@@ -17,7 +17,6 @@ export default function Home() {
       <UniquenessSection />
       <ConsultationsSection />
       <FeedbacksSection page="main" />
-      {/* <TestComponent /> */}
       <FormSection />
     </>
   );

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import parse from 'html-react-parser';
 import classNames from 'classnames';
 
-import { EducationCard } from '@/components/ui/EducationCard';
+import { EducationCard } from '@/components/common/EducationCard';
 import { Button } from '@/components/ui/Button';
 
 import education from '@/data/education.json';
