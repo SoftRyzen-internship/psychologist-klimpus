@@ -12,6 +12,7 @@
       "Системний терапевт"
     ]
   },
+  "policyTitle": "Політика конфіденційності",
   "communities": {
     "title": "Членство в професійних спільнотах"
   },
@@ -93,7 +94,7 @@
     }
   ],
   "section": {
-    "contacts": "footer",
+    "footer": "footer",
     "form": "form"
   },
   "buttonsText": {
@@ -108,7 +109,7 @@
   },
   "btnText": "Записатися",
   "url": {
-    "contacts": "/contacts",
+    "footer": "/footer",
     "form": "/form",
     "individual": "/individual"
   },

@@ -8,7 +8,7 @@ import { ConsultationsRequestCardProps } from './type';
 export const ConsultationsRequestCard: React.FC<
   ConsultationsRequestCardProps
 > = ({ data, className }) => {
-  const { images, requestText } = data;
+  const { images, requestText, alt } = data;
 
   const styles = classNames(
     className,
@@ -21,7 +21,7 @@ export const ConsultationsRequestCard: React.FC<
         width={448}
         height={218}
         src={images.mobImage}
-        alt={requestText}
+        alt={alt}
         priority
         className="rounded-[20px] md:hidden"
       />
@@ -29,7 +29,7 @@ export const ConsultationsRequestCard: React.FC<
         width={392}
         height={525}
         src={images.tabdeskImage}
-        alt={requestText}
+        alt={alt}
         priority
         className="rounded-[20px] md:h-[301px] md:w-[225px] xl:h-[525px] xl:w-[392px] smOnly:hidden"
       />
