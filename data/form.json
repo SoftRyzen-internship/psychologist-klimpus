@@ -49,7 +49,7 @@
             "message": "Це поле обов’язкове для заповнення."
           },
           "pattern": {
-            "value": "[0-9]+",
+            "value": "^\\+\\d+$",
             "message": "Введіть коректний номер телефону"
           },
           "minLength": {
@@ -68,7 +68,25 @@
         "textarea": false,
         "label": "Email",
         "name": "email",
-        "placeholder": "psyhologhelp111111@gmail.com"
+        "placeholder": "psyhologhelp111111@gmail.com",
+        "validation": {
+          "required": {
+            "value": false,
+            "message": ""
+          },
+          "pattern": {
+            "value": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+            "message": "Введіть коректний email"
+          },
+          "minLength": {
+            "value": 0,
+            "message": ""
+          },
+          "maxLength": {
+            "value": 40,
+            "message": "Максимальна довжина 40 символів"
+          }
+        }
       }
     },
     {
@@ -76,14 +94,19 @@
         "textarea": true,
         "label": "Залиште повідомлення",
         "name": "message",
-        "placeholder": "Я хочу..."
+        "placeholder": "Я хочу...",
+        "validation": {
+          "required": {
+            "value": false,
+            "message": ""
+          }
+        }
       }
     }
   ],
-
   "checkBox": {
     "name": "checkbox",
-    "label": "Даю згоду на обробку персональних данних",
+    "label": "Даю згоду на обробку персональних даних",
     "ariaLabel": "Прапорець підтвердження згоди на обробку персональних даних",
     "validation": {
       "required": {

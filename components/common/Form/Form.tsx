@@ -39,6 +39,7 @@ export const Form = () => {
   const checkboxInput = watch(form.checkBox.name);
 
   const onSubmit: SubmitHandler<FormData> = data => {
+    console.log(data);
     try {
       setIsLoading(true);
       console.log("Ім'я:", data.name);
