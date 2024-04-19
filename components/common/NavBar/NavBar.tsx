@@ -31,7 +31,7 @@ export const NavBar: React.FC<INavBarProps> = ({ onClose }) => {
 
   const buttonClassName = classNames(
     css['navbar-btn'],
-    'flex items-center gap-[12px] font-roboto text-[18px] font-normal transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
+    'flex items-center gap-[12px] font-roboto text-[18px] font-normal leading-[1.35] transition-[color] duration-300 ease-out hover:text-hoverAccent focus:text-hoverAccent active:text-clickAccent',
     {
       'text-hoverAccent':
         pathname === '/family-consultation' ||

@@ -12,7 +12,7 @@ import { IBurgerMenuProps } from './type';
 import data from '@/data/common.json';
 
 const {
-  linksText: { footer },
+  linksText: { contacts },
   ariaLabelClose,
 } = data;
 
@@ -65,7 +65,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                     </div>
                     <div className="px-[20px] md:px-[18px]">
                       <p className="mb-6 font-raleway text-lg font-semibold leading-[1.35]">
-                        {footer}
+                        {contacts}
                       </p>
                       <Contacts />
                     </div>

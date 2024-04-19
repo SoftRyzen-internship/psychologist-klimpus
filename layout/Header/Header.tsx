@@ -31,7 +31,7 @@ export const Header = () => {
           isAccent={false}
           className="ml-auto notXL:hidden"
         >
-          {data.linksText.footer}
+          {data.linksText.contacts}
         </SiteLink>
 
         <button

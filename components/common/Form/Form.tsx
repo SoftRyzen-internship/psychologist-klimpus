@@ -42,8 +42,6 @@ export const Form = () => {
   const onSubmit: SubmitHandler<FormData> = async data => {
     try {
       setIsLoading(true);
-      console.log("Ім'я:", data.name);
-      console.log('Телефон:', data.phone);
 
       const message = `Ім'я: ${data.name} %0AТелефон: ${data.phone} %0A${data.email ? `Email: ${data.email}` : ''} %0A${data.message ? `Повідомлення: ${data.message}` : ''}`;
       await sendMessage(message);
