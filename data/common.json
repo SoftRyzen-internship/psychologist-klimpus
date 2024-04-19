@@ -94,7 +94,7 @@
     }
   ],
   "section": {
-    "contacts": "footer",
+    "footer": "footer",
     "form": "form"
   },
   "buttonsText": {
@@ -104,12 +104,12 @@
   },
   "linksText": {
     "signUp": "Записатися на консультацію",
-    "contacts": "Контакти",
+    "footer": "Контакти",
     "inDetail": "Детальніше"
   },
   "btnText": "Записатися",
   "url": {
-    "contacts": "/contacts",
+    "footer": "/footer",
     "form": "/form",
     "individual": "/individual"
   },

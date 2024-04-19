@@ -44,9 +44,8 @@ export const Form = () => {
       setIsLoading(true);
       console.log("Ім'я:", data.name);
       console.log('Телефон:', data.phone);
-      console.log('Email:', data.email);
 
-      const message = `Ім'я: ${data.name} %0AТелефон: ${data.phone} %0AEmail: ${data.email} %0A${data.message ? `Повідомлення: ${data.message}` : ''}`;
+      const message = `Ім'я: ${data.name} %0AТелефон: ${data.phone} %0A${data.email ? `Email: ${data.email}` : ''} %0A${data.message ? `Повідомлення: ${data.message}` : ''}`;
       await sendMessage(message);
 
       reset();

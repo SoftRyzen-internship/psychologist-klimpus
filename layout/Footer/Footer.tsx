@@ -10,7 +10,7 @@ export const Footer = () => {
 
   return (
     <footer
-      id={data.section.contacts}
+      id={data.section.footer}
       className="w-full rounded-t-[20px] bg-mainBlack py-8"
     >
       <div className="container">

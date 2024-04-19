@@ -27,11 +27,11 @@ export const Header = () => {
         </div>
         <SiteLink
           linkType="scroll"
-          href={data.url.contacts}
+          href={data.url.footer}
           isAccent={false}
           className="ml-auto notXL:hidden"
         >
-          {data.linksText.contacts}
+          {data.linksText.footer}
         </SiteLink>
 
         <button
