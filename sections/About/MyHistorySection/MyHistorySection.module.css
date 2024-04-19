@@ -1,3 +1,7 @@
 .title {
   @apply leading-[1.5] md:text-[50px] xl:text-[86px];
 }
+
+.button {
+  @apply h-[54px] w-full rounded-[20px] px-12 py-4 md:w-[300px] md:px-10 xl:w-[341px];
+}
