@@ -1,6 +1,7 @@
 import { FormSection } from '@/sections/FormSection';
 import { ConsultationsHeroSections } from '@/sections/Consultations/ConsultationsHeroSection';
 import consultationsData from '@/data/consultations.json';
+import { RequestSection } from '@/sections/Consultations/RequestSection';
 import { FeedbacksSection } from '@/sections/FeedbacksSection';
 
 interface Props {
@@ -19,6 +20,7 @@ const SinglePage = ({ params }: Props) => {
   return (
     <>
       <ConsultationsHeroSections consultation={consultation} />
+      <RequestSection consultation={consultation} />
       <FeedbacksSection page="consultancy" />
       <FormSection />
     </>
