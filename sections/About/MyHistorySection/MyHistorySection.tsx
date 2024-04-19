@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import classNames from 'classnames';
+
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { SiteLink } from '@/components/ui/SiteLink';
 import { ShowMore } from '@/components/ui/ShowMore';
@@ -8,7 +10,6 @@ import myHistoryData from '@/data/myHistory.json';
 import data from '@/data/common.json';
 
 import styles from './MyHistorySection.module.css';
-import classNames from 'classnames';
 
 export const MyHistorySection = () => {
   const {
