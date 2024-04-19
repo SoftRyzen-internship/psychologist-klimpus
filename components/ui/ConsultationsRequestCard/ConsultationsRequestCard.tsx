@@ -18,12 +18,16 @@ export const ConsultationsRequestCard: React.FC<
   return (
     <div className={styles}>
       <Image
-        width={448}
+        width={428}
         height={218}
         src={images.mobImage}
         alt={alt}
         priority
-        className="rounded-[20px] md:hidden"
+        className="w-[448px] rounded-[20px] md:hidden"
+        style={{
+          width: '100%',
+          height: 'auto',
+        }}
       />
       <Image
         width={392}
