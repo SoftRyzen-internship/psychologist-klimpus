@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { EducationCardProps } from './types';
 
 export const EducationCard: React.FC<EducationCardProps> = ({
