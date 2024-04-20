@@ -4,9 +4,11 @@ import classNames from 'classnames';
 
 import { Header } from '@/layout/Header';
 import { Footer } from '@/layout/Footer';
-import meta from '@/data/meta.json';
 
 import { Raleway, Roboto } from 'next/font/google';
+
+import meta from '@/data/meta/base.json';
+
 import './globals.css';
 
 const raleway = Raleway({
@@ -23,24 +25,26 @@ const roboto = Roboto({
   display: 'swap',
 });
 
-const NEXT_PUBLIC_URL = process.env.NEXT_PUBLIC_URL as string;
+export async function generateMetadata(): Promise<Metadata> {
+  const baseUrl = process.env.NEXT_PUBLIC_URL as string;
 
-const { title, description, manifest, openGraph, icons } = meta;
+  const { title, description, manifest, keywords, twitter, openGraph, icons } =
+    meta;
 
-export const metadata: Metadata = {
-  metadataBase: new URL(NEXT_PUBLIC_URL),
-  title,
-  description,
-  icons,
-  manifest,
-  alternates: {
-    canonical: NEXT_PUBLIC_URL,
-  },
-  openGraph: {
-    ...openGraph,
-    url: NEXT_PUBLIC_URL,
-  },
-};
+  return {
+    title: title,
+    description,
+    metadataBase: new URL(baseUrl),
+    alternates: {
+      canonical: baseUrl,
+    },
+    manifest,
+    keywords,
+    twitter,
+    openGraph: { ...openGraph, url: baseUrl },
+    icons,
+  };
+}
 
 export default function RootLayout({
   children,
