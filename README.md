@@ -4,6 +4,38 @@
 
 <img width="100%" src="./public/images/readme/main-page.jpg" alt="main page"/>
 
+<p align="center">
+  <a href="#introduction">Introduction</a> •
+  <a href="#features">Features</a> •
+  <a href="#technologies-used">Technologies Used</a> •
+  <a href="#getting-started">Getting started</a> •
+  <a href="#components-api">Components API</a> 
+</p>
+
+## Introduction
+
+`Psychologist Iryna Klimpus` is the online platform created to provide
+professional psychological support.
+
+### What we offer:
+
+- **Individual consultations**: You can contact Iryna Klimpus for individual
+  consultations, where you can count on support and understanding, whether you
+  need one-off advice or long-term therapy.
+- **Family Consultations**: Here you will find support and resources for making
+  positive changes in your family. Both a couple and one family member can
+  participate.
+- **Group consultation**: Here you can share your challenges and achievements
+  while finding support and inspiration in the community.
+
+## Features
+
+Website consists from 2 static pages: Main & Privacy Policy, and 3 dynamic
+pages: Individual consultation, Family Consultation, Group consultation.
+</br>The layout is responsive and cross-browser compatible - mobile starts from
+360px, tablet from 768px, desktop from 1280px. The layout from 360px to 480px is
+fluid (stretchable). Used mobile-first approach.
+
 ## Technologies Used
 
 This software uses the following open source packages:
@@ -19,11 +51,11 @@ This software uses the following open source packages:
 - [svgr](https://www.npmjs.com/package/@svgr/webpack)
 - [classnames](https://www.npmjs.com/package/classnames)
 
-⚙️Creating the project ⚙️ This is a [Next.js](https://nextjs.org/) project
+## Getting Started
+
+⚙️Creating the project ⚙️ </br>This is a [Next.js](https://nextjs.org/) project
 bootstrapped with
 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
 
 - **Clone the repository to local machine**
 
