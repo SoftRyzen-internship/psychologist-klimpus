@@ -30,7 +30,7 @@ professional psychological support.
 
 ## Features
 
-Website consists from 2 static pages: Main & Privacy Policy, and 3 dynamic
+Website consists of 3 static pages: Main, About, Privacy Policy, and 3 dynamic
 pages: Individual consultation, Family Consultation, Group consultation.
 </br>The layout is responsive and cross-browser compatible - mobile starts from
 360px, tablet from 768px, desktop from 1280px. The layout from 360px to 480px is
