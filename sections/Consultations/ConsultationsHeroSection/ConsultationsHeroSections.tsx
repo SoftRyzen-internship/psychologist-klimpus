@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { ConsultationProps } from './types';
 import { SiteLink } from '@/components/ui/SiteLink';
 import data from '@/data/common.json';
+
 export const ConsultationsHeroSections = ({
   consultation,
   className = '',
