@@ -15,7 +15,7 @@ export const ConsultationsRequestCard: React.FC<
 
   const { width } = useViewportSize();
   const isMobile = width && width < 767.98;
-  const notMobile = width && width > 768;
+  const notMobile = width && width >= 768;
 
   const styles = classNames(
     className,
