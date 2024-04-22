@@ -1,25 +1,26 @@
 import { useEffect, useState } from 'react';
 
-export const useScreen = () => {
-  // const [width, setWidth] = useState(window.innerWidth);
-  const [width, setWidth] = useState(0);
-
-  const handleWindowSizeChange = () => {
-    setWidth(window.innerWidth);
-  };
+export const useViewportSize = () => {
+  const [viewportSize, setViewportSize] = useState<{
+    width?: number | null;
+    height: number | null;
+  }>({ width: null, height: null });
 
   useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
+    const onResize = () => {
+      setViewportSize({ width: window.innerWidth, height: window.innerHeight });
+    };
+
+    if (window !== undefined) {
+      onResize();
+
+      window.addEventListener('resize', onResize);
+    }
 
     return () => {
-      window.removeEventListener('resize', handleWindowSizeChange);
+      window.removeEventListener('resize', onResize);
     };
   }, []);
 
-  const isMobile = width < 768;
-  const isTablet = width >= 768 && width < 1280;
-  const isDesktop = width >= 1280;
-  const isTabletOrDesktop = width >= 768;
-
-  return { isMobile, isTablet, isDesktop, isTabletOrDesktop };
+  return viewportSize;
 };
