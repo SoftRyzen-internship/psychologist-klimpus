@@ -30,6 +30,7 @@ export const ConsultationsRequestCard: React.FC<
           height={218}
           src={images.mobImage}
           alt={alt}
+          priority
           className="h-auto w-full rounded-[20px]"
         />
       )}
@@ -39,6 +40,7 @@ export const ConsultationsRequestCard: React.FC<
           height={525}
           src={images.tabdeskImage}
           alt={alt}
+          priority
           className="h-[301px] w-[225px] rounded-[20px] xl:h-[525px] xl:w-[392px]"
         />
       )}
