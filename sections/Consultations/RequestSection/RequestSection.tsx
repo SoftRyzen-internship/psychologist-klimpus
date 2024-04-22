@@ -3,7 +3,7 @@ import React from 'react';
 
 import { RequestSectionProps } from './type';
 
-import { ConsultationsRequestCard } from '@/components/ui/ConsultationsRequestCard';
+import { ConsultationsRequestCard } from '@/components/common/ConsultationsRequestCard';
 import { Slider } from '@/components/common/Slider';
 
 import consultations from '@/data/consultations.json';

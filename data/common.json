@@ -94,7 +94,7 @@
     }
   ],
   "section": {
-    "contacts": "footer",
+    "footer": "footer",
     "form": "form"
   },
   "buttonsText": {
@@ -109,7 +109,7 @@
   },
   "btnText": "Записатися",
   "url": {
-    "contacts": "/contacts",
+    "footer": "/footer",
     "form": "/form",
     "individual": "/individual"
   },
@@ -122,5 +122,10 @@
   "sliderBtn": {
     "rightArrow": "Наступний слайд",
     "leftArrow": "Попередній слайд"
+  },
+  "techInfo": {
+    "text1": "Вибачте за незручності.",
+    "text2": "На сторінці проводяться технічні роботи.",
+    "text3": "Поверніться будь ласка пізніше."
   }
 }

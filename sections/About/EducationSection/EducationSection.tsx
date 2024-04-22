@@ -5,7 +5,7 @@ import { performRequest } from '@/lib/datocms';
 import { coursesQuery } from '@/lib/queries/coursesQuery';
 
 import { SectionTitle } from '@/components/common/SectionTitle';
-import { EducationCard } from '@/components/ui/EducationCard';
+import { EducationCard } from '@/components/common/EducationCard';
 import { CoursesList } from '@/components/common/CoursesList';
 import { CourseType } from '@/components/common/CoursesList/types';
 

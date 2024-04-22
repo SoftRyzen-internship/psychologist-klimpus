@@ -1,14 +1,16 @@
 import { performRequest } from '@/lib/datocms';
 import { policyQuery } from '@/lib/queries/policyQuery';
 import { PolicySection } from '@/sections/PolicySection';
+import { TechnicalWorks } from '@/components/common/TechnicalWorks';
 
 export default async function Page() {
-  const { data } = await performRequest({ query: policyQuery });
-  const policy = data?.policy?.text?.value;
+  let policy = null;
+  try {
+    const { data } = await performRequest({ query: policyQuery });
+    policy = data?.policy?.text?.value;
+  } catch (error) {
+    console.error('Помилка отримання даних з сервера:', error);
+  }
 
-  return (
-    <div>
-      <PolicySection data={policy} />
-    </div>
-  );
+  return <>{policy ? <PolicySection data={policy} /> : <TechnicalWorks />}</>;
 }
