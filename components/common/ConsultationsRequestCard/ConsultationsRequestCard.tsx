@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { useMediaQuery } from 'react-responsive';
+import { useViewportSize } from '@/utils/useScreen';
 import classNames from 'classnames';
 
 import { ConsultationsRequestCardProps } from './type';
@@ -13,9 +13,9 @@ export const ConsultationsRequestCard: React.FC<
 > = ({ data, className }) => {
   const { images, requestText, alt } = data;
 
-  const isMobile = useMediaQuery({
-    query: '(max-width: 768px)',
-  });
+  const { width } = useViewportSize();
+  const isMobile = width && width < 767.98;
+  const notMobile = width && width > 768;
 
   const styles = classNames(
     className,
@@ -24,23 +24,21 @@ export const ConsultationsRequestCard: React.FC<
 
   return (
     <div className={styles}>
-      {isMobile ? (
+      {isMobile && (
         <Image
           width={428}
           height={218}
           src={images.mobImage}
           alt={alt}
-          priority
-          className="rounded-[20px]"
-          style={{ width: '100%', height: 'auto' }}
+          className="h-auto w-full rounded-[20px]"
         />
-      ) : (
+      )}
+      {notMobile && (
         <Image
           width={392}
           height={525}
           src={images.tabdeskImage}
           alt={alt}
-          priority
           className="h-[301px] w-[225px] rounded-[20px] xl:h-[525px] xl:w-[392px]"
         />
       )}
