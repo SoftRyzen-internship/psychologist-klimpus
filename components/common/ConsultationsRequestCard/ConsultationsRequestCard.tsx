@@ -21,8 +21,6 @@ export const ConsultationsRequestCard: React.FC<
     ? 'before:absolute before:left-0 before:top-0 before:z-10 before:h-[40%] before:w-full before:bg-gradient-to-b from-black/65 to-transparent before:rounded-[20px]'
     : '';
 
-  // const mobileStyles = isMobile
-
   const styles = classNames(
     className,
     'rounded-[20px] md:w-[225px] xl:w-[392px] relative',
