@@ -6,7 +6,7 @@ import familyMeta from '@/data/meta/familyConsultation.json';
 import groupMeta from '@/data/meta/groupConsultation.json';
 
 export const pageMetadata = (page: string) => {
-  const baseUrl = process.env.NEXT_PUBLIC_MAIN_SITE_URL as string;
+  const baseUrl = process.env.NEXT_PUBLIC_URL as string;
   const { title, description, keywords, openGraph } = baseMeta;
 
   const getMeta = () => {
