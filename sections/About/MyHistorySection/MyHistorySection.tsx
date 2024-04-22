@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import classNames from 'classnames';
 
-import { SectionTitle } from '@/components/common/SectionTitle';
 import { SiteLink } from '@/components/ui/SiteLink';
 import { ShowMore } from '@/components/ui/ShowMore';
 
@@ -38,15 +37,16 @@ export const MyHistorySection = () => {
       <div className="container md:flex md:flex-col md:gap-12 xl:gap-20">
         <div className="md:flex xl:gap-[22px] mdOnly:items-center mdOnly:justify-between">
           <div className=" md:flex md:w-[346px] md:flex-col xl:w-[598px]">
-            <SectionTitle className={`${styles.title} mb-6 md:mb-8 xl:mb-16`}>
+            <h1 className="mb-6 font-raleway text-[44px] font-semibold uppercase leading-[1.5] md:mb-8 md:text-[50px] xl:mb-16 xl:text-[86px]">
               {title}
-            </SectionTitle>
+            </h1>
             <Image
               src={firstPhoto}
               alt={firstPhotoAlt}
               width={596}
               height={639}
               className="mb-4 md:hidden"
+              priority
             />
             <p className=" mb-3 font-roboto text-[20px] font-semibold leading-[1.35] md:text-[22px] xl:mb-9 xl:w-[580px] xl:text-[24px]">
               {afterTitle}
@@ -61,6 +61,7 @@ export const MyHistorySection = () => {
             width={596}
             height={639}
             className="mb-4 hidden aspect-video rounded-[20px] object-cover md:mb-0 md:block md:h-[477px] md:w-[306px] xl:h-[639px] xl:w-[596px]"
+            priority
           />
         </div>
 
