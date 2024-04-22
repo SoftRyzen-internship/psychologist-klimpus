@@ -200,6 +200,6 @@ Here you may find a list of the most common components and their API:
 
 - #### CourseList
 
-| Prop        | Value    | Description                                            |
-| ----------- | -------- | ------------------------------------------------------ |
-| `className` | `string` | optional, you can add some additional styles if needed |
+| Prop        | Value    | Description                                             |
+| ----------- | -------- | ------------------------------------------------------- |
+| `className` | `string` | optional, you can add some additional styles if needed. |
