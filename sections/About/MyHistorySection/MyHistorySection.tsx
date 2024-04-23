@@ -45,7 +45,7 @@ export const MyHistorySection = () => {
               alt={firstPhotoAlt}
               width={596}
               height={639}
-              className="mb-4 md:hidden"
+              className="mb-4 aspect-video h-[412px] w-full rounded-[20px] object-cover object-top md:hidden"
               priority
             />
             <p className=" mb-3 font-roboto text-[20px] font-semibold leading-[1.35] md:text-[22px] xl:mb-9 xl:w-[580px] xl:text-[24px]">
@@ -61,7 +61,7 @@ export const MyHistorySection = () => {
               alt={firstPhotoAlt}
               width={596}
               height={639}
-              className="mb-4  aspect-video rounded-[20px] object-cover md:mb-0  md:h-[477px] md:w-[306px] xl:h-[639px] xl:w-[596px] "
+              className="mb-4  aspect-video rounded-[20px] object-cover md:mb-0 md:h-[477px] md:w-[306px] xl:h-[639px] xl:w-[596px] "
               priority
             />
           </div>

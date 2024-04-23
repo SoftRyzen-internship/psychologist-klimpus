@@ -28,7 +28,7 @@ export const ShowMore: React.FC<IShowMoreProps> = ({ showText, hideText }) => {
           alt={secondPhotoAlt}
           width={495}
           height={450}
-          className="mb-4 mdOnly:h-[390px] mdOnly:w-[306px]"
+          className=" mb-4 aspect-video h-[290px] w-full rounded-[20px] object-cover object-top"
         />
         <div className="flex-col md:flex md:w-[346px] xl:w-[587px]">
           <p className="mainText mb-3 md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
