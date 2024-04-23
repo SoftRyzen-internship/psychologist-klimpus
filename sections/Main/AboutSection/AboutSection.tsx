@@ -50,7 +50,7 @@ export const AboutSection = () => {
               alt={alt}
               width={845}
               height={1274}
-              className="rounded-[20px] md:w-[278px] xl:w-[289px]"
+              className="aspect-video  h-[421px] w-full rounded-[20px] object-cover object-top md:h-[357px] md:w-[278px] xl:h-[436px] xl:w-[289px]"
             />
           </div>
         </div>
