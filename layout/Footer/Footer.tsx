@@ -15,7 +15,7 @@ export const Footer = () => {
     >
       <div className="container">
         <div className="flex w-full flex-col border-b-[1px] border-solid border-strokeFooter pb-8 md:pb-9 xl:pb-12">
-          <p className="mb-8 font-raleway text-lg font-semibold uppercase leading-[1.35] text-white  md:mb-[48px] md:text-xl xl:text-[22px]">
+          <p className="mb-8 font-raleway text-lg font-semibold uppercase leading-[1.35] text-white  md:mb-[48px] md:text-xl md:leading-[1.35] xl:text-[22px] xl:leading-[1.35]">
             {data.footer.title}
           </p>
           <div className="flex w-full flex-col md:flex-row md:justify-between ">

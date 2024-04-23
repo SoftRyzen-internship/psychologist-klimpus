@@ -68,7 +68,7 @@ export const Form = () => {
         className="mx-auto flex flex-col md:max-w-[450px] xl:max-w-[517px]"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl xl:text-[20px]">
+        <h3 className="mb-5 text-center font-raleway text-lg font-semibold uppercase leading-[1.35] md:mb-6 md:text-xl md:leading-[1.35] xl:text-[20px] xl:leading-[1.35] ">
           {form.formTitle}
         </h3>
         {form.inputs.map(item => (

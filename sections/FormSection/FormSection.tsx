@@ -14,7 +14,7 @@ export const FormSection = () => {
       className="pb-[54px] pt-[27px] md:pb-24 md:pt-10 xl:pb-[116px] xl:pt-[50px]"
     >
       <div className="container">
-        <div className="sectionTitle mf:mb-9 m-auto mb-6 flex justify-center">
+        <div className="sectionTitle m-auto mb-6 flex justify-center md:mb-9">
           <div
             className={`${s.titleIcon} text-cardTextLg relative flex flex-col items-center justify-center after:md:h-[48px] after:md:w-[86px] before:xl:h-[57px] before:xl:w-[103px] after:xl:h-[57px] after:xl:w-[103px]`}
           >
