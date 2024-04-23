@@ -31,10 +31,10 @@ export const ShowMore: React.FC<IShowMoreProps> = ({ showText, hideText }) => {
           className="mb-4 mdOnly:h-[390px] mdOnly:w-[306px]"
         />
         <div className="flex-col md:flex md:w-[346px] xl:w-[587px]">
-          <p className=" mb-3 font-roboto text-[15px] font-normal leading-[1.5]  md:text-[18px] xl:mb-9 xl:text-[20px]">
+          <p className="mainText mb-3 md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
             {secondText}
           </p>
-          <p className=" mb-3 font-roboto text-[15px] font-normal leading-[1.5] md:mb-8  md:text-[18px] xl:mb-9 xl:text-[20px]">
+          <p className="mainText mb-3 md:mb-8 md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
             {thirdText}
           </p>
         </div>
