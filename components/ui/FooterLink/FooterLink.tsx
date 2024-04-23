@@ -12,9 +12,9 @@ export const FooterLink = () => {
   return (
     <Link
       className="ml-0 text-white transition hover:text-rose focus:text-rose active:text-accent md:ml-auto"
-      href={pathname === '/' ? `${footer.href}` : '/'}
+      href={pathname === '/policy' ? '/' : `${footer.href}`}
     >
-      {pathname === '/' ? footer.policyText : footer.home}
+      {pathname === '/policy' ? footer.home : footer.policyText}
     </Link>
   );
 };

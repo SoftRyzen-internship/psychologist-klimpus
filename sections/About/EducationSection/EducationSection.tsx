@@ -1,20 +1,15 @@
 import React from 'react';
-
-import { performRequest } from '@/lib/datocms';
-
-import { coursesQuery } from '@/lib/queries/coursesQuery';
-
 import parse from 'html-react-parser';
 
+import { performRequest } from '@/lib/datocms';
+import { coursesQuery } from '@/lib/queries/coursesQuery';
+
 import { SectionTitle } from '@/components/common/SectionTitle';
-
-import { EducationCard } from '@/components/ui/EducationCard';
-
-import education from '@/data/education.json';
-
+import { EducationCard } from '@/components/common/EducationCard';
+import { CoursesList } from '@/components/common/CoursesList';
 import { CourseType } from '@/components/common/CoursesList/types';
 
-import { CoursesList } from '@/components/common/CoursesList';
+import education from '@/data/education.json';
 
 export const EducationSection = async () => {
   const { data } = await performRequest({ query: coursesQuery });

@@ -25,7 +25,7 @@ export const FormInput: React.FC<FormInputProps> = ({
         <textarea
           id={name}
           placeholder={placeholder}
-          {...register(name)}
+          {...register(name, { required: false })}
           className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6"
         />
       ) : (
@@ -36,7 +36,6 @@ export const FormInput: React.FC<FormInputProps> = ({
           id={name}
           {...register(name, {
             ...validation,
-            required: isRequired,
             minLength: {
               value: validation?.minLength ? validation?.minLength?.value : 13,
               message: validation?.minLength
@@ -59,16 +58,14 @@ export const FormInput: React.FC<FormInputProps> = ({
           placeholder={placeholder}
           className={classNames(
             'relative rounded-xl border-[1px] border-solid  px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6',
-            isError && (name === 'name' || name === 'phone')
+            isError
               ? 'border-mainRed text-mainRed focus:border-mainRed'
               : 'border-strokeForm',
-            isError && (name === 'name' || name === 'phone')
-              ? 'mb-0'
-              : 'mb-[42px]',
+            isError ? 'mb-0' : 'mb-[42px]',
           )}
         />
       )}
-      {isError && (name === 'name' || name === 'phone') && (
+      {isError && (
         <div className="relative mb-[18px] ">
           <span
             id={`errorName${name}`}
