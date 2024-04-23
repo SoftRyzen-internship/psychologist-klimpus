@@ -1,3 +1,7 @@
 .button {
   @apply h-[54px] w-full rounded-[20px] px-12 py-4 md:w-[300px] md:px-10 xl:h-auto xl:w-[341px] xl:py-5;
 }
+
+.section {
+  @apply w-full pb-5 pt-10 md:pb-10 md:pt-12 xl:pb-[50px] xl:pt-[56px];
+}
