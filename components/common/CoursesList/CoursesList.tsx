@@ -42,7 +42,7 @@ export const CoursesList: React.FC<CoursesListProps> = ({ courses }) => {
         ))}
       </ul>
       <Button
-        className="w-[87px] py-[15px] md:leading-[1.35] xl:w-[94px] xl:text-lg"
+        className="w-[87px]  md:leading-[1.35] xl:w-[94px] xl:text-lg"
         type="button"
         onClick={toggleOpen}
       >

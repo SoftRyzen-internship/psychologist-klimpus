@@ -47,7 +47,7 @@ export const BurgerMenu: React.FC<IBurgerMenuProps> = ({ isOpen, onClose }) => {
                 <Dialog.Panel className="pointer-events-auto relative w-screen bg-white md:h-[626px] md:w-[384px] md:rounded-bl-[20px]">
                   <div className="mx-auto flex h-full max-w-[480px] flex-col justify-between px-[16px] pb-[36px] pt-4 md:px-[30px] md:pb-[48px] md:pt-5">
                     <div>
-                      <div className="mb-6 flex items-center justify-between md:mb-4">
+                      <div className="mb-6 flex items-center justify-between md:mb-[35px]">
                         <Logo className="md:hidden" onClick={onClose} />
 
                         <button

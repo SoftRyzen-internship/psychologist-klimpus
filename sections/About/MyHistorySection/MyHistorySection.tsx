@@ -51,7 +51,7 @@ export const MyHistorySection = () => {
             <p className=" mb-3 font-roboto text-[20px] font-semibold leading-[1.35] md:text-[22px] xl:mb-9 xl:w-[580px] xl:text-[24px]">
               {afterTitle}
             </p>
-            <p className=" mainText mb-4  md:mb-0  md:leading-[1.5] xl:w-[562px] xl:leading-[1.5]">
+            <p className=" mainText mb-8  md:mb-0  md:leading-[1.5] xl:w-[562px] xl:leading-[1.5]">
               {text}
             </p>
           </div>
