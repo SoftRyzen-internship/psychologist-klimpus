@@ -32,14 +32,14 @@
     "href": "/policy",
     "links": [
       {
-        "name": "softryzen",
-        "path": "https://www.softryzen.com/",
-        "ariaLabel": "посилання на веб-сайт SoftRyzen"
-      },
-      {
         "name": "goit",
         "path": "https://goit.global/ua/",
         "ariaLabel": "посилання на веб-сайт GoIT"
+      },
+      {
+        "name": "softryzen",
+        "path": "https://www.softryzen.com/",
+        "ariaLabel": "посилання на веб-сайт SoftRyzen"
       }
     ]
   },
