@@ -7,6 +7,7 @@ import { useViewportSize } from '@/utils/useScreen';
 import classNames from 'classnames';
 
 import { ConsultationsRequestCardProps } from './type';
+import './ConsultationsRequestCard.modules.css';
 
 export const ConsultationsRequestCard: React.FC<
   ConsultationsRequestCardProps
@@ -19,7 +20,7 @@ export const ConsultationsRequestCard: React.FC<
 
   const styles = classNames(
     className,
-    'rounded-[20px] md:w-[225px] xl:w-[392px] relative',
+    'requestCard rounded-[20px] md:w-[225px] xl:w-[392px] relative',
   );
 
   return (
