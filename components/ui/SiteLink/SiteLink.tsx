@@ -31,6 +31,7 @@ export const SiteLink: React.FC<SiteLinkProps> = ({
   return linkType === 'scroll' ? (
     <ScrollLink
       to={href.slice(1)}
+      href="/"
       spy={true}
       smooth={true}
       duration={1500}

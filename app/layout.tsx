@@ -28,8 +28,16 @@ const roboto = Roboto({
 export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = process.env.NEXT_PUBLIC_URL as string;
 
-  const { title, description, manifest, keywords, twitter, openGraph, icons } =
-    meta;
+  const {
+    title,
+    description,
+    manifest,
+    keywords,
+    twitter,
+    openGraph,
+    icons,
+    robots,
+  } = meta;
 
   return {
     title: title,
@@ -43,6 +51,7 @@ export async function generateMetadata(): Promise<Metadata> {
     twitter,
     openGraph: { ...openGraph, url: baseUrl },
     icons,
+    robots,
   };
 }
 
