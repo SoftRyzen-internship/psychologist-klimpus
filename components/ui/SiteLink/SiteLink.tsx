@@ -35,6 +35,7 @@ export const SiteLink: React.FC<SiteLinkProps> = ({
       spy={true}
       smooth={true}
       duration={1500}
+      href="/"
       className={classNames(isAccent ? accentStyles : styles, className)}
     >
       {children}

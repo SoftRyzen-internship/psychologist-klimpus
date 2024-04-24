@@ -34,16 +34,12 @@ export const ShowMore: React.FC<IShowMoreProps> = ({ showText, hideText }) => {
           <p className="mainText mb-3 md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
             {secondText}
           </p>
-          <p className="mainText mb-3 md:mb-8 md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
+          <p className="mainText mb-8  md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
             {thirdText}
           </p>
         </div>
       </div>
-      <Button
-        type="button"
-        onClick={toggleOpen}
-        className="mb-2 py-4 pr-[58px] md:hidden"
-      >
+      <Button type="button" onClick={toggleOpen} className="mb-6  md:hidden">
         {isOpen ? hideText : showText}
       </Button>
     </>

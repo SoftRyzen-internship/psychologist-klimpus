@@ -25,7 +25,9 @@ export const RequestsSection: React.FC = () => {
           <SectionTitle className="mb-6 md:mb-10 xl:mb-16">
             {sectionTitle}
           </SectionTitle>
-          <p className="textBold mb-5 md:mb-9 xl:mb-10">{sectionText}</p>
+          <p className="textBold mb-5 md:mb-9 md:leading-[1.35] xl:mb-10">
+            {sectionText}
+          </p>
           <div className="md:hidden">
             <Slider
               component={RequestCard}

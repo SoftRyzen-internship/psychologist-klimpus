@@ -42,7 +42,7 @@ export const NavBar: React.FC<INavBarProps> = ({ onClose }) => {
 
   return (
     <nav className="w-full bg-white">
-      <ul className="flex flex-col gap-[27px] text-mainBlack xl:flex-row xl:gap-[48px]">
+      <ul className="flex flex-col gap-[24px] text-mainBlack xl:flex-row xl:gap-[48px]">
         {linkData.map((item, index) => (
           <li key={index}>
             <Link
