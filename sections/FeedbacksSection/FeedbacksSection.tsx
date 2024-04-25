@@ -26,8 +26,12 @@ export const FeedbacksSection: React.FC<IFeedbacksSectionProps> = ({
     [styles.title]: page === 'consultancy',
   });
 
+  const sectionStyles = classNames('section', {
+    [styles.section]: page === 'consultancy',
+  });
+
   return (
-    <section className="section">
+    <section className={sectionStyles}>
       <div className={containerStyles}>
         {page === 'main' && (
           <p className="mb-3 py-2 font-roboto text-base font-normal leading-[1.35] text-miniTitles  md:mb-0 md:py-3 xl:text-lg xl:leading-[1.35]">
@@ -41,7 +45,7 @@ export const FeedbacksSection: React.FC<IFeedbacksSectionProps> = ({
           </SectionTitle>
 
           {page === 'main' && (
-            <p className=" mb-5 font-roboto text-[16px] font-medium leading-[1.35] text-mainBlack  md:mb-[92px] md:text-[19px]  xl:mb-[120px] xl:w-[701px] xl:text-[20px]">
+            <p className=" mb-5 font-roboto text-[16px] font-medium leading-[1.35] text-mainBlack  md:mb-[92px] md:text-[18px]  xl:mb-[120px] xl:w-[701px] xl:text-[20px]">
               {afterTitle}
             </p>
           )}

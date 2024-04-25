@@ -16,6 +16,11 @@
             "src":"/favicon.ico",
             "sizes":"48x48",
             "type":"image/x-icon"
+        },
+        {
+            "src":"/favicon-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png"
         }
         ]
 }

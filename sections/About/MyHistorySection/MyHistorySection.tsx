@@ -33,7 +33,7 @@ export const MyHistorySection = () => {
   const mobileButtonStyles = classNames([styles.button], 'md:hidden');
 
   return (
-    <section className="section">
+    <section className={styles.section}>
       <div className="container md:flex md:flex-col md:gap-12 xl:gap-20">
         <div className="md:flex xl:gap-[22px] mdOnly:items-center mdOnly:justify-between">
           <div className=" md:flex md:w-[346px] md:flex-col xl:w-[598px]">
@@ -45,24 +45,26 @@ export const MyHistorySection = () => {
               alt={firstPhotoAlt}
               width={596}
               height={639}
-              className="mb-4 md:hidden"
+              className="mb-4 aspect-video h-[412px] w-full rounded-[20px] object-cover object-top md:hidden"
               priority
             />
             <p className=" mb-3 font-roboto text-[20px] font-semibold leading-[1.35] md:text-[22px] xl:mb-9 xl:w-[580px] xl:text-[24px]">
               {afterTitle}
             </p>
-            <p className=" mb-4 font-roboto text-[15px] font-normal leading-[1.5] md:text-[18px] xl:w-[562px] xl:text-[20px]">
+            <p className=" mainText mb-8  md:mb-0  md:leading-[1.5] xl:w-[562px] xl:leading-[1.5]">
               {text}
             </p>
           </div>
-          <Image
-            src={firstPhoto}
-            alt={firstPhotoAlt}
-            width={596}
-            height={639}
-            className="mb-4 hidden aspect-video rounded-[20px] object-cover md:mb-0 md:block md:h-[477px] md:w-[306px] xl:h-[639px] xl:w-[596px]"
-            priority
-          />
+          <div className="hidden md:block mdOnly:pt-12">
+            <Image
+              src={firstPhoto}
+              alt={firstPhotoAlt}
+              width={596}
+              height={639}
+              className="mb-4  aspect-video rounded-[20px] object-cover md:mb-0 md:h-[477px] md:w-[306px] xl:h-[639px] xl:w-[596px] "
+              priority
+            />
+          </div>
         </div>
 
         <ShowMore showText={showMoreText} hideText={hideText} />
@@ -73,13 +75,13 @@ export const MyHistorySection = () => {
             alt={secondPhotoAlt}
             width={495}
             height={450}
-            className="mb-4 aspect-video h-[390px] w-[328px] rounded-[20px] object-cover md:h-[390px] md:w-[306px] xl:h-[450px] xl:w-[495px]"
+            className="mb-4 aspect-video h-[390px] w-[328px] rounded-[20px] object-cover md:mb-0 md:h-[390px] md:w-[306px] xl:h-[450px] xl:w-[495px]"
           />
           <div className="flex-col md:flex md:w-[343px] xl:w-[587px]">
-            <p className=" mb-3 font-roboto text-[15px] font-normal leading-[1.5]  md:text-[18px] xl:mb-9 xl:w-[550px] xl:text-[20px] mdOnly:w-[334px]">
+            <p className="mainText mb-3  md:leading-[1.5] xl:mb-9  xl:w-[550px] xl:leading-[1.5] mdOnly:w-[334px]">
               {secondText}
             </p>
-            <p className=" mb-3 font-roboto text-[15px] font-normal leading-[1.5] md:mb-8  md:text-[18px] xl:mb-9 xl:text-[20px]">
+            <p className="mainText mb-3  md:mb-8  md:leading-[1.5] xl:mb-9 xl:leading-[1.5]">
               {thirdText}
             </p>
 

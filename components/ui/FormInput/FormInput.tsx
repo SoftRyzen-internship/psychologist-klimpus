@@ -26,7 +26,7 @@ export const FormInput: React.FC<FormInputProps> = ({
           id={name}
           placeholder={placeholder}
           {...register(name, { required: false })}
-          className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6"
+          className="mb-4 h-[176px] resize-none rounded-xl border-[1px] border-solid border-strokeForm px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm focus:border-mainBlack md:px-6"
         />
       ) : (
         <input
@@ -60,7 +60,7 @@ export const FormInput: React.FC<FormInputProps> = ({
             'relative rounded-xl border-[1px] border-solid  px-4 py-4 font-roboto text-base font-normal leading-[1.35] outline-none placeholder:text-strokeForm md:px-6',
             isError
               ? 'border-mainRed text-mainRed focus:border-mainRed'
-              : 'border-strokeForm',
+              : 'border-strokeForm focus:border-mainBlack',
             isError ? 'mb-0' : 'mb-[42px]',
           )}
         />

@@ -27,7 +27,7 @@ export const AboutSection = () => {
           </SectionTitle>
           <div className="xl:flex xl:flex-row-reverse xl:justify-between">
             <div>
-              <ul className="mb-4 flex flex-col gap-4 md:mb-9 xl:mb-12 xl:w-[598px]">
+              <ul className="mb-8 flex flex-col gap-4 md:mb-[52px] xl:mb-16 xl:w-[598px]">
                 {paragraphs.map(paragraph => (
                   <li key={paragraph.id}>
                     <p className="font-roboto text-[15px] font-normal leading-[1.5] md:text-[18px] xl:text-[20px]">
@@ -40,7 +40,7 @@ export const AboutSection = () => {
                 href={href}
                 linkType="link"
                 isAccent={true}
-                className="py-4 pr-[22px] notXL:mb-3"
+                className="notXL:mb-7"
               >
                 {text}
               </SiteLink>
@@ -50,7 +50,7 @@ export const AboutSection = () => {
               alt={alt}
               width={845}
               height={1274}
-              className="rounded-[20px] md:w-[278px] xl:w-[289px]"
+              className="aspect-video  h-[421px] w-full rounded-[20px] object-cover object-top md:h-[357px] md:w-[278px] xl:h-[436px] xl:w-[289px]"
             />
           </div>
         </div>
