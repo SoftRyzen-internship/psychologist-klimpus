@@ -1,10 +1,22 @@
+import { performRequest } from '@/lib/datocms';
+import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
 import { ConsultationsList } from '@/components/common/ConsultationsList';
 import { SectionTitle } from '@/components/common/SectionTitle';
 
 import consultations from '@/data/consultations.json';
+import { mergeData } from '@/utils/mergeData';
 
-export const ConsultationsSection = () => {
-  const { preTitle, sectionTitle, sectionText } = consultations;
+export const ConsultationsSection = async () => {
+  const { preTitle, sectionTitle, sectionText, consultationsList } =
+    consultations;
+
+  const { data } = await performRequest({ query: consultancyPlatesQuery });
+  const plates = data?.consultancyPlate.plates;
+
+  const dataToShow = plates
+    ? mergeData(plates, consultationsList)
+    : consultationsList;
+
   return (
     <section className="section">
       <div className="container gap-4 md:flex xl:gap-[18px]">
@@ -18,7 +30,7 @@ export const ConsultationsSection = () => {
           <p className="mb-5 font-roboto text-base font-medium leading-[1.35] md:mb-9 md:text-lg md:leading-[1.35] xl:mb-10 xl:w-[796px] xl:text-xl xl:leading-[1.35]">
             {sectionText}
           </p>
-          <ConsultationsList />
+          <ConsultationsList dataToShow={dataToShow} />
         </div>
       </div>
     </section>
