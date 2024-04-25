@@ -9,7 +9,7 @@ import { SiteLink } from '@/components/ui/SiteLink';
 
 import './ConsultationsCard.modules.css';
 
-export const ConsultationsCard: React.FC<ConsultationsCardProps> = async ({
+export const ConsultationsCard: React.FC<ConsultationsCardProps> = ({
   className = '',
   item,
 }) => {
