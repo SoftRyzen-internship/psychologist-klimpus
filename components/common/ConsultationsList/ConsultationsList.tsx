@@ -1,30 +1,27 @@
-import { performRequest } from '@/lib/datocms';
-import { consultancyPlatesQuery } from '@/lib/queries/consultancyPlatesQuery';
-
+'use client';
+import { FC } from 'react';
+import { motion } from 'framer-motion';
 import { Item } from '@/components/common/ConsultationsCard/type';
 
 import { ConsultationsCard } from '@/components/common/ConsultationsCard';
+import { ConsultationsListProps } from './type';
 
-import consultations from '@/data/consultations.json';
-import { mergeData } from '@/utils/mergeData';
-
-export const ConsultationsList = async () => {
-  const { consultationsList } = consultations;
-
-  const { data } = await performRequest({ query: consultancyPlatesQuery });
-  const plates = data?.consultancyPlate.plates;
-
-  const dataToShow = plates
-    ? mergeData(plates, consultationsList)
-    : consultationsList;
-
+export const ConsultationsList: FC<ConsultationsListProps> = ({
+  dataToShow,
+}) => {
   return (
     <ul className="flex flex-col gap-4 xl:flex-row xl:gap-8">
-      {dataToShow.map((item: Item) => {
+      {dataToShow.map((item: Item, idx) => {
         return (
-          <li key={item.id}>
+          <motion.li
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: idx * 0.6 }}
+            viewport={{ once: true }}
+            key={item.id}
+          >
             <ConsultationsCard item={item} />
-          </li>
+          </motion.li>
         );
       })}
     </ul>

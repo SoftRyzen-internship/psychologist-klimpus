@@ -18,6 +18,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "classnames": "^2.5.1",
+    "framer-motion": "^11.1.7",
     "graphql-request": "^6.1.0",
     "html-react-parser": "^5.1.10",
     "next": "14.1.4",
